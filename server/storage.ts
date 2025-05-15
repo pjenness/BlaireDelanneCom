@@ -1059,7 +1059,7 @@ export class MemStorage implements IStorage {
       title: "Destination Weddings: Byron Bay Edition",
       slug: "destination-weddings-byron-bay",
       excerpt: "The magic of planning celebrations in Australia's boho-luxury coastal paradise and why it has become my favorite wedding destination.",
-      content: `<p>There are certain places that seem designed by nature specifically for celebration. Byron Bay, with its pristine beaches, subtropical hinterland, and golden quality of light, is undoubtedly one such location. Over the past year, it has become my favorite destination for the weddings I plan through Luxe Society.</p>
+      content: `<p>There are certain places that seem designed by nature specifically for celebration. Byron Bay, with its pristine beaches, subtropical hinterland, and golden quality of light, is undoubtedly one such location. Over the past year, it has become my favorite destination for the weddings I plan through Celestial Celebrations.</p>
       <p>What makes Byron special isn't just its physical beauty, but the particular energy of the place—a blend of laid-back coastal ease and unexpected sophistication. It attracts couples who want celebrations that feel both elegant and authentic, refined yet connected to nature.</p>`,
       coverImage: "https://images.unsplash.com/photo-1533993036450-7c48a147e09c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
       publishedAt: new Date("2021-04-12T10:00:00Z"),
@@ -1217,10 +1217,10 @@ export class MemStorage implements IStorage {
     });
     
     this.createPost({
-      title: "Hotel DeBrett: Collaborating with Auckland's Design Icon",
-      slug: "hotel-debrett-auckland-design-icon",
+      title: "The Fern Boutique Hotel: Collaborating with Auckland's Design Icon",
+      slug: "fern-boutique-hotel-auckland-design-icon",
       excerpt: "The joy of partnering with one of New Zealand's most distinctive boutique hotels and how our collaboration is creating unique guest experiences.",
-      content: `<p>Some spaces have a soul that's immediately perceptible when you enter. Hotel DeBrett, with its soaring art deco-inspired atrium, bold striped carpets, and eclectic collection of New Zealand art, is such a place. I knew upon my first visit that this was an environment that aligned with my own vision of hospitality—design-forward yet deeply comfortable, distinctive without being pretentious.</p>
+      content: `<p>Some spaces have a soul that's immediately perceptible when you enter. The Fern Boutique Hotel, with its soaring art deco-inspired atrium, bold striped carpets, and eclectic collection of New Zealand art, is such a place. I knew upon my first visit that this was an environment that aligned with my own vision of hospitality—design-forward yet deeply comfortable, distinctive without being pretentious.</p>
       <p>When the opportunity arose to collaborate with them on special events and guest experiences, it felt like a natural partnership. Together, we're developing a series of cultural salons that bring together local artists, winemakers, and culinary talents for intimate evenings that showcase the creative spirit of Auckland.</p>`,
       coverImage: "https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
       publishedAt: new Date("2022-11-10T10:00:00Z"),
