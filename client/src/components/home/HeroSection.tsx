@@ -6,7 +6,7 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-black/40 z-10"></div>
       <div className="absolute inset-0">
         <img 
-          src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080" 
+          src="/images/hero/blaire-hero-image.jpg" 
           alt="Blaire Delanne - Hospitality and Wedding Specialist" 
           className="w-full h-full object-cover"
         />
