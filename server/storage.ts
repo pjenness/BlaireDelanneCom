@@ -1198,7 +1198,7 @@ export class MemStorage implements IStorage {
       excerpt: "Learning from New Zealand's Indigenous concepts of hospitality and how they're shaping my approach to creating meaningful guest experiences.",
       content: `<p>One of the most beautiful words I've encountered since moving to New Zealand is "manaakitanga"—a Māori concept that encompasses hospitality, kindness, generosity, and respect for others. It's a philosophy that extends far beyond service transactions to embrace genuine care for visitors' wellbeing and the sharing of place and culture.</p>
       <p>Through conversations with Māori cultural experts and hospitality professionals, I've been deepening my understanding of how this concept manifests in everything from arrival rituals to food sharing to storytelling. These principles are profoundly influencing how I'm developing experiences for my clients.</p>`,
-      coverImage: "https://images.unsplash.com/photo-1528495612343-9ca9f4a9f67c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+      coverImage: "/images/blog/maori-hospitality.jpg",
       publishedAt: new Date("2022-05-12T10:00:00Z"),
       category: "Hospitality",
       location: "New Zealand",
@@ -1214,7 +1214,7 @@ export class MemStorage implements IStorage {
       excerpt: "The challenges and rewards of orchestrating destination weddings in New Zealand's adventure capital and why the extra effort creates incomparable celebrations.",
       content: `<p>Planning a wedding in one of the world's most photogenic locations comes with unique challenges. The same dramatic landscapes that make Queenstown an unforgettable backdrop—soaring mountains, crystal lakes, remote valleys—also create logistical complexities that demand creative solutions.</p>
       <p>For a celebration I'm currently designing, we're arranging helicopter transportation to a mountain plateau for the ceremony, coordinating with weather specialists to identify the optimal timing window, and working with local artisans to create an experience that honors the remarkable setting while ensuring guests' comfort.</p>`,
-      coverImage: "https://images.unsplash.com/photo-1464288550599-43d5a73451b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+      coverImage: "/images/blog/queenstown-weddings.jpg",
       publishedAt: new Date("2022-07-25T10:00:00Z"),
       category: "Wedding",
       location: "New Zealand",
@@ -1230,7 +1230,7 @@ export class MemStorage implements IStorage {
       excerpt: "Exploring Auckland's island wine region and how its distinctive terroir creates world-class wines with a character all their own.",
       content: `<p>Just a 40-minute ferry ride from downtown Auckland lies a world of vineyards cascading down hills to sparkling blue bays. Waiheke Island has rapidly become one of my favorite places to bring visitors seeking an experience that combines natural beauty, exceptional food and wine, and a distinctly New Zealand sense of relaxed sophistication.</p>
       <p>What makes Waiheke wines special is not just the stunning settings of the vineyards, but the distinctive growing conditions. The island's maritime climate, with its cooling sea breezes and varied topography, creates ideal conditions for Bordeaux-style reds and elegant Chardonnays with a character that couldn't be replicated elsewhere.</p>`,
-      coverImage: "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+      coverImage: "/images/blog/waiheke-vineyards.jpg",
       publishedAt: new Date("2022-09-14T10:00:00Z"),
       category: "Travel",
       location: "New Zealand",
@@ -1246,7 +1246,7 @@ export class MemStorage implements IStorage {
       excerpt: "The joy of partnering with one of New Zealand's most distinctive boutique hotels and how our collaboration is creating unique guest experiences.",
       content: `<p>Some spaces have a soul that's immediately perceptible when you enter. The Fern Boutique Hotel, with its soaring art deco-inspired atrium, bold striped carpets, and eclectic collection of New Zealand art, is such a place. I knew upon my first visit that this was an environment that aligned with my own vision of hospitality—design-forward yet deeply comfortable, distinctive without being pretentious.</p>
       <p>When the opportunity arose to collaborate with them on special events and guest experiences, it felt like a natural partnership. Together, we're developing a series of cultural salons that bring together local artists, winemakers, and culinary talents for intimate evenings that showcase the creative spirit of Auckland.</p>`,
-      coverImage: "https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+      coverImage: "/images/blog/boutique-hotel-partnership.jpg",
       publishedAt: new Date("2022-11-10T10:00:00Z"),
       category: "Hospitality",
       location: "New Zealand",
