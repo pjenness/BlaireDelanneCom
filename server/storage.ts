@@ -1255,7 +1255,7 @@ export class MemStorage implements IStorage {
       content: `<p>When a recently engaged couple approached me about planning their wedding, they had one non-negotiable requirement: the celebration needed to align with their environmental values without sacrificing beauty or guest experience. This request reflects a growing trend I've observed since establishing my consultancy in New Zealand.</p>
       <p>What's distinctive about the Kiwi approach to sustainable celebrations is how it extends beyond superficial "green" gestures to encompass thoughtful consideration of every element—from locally grown flowers arranged in reusable vessels to rental attire for the wedding party to comprehensive composting systems.</p>`,
       coverImage: "https://images.unsplash.com/photo-1522157201180-a47e26c4dea4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
-      publishedAt: new Date("2023-02-14T10:00:00Z"),
+      publishedAt: new Date("2023-08-14T10:00:00Z"),
       category: "Wedding",
       location: "New Zealand",
       featured: 0,
@@ -1271,7 +1271,7 @@ export class MemStorage implements IStorage {
       content: `<p>There's a particular quality to autumn light—golden, honeyed, nostalgic—that transforms landscapes. Nowhere have I experienced this more vividly than during my recent road trip through Central Otago, where vineyard rows blazed with amber and crimson foliage against a backdrop of snow-dusted mountains.</p>
       <p>Timing the visit to coincide with harvest festivals offered a privileged glimpse into both winemaking processes and community traditions. From helping with a pre-dawn grape pick followed by a vineyard breakfast to attending long-table harvest dinners where multiple wineries shared their first pressings, the experience deepened my appreciation for New Zealand's wine culture.</p>`,
       coverImage: "https://images.unsplash.com/photo-1506377295352-e3154d43ea9e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
-      publishedAt: new Date("2023-04-05T10:00:00Z"),
+      publishedAt: new Date("2023-11-05T10:00:00Z"),
       category: "Travel",
       location: "New Zealand",
       featured: 0,
@@ -1287,11 +1287,43 @@ export class MemStorage implements IStorage {
       content: `<p>A beautifully set table is more than an aesthetic pleasure—it's the stage upon which shared experiences unfold. Through my work designing special events, I've come to appreciate how deliberately composed dining environments influence everything from conversation flow to flavor perception to memory formation.</p>
       <p>What I find most fascinating is how cultural context shapes these settings. The tablescaping approach I've developed in New Zealand incorporates elements distinct to this place—native foliage like silver fern and nikau palm, locally crafted ceramics with volcanic glazes, pounamu (greenstone) accents that connect to Māori traditions.</p>`,
       coverImage: "https://images.unsplash.com/photo-1586105251261-72a756497a11?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
-      publishedAt: new Date("2023-06-20T10:00:00Z"),
+      publishedAt: new Date("2024-02-20T10:00:00Z"),
       category: "Hospitality",
       location: "New Zealand",
       featured: 0,
       readTime: 4,
+      prevPostId: null,
+      nextPostId: null
+    });
+
+    this.createPost({
+      title: "Embracing Wellness in Event Design: Mind, Body, and Soul Experiences",
+      slug: "wellness-event-design-mind-body-soul",
+      excerpt: "How the wellness movement is transforming special events in New Zealand and creating meaningful experiences that nourish guests on multiple levels.",
+      content: `<p>The definition of luxury hospitality continues to evolve, with wellness now taking center stage in how we design and execute special events. This shift moves beyond superficial indulgence to create experiences that genuinely nurture guests' wellbeing—addressing physical, mental, and spiritual dimensions.</p>
+      <p>In my recent projects across New Zealand, I've incorporated wellness elements that reflect our unique landscape and culture: guided forest bathing experiences before wedding ceremonies, sound healing with traditional Māori instruments, and menus designed around locally-foraged ingredients with specific wellness properties.</p>`,
+      coverImage: "https://images.unsplash.com/photo-1602192509154-0b900ee1f851?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+      publishedAt: new Date("2024-06-15T10:00:00Z"),
+      category: "Hospitality",
+      location: "New Zealand",
+      featured: 0,
+      readTime: 5,
+      prevPostId: null,
+      nextPostId: null
+    });
+
+    this.createPost({
+      title: "Luxury Travel in a Changing World: Conscious Exploration",
+      slug: "luxury-travel-conscious-exploration",
+      excerpt: "How the concept of luxury travel has evolved to embrace sustainability, cultural respect, and meaningful connection with places and people.",
+      content: `<p>The definition of luxury travel has undergone a profound transformation. Where it once signified opulence and exclusivity above all else, today's sophisticated travelers are seeking experiences that combine comfort with conscience, and indulgence with intentionality.</p>
+      <p>Through my work curating bespoke New Zealand journeys, I've observed five key aspects that define this new paradigm of conscious luxury travel: environmental sustainability without compromise on quality, genuine cultural exchange rather than superficial tourism, hyper-local gastronomy that tells the story of a place, transformative wellness that responds to the specific energy of a destination, and seamless personalization that responds to individual purpose.</p>`,
+      coverImage: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+      publishedAt: new Date("2025-01-10T10:00:00Z"),
+      category: "Travel",
+      location: "New Zealand",
+      featured: 0,
+      readTime: 6,
       prevPostId: null,
       nextPostId: null
     });
