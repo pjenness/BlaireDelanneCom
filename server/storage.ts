@@ -1133,7 +1133,7 @@ export class MemStorage implements IStorage {
       excerpt: "How Australia's leading hotels are pioneering eco-luxury approaches and why sustainability doesn't mean sacrificing exceptional experiences.",
       content: `<p>The notion that luxury and sustainability exist in opposition is rapidly becoming outdated. Through my work at Harbour View Luxury Hotel and with various hospitality clients at Celestial Celebrations, I've observed a meaningful shift in how premium experiences are conceived and delivered.</p>
       <p>The most forward-thinking Australian properties are proving that environmental consciousness can enhance rather than detract from guest experiences: hyperlocal sourcing that ensures peak freshness, plastic-free approaches that introduce beautiful alternatives, energy-efficient systems that improve comfort while reducing impact.</p>`,
-      coverImage: "https://images.unsplash.com/photo-1613618948931-ef3422a4575d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+      coverImage: "/images/blog/sustainable-luxury.jpg",
       publishedAt: new Date("2021-10-18T10:00:00Z"),
       category: "Hospitality",
       location: "Australia",
@@ -1149,7 +1149,7 @@ export class MemStorage implements IStorage {
       excerpt: "The decision to relocate to Auckland and the new professional chapter I'll be beginning in 2022 as I launch my own consultancy.",
       content: `<p>They say that once you start traveling, it's difficult to stop. My journey from New York to Sydney has been transformative both personally and professionally, and now I'm embracing another transition: a move to New Zealand in early 2022.</p>
       <p>This next step feels different from previous ones. Rather than joining an established organization, I'll be launching my own hospitality and event design consultancy. It's a decision that combines everything I've learned from the structured excellence of places like The Luminous Grand Hotel and Harbour View Luxury Hotel with the creative flexibility I've developed at Celestial Celebrations.</p>`,
-      coverImage: "https://images.unsplash.com/photo-1507699622108-4be3abd695ad?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+      coverImage: "/images/blog/moving-to-new-zealand.jpg",
       publishedAt: new Date("2021-12-05T10:00:00Z"),
       category: "Personal",
       location: "Australia",
@@ -1166,7 +1166,7 @@ export class MemStorage implements IStorage {
       excerpt: "First impressions of New Zealand's largest city and the unexpected ways it differs from both New York and Sydney.",
       content: `<p>They call Auckland the City of Sails, and it's immediately apparent why. The harbor bristles with masts, the horizon is dotted with white triangles catching the breeze, and it seems everyone has a story about being on the water. This intimate relationship with the harbor shapes Auckland's character in ways that feel distinct from other coastal cities I've called home.</p>
       <p>What's most striking about Auckland is the seamless integration of urban sophistication and natural beauty. Within thirty minutes of downtown's sleek high-rises, you can be on a black sand beach, hiking through rainforest, or sampling wines at a vineyard. This accessibility to diverse experiences creates unique possibilities for the hospitality experiences I hope to design here.</p>`,
-      coverImage: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+      coverImage: "/images/blog/auckland-impressions.jpg",
       publishedAt: new Date("2022-01-20T10:00:00Z"),
       category: "Travel",
       location: "New Zealand",
@@ -1182,7 +1182,7 @@ export class MemStorage implements IStorage {
       excerpt: "The exhilarating reality of building a business from scratch and the unexpected skills I've had to develop beyond my hospitality expertise.",
       content: `<p>They don't teach you about bookkeeping systems or contract templates in hospitality school. The past month of establishing my consultancy has been an education in aspects of business I never considered while focused on creating beautiful experiences for others.</p>
       <p>The learning curve has been steep but exhilarating. Each day brings new challenges—from designing my brand identity to establishing service packages to building a network in a new country. What sustains me through the administrative details is the vision of creating truly distinctive, personalized experiences that honor New Zealand's exceptional landscapes and cultures.</p>`,
-      coverImage: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+      coverImage: "/images/blog/entrepreneurship-journey.jpg",
       publishedAt: new Date("2022-03-08T10:00:00Z"),
       category: "Personal",
       location: "New Zealand",
