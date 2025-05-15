@@ -1,67 +1,20 @@
-import { useState } from "react";
 import { useParams, Link, useLocation } from "wouter";
-import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
+import { useQuery } from "@tanstack/react-query";
 import { Helmet } from "react-helmet";
-import { Post, Comment, InsertComment } from "@shared/schema";
+import { Post } from "@shared/schema";
 import { formatDate } from "@/lib/utils";
-import { useToast } from "@/hooks/use-toast";
-import { apiRequest } from "@/lib/queryClient";
-import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Textarea } from "@/components/ui/textarea";
 import { Facebook, Twitter, Linkedin, Instagram, ArrowLeft, ArrowRight } from "lucide-react";
 import { Skeleton } from "@/components/ui/skeleton";
 
 const BlogPost = () => {
   const { id } = useParams();
   const [, navigate] = useLocation();
-  const queryClient = useQueryClient();
-  const { toast } = useToast();
-  const [commentText, setCommentText] = useState("");
 
   // Fetch blog post
   const { data: post, isLoading, error } = useQuery<Post>({
     queryKey: [`/api/posts/${id}`],
   });
-
-  // Fetch comments
-  const { data: comments = [] } = useQuery<Comment[]>({
-    queryKey: [`/api/posts/${id}/comments`],
-    enabled: !!id,
-  });
-
-  // Add comment mutation
-  const { mutate, isPending } = useMutation({
-    mutationFn: async (comment: InsertComment) => {
-      await apiRequest("POST", `/api/posts/${id}/comments`, comment);
-    },
-    onSuccess: () => {
-      queryClient.invalidateQueries({ queryKey: [`/api/posts/${id}/comments`] });
-      setCommentText("");
-      toast({
-        title: "Comment posted",
-        description: "Your comment has been added successfully.",
-      });
-    },
-    onError: () => {
-      toast({
-        title: "Error",
-        description: "Failed to post comment. Please try again.",
-        variant: "destructive",
-      });
-    },
-  });
-
-  const handleSubmitComment = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!commentText.trim()) return;
-
-    mutate({
-      postId: Number(id),
-      name: "Guest User", // In a real app, this would come from auth
-      content: commentText,
-    });
-  };
 
   if (isLoading) {
     return (
@@ -202,52 +155,6 @@ const BlogPost = () => {
                 <div></div>
               )}
             </div>
-            
-            <Card className="bg-neutral p-6 rounded">
-              <CardContent className="p-0">
-                <h4 className="font-playfair text-xl font-semibold mb-4">Join the Conversation</h4>
-                <form onSubmit={handleSubmitComment}>
-                  <Textarea
-                    placeholder="Share your thoughts..."
-                    value={commentText}
-                    onChange={(e) => setCommentText(e.target.value)}
-                    className="w-full p-4 border border-gray-300 focus:border-accent focus:outline-none mb-4"
-                    rows={4}
-                    required
-                  />
-                  <Button 
-                    type="submit" 
-                    className="bg-accent hover:bg-accent/90 text-white px-6 py-2 transition duration-300"
-                    disabled={isPending}
-                  >
-                    {isPending ? "Posting..." : "Post Comment"}
-                  </Button>
-                </form>
-                
-                <div className="mt-8">
-                  <h5 className="font-medium mb-4">Comments ({comments.length})</h5>
-                  
-                  {comments.length === 0 ? (
-                    <p className="text-charcoal/70 italic">Be the first to comment on this article!</p>
-                  ) : (
-                    comments.map((comment) => (
-                      <div key={comment.id} className="mb-6 pb-6 border-b border-gray-200 last:border-b-0">
-                        <div className="flex items-start mb-2">
-                          <div className="w-10 h-10 rounded-full overflow-hidden mr-3 bg-gray-300 flex items-center justify-center text-gray-500">
-                            {comment.name.charAt(0).toUpperCase()}
-                          </div>
-                          <div>
-                            <span className="block text-charcoal font-medium">{comment.name}</span>
-                            <span className="text-sm text-charcoal/60">{formatDate(comment.createdAt)}</span>
-                          </div>
-                        </div>
-                        <p className="text-charcoal/80">{comment.content}</p>
-                      </div>
-                    ))
-                  )}
-                </div>
-              </CardContent>
-            </Card>
           </article>
         </div>
       </section>
