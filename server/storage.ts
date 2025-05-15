@@ -1037,7 +1037,7 @@ export class MemStorage implements IStorage {
       excerpt: "Reflections on adapting to COVID-19 challenges in the luxury hotel industry and finding meaningful ways to serve during global disruption.",
       content: `<p>None of us could have predicted how 2020 would unfold. Moving to a new country just before a global pandemic wasn't in my plans, but the past months have been profoundly educational as the hospitality industry navigates unprecedented challenges.</p>
       <p>At Harbour View Luxury Hotel, we've had to reimagine what luxury service means when physical distancing is required and when masks hide our smiles. The essence, I've discovered, remains unchanged even when the expression must adapt. The fundamental principle of making people feel cared for has become more important than ever.</p>`,
-      coverImage: "/images/blog/hospitality-pandemic.jpg",
+      coverImage: "/images/blog/luxury-travel.jpg",
       publishedAt: new Date("2020-06-18T10:00:00Z"),
       category: "Hospitality",
       location: "Australia",
@@ -1053,7 +1053,7 @@ export class MemStorage implements IStorage {
       excerpt: "Exploring Australia's oldest wine region and discovering how terroir translates into taste through immersive vineyard experiences.",
       content: `<p>There's something magical about standing in a vineyard, feeling the same soil beneath your feet that nourishes the vines, experiencing the particular quality of sunlight and breeze that will ultimately be expressed in what you taste. Wine appreciation begins long before the glass is poured.</p>
       <p>This past weekend, I had the privilege of visiting several Hunter Valley estates, spending time with winemakers who spoke about their craft with the same passionate precision I've observed in great chefs. The experience has fundamentally changed how I think about wine service in hospitality settings.</p>`,
-      coverImage: "/images/blog/hunter-valley-wine.jpg",
+      coverImage: "/images/blog/autumn-harvest-festivals-otago.jpg",
       publishedAt: new Date("2020-08-14T10:00:00Z"),
       category: "Travel",
       location: "Australia",
@@ -1069,7 +1069,7 @@ export class MemStorage implements IStorage {
       excerpt: "How pandemic restrictions have transformed wedding celebrations and why smaller gatherings often create more meaningful experiences.",
       content: `<p>In joining the Celestial Celebrations team, I never anticipated that my first year would involve reimagining weddings for a pandemic world. Yet watching couples navigate these challenges has been unexpectedly inspiring.</p>
       <p>What we've discovered is that smaller celebrations offer unique opportunities for personalization and depth. With guest lists of 20 instead of 200, couples are investing in extraordinary individual experiences—bespoke multi-course menus, handwritten notes at each place setting, interactive elements that wouldn't be possible at larger scales.</p>`,
-      coverImage: "/images/blog/intimate-weddings.jpg",
+      coverImage: "/images/blog/byron-bay-weddings.jpg",
       publishedAt: new Date("2020-10-25T10:00:00Z"),
       category: "Wedding",
       location: "Australia",
@@ -1085,7 +1085,7 @@ export class MemStorage implements IStorage {
       excerpt: "The delightful contradiction of Christmas in summer and how seasonal celebrations take on new meaning across hemispheres.",
       content: `<p>There's something wonderfully disorienting about preparing for Christmas while temperatures soar into the 90s. All the familiar symbols remain—the trees, the lights, the festive music—yet they exist in a completely different context. Santa hats paired with swimsuits. Elaborate seafood feasts rather than roast dinners. Carol concerts on the beach.</p>
       <p>As someone deeply attached to seasonal traditions, I've found this hemisphere shift prompts reflection on what these celebrations really mean beyond their weather-specific trappings. The essence—gathering, gratitude, marking time's passage—remains constant even when the expression evolves.</p>`,
-      coverImage: "/images/blog/australian-christmas.jpg",
+      coverImage: "/images/blog/sydney-culinary-treasures.jpg",
       publishedAt: new Date("2020-12-20T10:00:00Z"),
       category: "Personal",
       location: "Australia",
@@ -1102,7 +1102,7 @@ export class MemStorage implements IStorage {
       excerpt: "How Australia's relaxed approach to luxury entertaining has influenced my event design philosophy and transformed my approach to hospitality.",
       content: `<p>There's a distinctly Australian approach to hospitality that emphasizes abundance without formality, sophistication without stuffiness. Perhaps nothing embodies this philosophy better than the elaborate grazing tables that have become central to events I've planned with Celestial Celebrations.</p>
       <p>These artful arrangements—where cheese, charcuterie, fruits, dips, breads, and more are assembled into an edible landscape—invite guests to interact, share, and return throughout an event. They transform food service from a scheduled activity into an ongoing experience.</p>`,
-      coverImage: "/images/blog/grazing-tables.jpg",
+      coverImage: "/images/blog/accessories-styling.jpg",
       publishedAt: new Date("2021-02-05T10:00:00Z"),
       category: "Hospitality",
       location: "Australia",
@@ -1134,7 +1134,7 @@ export class MemStorage implements IStorage {
       excerpt: "Discovering the rich culinary heritage of Australian native foods and how these ancient ingredients are transforming modern hospitality experiences.",
       content: `<p>My culinary education has expanded dramatically since moving to Australia, thanks to exposure to ingredients that have been used by Indigenous peoples for thousands of years but are only recently gaining recognition in contemporary cuisine.</p>
       <p>Finger lime with its citrus caviar texture. Peppery mountain pepper. Fragrant lemon myrtle. Nutty wattleseed. These distinctive flavors not only create memorable tasting experiences but also connect diners to this continent's unique ecological history.</p>`,
-      coverImage: "/images/blog/bush-tucker-cuisine.jpg",
+      coverImage: "/images/blog/sustainable-fashion.jpg",
       publishedAt: new Date("2021-06-30T10:00:00Z"),
       category: "Hospitality",
       location: "Australia",
@@ -1150,7 +1150,7 @@ export class MemStorage implements IStorage {
       excerpt: "Finding unexpected winter magic in the misty valleys and charming villages of New South Wales' most iconic mountain range.",
       content: `<p>There's something undeniably romantic about mountain mist. The way it softens edges, creates depth and mystery, transforms familiar landscapes into dreamscapes. This past weekend, I experienced the Blue Mountains in winter for the first time—a completely different environment from the sun-drenched Sydney I've grown accustomed to.</p>
       <p>Staying in a heritage cottage with a wood-burning fireplace, wandering through gardens shrouded in morning fog, and savoring long dinners in cozy village restaurants offered a wonderful counterpoint to coastal living.</p>`,
-      coverImage: "/images/blog/blue-mountains.jpg",
+      coverImage: "/images/blog/wellness-event-design.jpg",
       publishedAt: new Date("2021-08-10T10:00:00Z"),
       category: "Travel",
       location: "Australia",
@@ -1166,7 +1166,7 @@ export class MemStorage implements IStorage {
       excerpt: "How Australia's leading hotels are pioneering eco-luxury approaches and why sustainability doesn't mean sacrificing exceptional experiences.",
       content: `<p>The notion that luxury and sustainability exist in opposition is rapidly becoming outdated. Through my work at Harbour View Luxury Hotel and with various hospitality clients at Celestial Celebrations, I've observed a meaningful shift in how premium experiences are conceived and delivered.</p>
       <p>The most forward-thinking Australian properties are proving that environmental consciousness can enhance rather than detract from guest experiences: hyperlocal sourcing that ensures peak freshness, plastic-free approaches that introduce beautiful alternatives, energy-efficient systems that improve comfort while reducing impact.</p>`,
-      coverImage: "/images/blog/sustainable-luxury.jpg",
+      coverImage: "/images/blog/luxury-wedding-planning.jpg",
       publishedAt: new Date("2021-10-18T10:00:00Z"),
       category: "Hospitality",
       location: "Australia",
