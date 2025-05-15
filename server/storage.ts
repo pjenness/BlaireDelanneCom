@@ -207,6 +207,39 @@ export class MemStorage implements IStorage {
   private initializeData() {
     // Featured Posts
     this.createPost({
+      title: "A New Chapter: Embracing Martinborough's Wine Culture",
+      slug: "new-chapter-martinborough-wine-culture",
+      excerpt: "My journey from Auckland to Martinborough has opened a new world of inspiration, combining the region's renowned wines with my passion for creating authentic hospitality experiences.",
+      content: `<p>There's something magical about new beginnings. As I write this, I'm sitting on the porch of my new cottage in Martinborough, watching the sun cast long shadows across the neighboring vineyards. The Wairarapa region has welcomed me with open arms, and I'm excited to share this new chapter with you.</p>
+      <p>After several fulfilling years in Auckland, I felt the call to explore New Zealand's wine country more deeply. Martinborough, with its charming village square surrounded by boutique vineyards, offered the perfect blend of rural tranquility and sophisticated wine culture I was seeking.</p>
+      <h3 class="font-playfair text-2xl font-semibold my-4">The Call of Wine Country</h3>
+      <p>What drew me to Martinborough wasn't just its world-class Pinot Noir (though that was certainly a compelling factor!). It was the sense of community—winemakers, chefs, farmers, and artisans all connected by a shared passion for this special terroir. In Auckland, I had built wonderful relationships with suppliers and venues, but I found myself increasingly sourcing wines and produce from this region.</p>
+      <p>When the opportunity arose to relocate my consulting practice here, it felt like the natural progression of my journey. Being at the source—where the grapes grow, where the cheese is made, where the olive oil is pressed—offers an authenticity to my work that I've always valued.</p>
+      <h3 class="font-playfair text-2xl font-semibold my-4">From Urban Luxury to Rural Elegance</h3>
+      <p>My experience at The Fern Boutique Hotel in Auckland gave me invaluable insights into luxury hospitality, but Martinborough offers a different kind of luxury—one defined by connection to place, seasonal rhythms, and the thoughtful work of local producers.</p>
+      <p>I've already begun collaborating with several wineries on their events programs, bringing my background in weddings and hospitality to enhance their visitor experiences. There's something deeply satisfying about designing an intimate dinner among the vines, or helping a couple plan their wedding in a historic barrel hall.</p>
+      <h3 class="font-playfair text-2xl font-semibold my-4">The Perfect Wine and Cheese Pairing</h3>
+      <p>One of my first projects here has been creating a series of guided tastings that celebrate the region's wine and cheese producers. Did you know that along with its celebrated Pinot Noir, the Wairarapa is home to some remarkable artisanal cheesemakers?</p>
+      <p>I've spent delightful afternoons with local cheesemakers learning about their processes and the stories behind their creations. From velvety goat cheese to complex aged cheddars, these artisans bring the same dedication to their craft that the winemakers bring to theirs.</p>
+      <p>These experiences have reinforced my belief that true luxury isn't about extravagance—it's about authenticity, quality, and meaningful connection. A perfectly paired local wine and cheese, enjoyed in good company with a view of the vineyards, offers a richness that no gold-plated amenity could match.</p>
+      <h3 class="font-playfair text-2xl font-semibold my-4">New Inspirations for Weddings</h3>
+      <p>For couples planning their special day, Martinborough offers such distinctive backdrops—from rustic vineyard settings to elegant historic homesteads. I'm finding new inspiration daily for wedding designs that incorporate local elements: tables adorned with local olive branches, welcome baskets featuring regional wines and preserves, menus that truly reflect what's being harvested that very week.</p>
+      <p>There's a genuineness to celebrations here that resonates deeply with my approach to event design. Your wedding shouldn't feel like it could happen anywhere—it should be intimately connected to the place you've chosen and tell a story that could only be yours.</p>
+      <h3 class="font-playfair text-2xl font-semibold my-4">Looking Forward</h3>
+      <p>While I'll still work with clients in Auckland and throughout New Zealand, making Martinborough my home base has already transformed my perspective and approach. There's something about the slower pace here that allows for deeper creative thinking and more meaningful connections.</p>
+      <p>If you're planning a visit to the Wairarapa wine region, or considering it as a destination for your wedding or special event, I'd love to show you the magic of this place through local eyes. And if you simply appreciate good wine and cheese—well, my porch has plenty of room for new friends.</p>
+      <p>Here's to new beginnings, to embracing change, and to finding inspiration in unexpected places. I raise my glass of local Pinot to you!</p>`,
+      coverImage: "/images/blog/wine-country-journal.jpg",
+      publishedAt: new Date("2025-05-12T10:00:00Z"),
+      category: "Hospitality",
+      location: "New Zealand",
+      featured: 1,
+      readTime: 6,
+      prevPostId: null,
+      nextPostId: 1
+    });
+    
+    this.createPost({
       title: "The Art of Investment Dressing: Building a Wardrobe That Lasts",
       slug: "investment-dressing-building-wardrobe-that-lasts",
       excerpt: "In a world of fast fashion and fleeting trends, the concept of investment dressing stands as a counterpoint to disposable consumption. Learn how to curate a collection of high-quality, timeless pieces that will serve you for years to come.",
