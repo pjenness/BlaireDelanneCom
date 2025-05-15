@@ -7,8 +7,8 @@ const AboutSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <img 
-              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=1000" 
-              alt="Blaire, Fashion Editor" 
+              src="/images/about/blaire-profile-1.jpg" 
+              alt="Blaire Delanné, Hospitality & Wedding Specialist" 
               className="w-full h-auto rounded-lg shadow-lg"
             />
           </div>
@@ -18,24 +18,21 @@ const AboutSection = () => {
             <div className="w-20 h-1 bg-accent mb-6"></div>
             
             <p className="text-charcoal/80 mb-6">
-              Welcome to BlaireFashionHub. I'm Blaire, a fashion enthusiast with a passion for discovering 
-              and sharing the stories behind style. With a background in fashion journalism and a 
-              keen eye for emerging trends, I've created this space to celebrate the art of personal 
-              expression through clothing and accessories.
+              Hello, I'm Blaire Delanné. I've spent years exploring the art of creating meaningful experiences
+              across hospitality, wedding design, travel, and fashion. My journey has taken me from New York's
+              bustling hotel scene to the serene wedding venues of New Zealand.
             </p>
             
             <p className="text-charcoal/80 mb-6">
-              My journey in fashion began over a decade ago, working with leading publications and brands 
-              to decode the language of style for diverse audiences. I believe that fashion is more than 
-              just clothing—it's a powerful form of communication that reflects our identities, values, 
-              and aspirations.
+              I believe in simple pleasures - a perfectly paired wine and cheese, an intimate gathering with loved ones,
+              or discovering a hidden gem while traveling. My approach is practical and authentic, focused on creating
+              moments that feel personal and genuine.
             </p>
             
             <p className="text-charcoal/80 mb-6">
-              Through BlaireFashionHub, I aim to provide insightful commentary on industry developments, 
-              practical styling advice, and thoughtful analyses of the cultural significance of what we wear. 
-              Whether you're a fashion insider or simply someone who appreciates the transformative power of 
-              a well-curated wardrobe, I hope you'll find inspiration and value in the content I create.
+              With Blaire Delanné, you'll find a reliable partner who understands the beauty in both grand events
+              and quiet moments. Whether you're planning a wedding, seeking travel recommendations, or looking for
+              hospitality advice, I'm here to help you create experiences that truly matter.
             </p>
             
             <div className="flex space-x-4 mb-8">
@@ -80,7 +77,7 @@ const AboutSection = () => {
             <div className="flex items-center">
               <div className="mr-6 text-accent font-playfair text-4xl">B</div>
               <blockquote className="italic text-charcoal/70">
-                "Fashion is about dressing according to what's fashionable. Style is more about being yourself."
+                "The best moments in life aren't about perfection - they're about connection, authenticity, and joy."
               </blockquote>
             </div>
           </div>

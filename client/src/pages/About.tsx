@@ -93,26 +93,26 @@ const About = () => {
               <h2 className="font-playfair text-3xl font-bold mb-6 text-center">My Philosophy</h2>
               
               <p className="text-charcoal/80 mb-6">
-                Through BlaireFashionHub, I aim to provide insightful commentary on industry developments, 
-                practical styling advice, and thoughtful analyses of the cultural significance of what we wear. 
-                Whether you're a fashion insider or simply someone who appreciates the transformative power of 
-                a well-curated wardrobe, I hope you'll find inspiration and value in the content I create.
+                I believe life's most beautiful moments happen around simple pleasures. If you enjoy a good glass of wine 
+                with artisanal cheese, exploring breathtaking landscapes, or preparing for your special day - I'm here for you. 
+                My approach is down-to-earth and focused on genuine connections, whether I'm designing a wedding or 
+                recommending the perfect travel itinerary.
               </p>
               
               <p className="text-charcoal/80 mb-6">
-                I believe in sustainable fashion practices and supporting brands that prioritize ethical 
-                production methods and fair labor practices. Fashion should be inclusive, accessible, and 
-                environmentally conscious—these values guide my approach to content creation and curation.
+                With Blaire Delanné, you'll find a practical partner who understands that true luxury isn't about 
+                extravagance but about meaningful experiences. I value sustainability, local traditions, and creating 
+                moments that feel authentic to you and your story.
               </p>
               
               <blockquote className="italic text-center text-charcoal/70 text-xl font-cormorant border-l-4 border-accent pl-6 my-8">
-                "Fashion is about dressing according to what's fashionable. Style is more about being yourself."
+                "The best experiences aren't planned to perfection - they're crafted with heart and soul."
               </blockquote>
               
               <p className="text-charcoal/80">
-                I'm constantly learning and evolving in my understanding of fashion and its impact on individuals 
-                and society. This blog is a reflection of that journey—a space where we can explore, question, 
-                and celebrate the ever-changing world of style together.
+                My journal shares the real stories behind my work - the hidden vineyard I discovered in New Zealand, 
+                the family-owned restaurant in Sydney with the best cheese board, or how we transformed a simple barn 
+                into a magical wedding venue. I hope these stories inspire your own adventures.
               </p>
             </div>
           </div>
