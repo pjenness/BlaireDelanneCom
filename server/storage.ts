@@ -253,7 +253,7 @@ export class MemStorage implements IStorage {
       <p>Beyond practical considerations, investment dressing offers significant emotional benefits. There's a unique satisfaction in wearing beautifully made clothes that have grown with you through different life chapters. These pieces often carry stories and memories that fast fashion simply cannot match.</p>
       <p>Moreover, knowing that your choices support quality craftsmanship and more sustainable consumption patterns provides a sense of alignment between your values and actions. This congruence alone can make investment dressing worthwhile, even beyond the practical benefits of having a wardrobe that truly works for you.</p>
       <p>As you embark on your investment dressing journey, remember that building a lasting wardrobe is a marathon, not a sprint. Take your time, save for pieces that truly speak to you, and enjoy the process of creating a collection that expresses your unique style while standing the test of time.</p>`,
-      coverImage: "https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=600",
+      coverImage: "/images/blog/investment-dressing.jpg",
       publishedAt: new Date("2023-06-20T10:00:00Z"),
       category: "Fashion",
       location: "New Zealand",
@@ -311,7 +311,7 @@ export class MemStorage implements IStorage {
       <h3 class="font-playfair text-2xl font-semibold my-4">Embracing Your Maximalist Self</h3>
       <p>At its heart, maximalism is about self-expression, creativity, and the joy of aesthetic abundance. Whether you embrace it fully or incorporate elements into a more moderate style, the movement offers everyone permission to be more playful and expressive with their personal style.</p>
       <p>As we continue to see maximalism evolve on runways and streets worldwide, remember that the most authentic interpretation is the one that feels genuinely you—bold, unapologetic, and full of the personal details that make fashion such a powerful form of individual expression.</p>`,
-      coverImage: "https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+      coverImage: "/images/blog/luxury-wedding-planning.jpg",
       publishedAt: new Date("2022-10-15T10:00:00Z"),
       category: "Wedding",
       location: "New Zealand",
@@ -382,7 +382,7 @@ export class MemStorage implements IStorage {
       <p><strong>Localized Production:</strong> Reducing shipping distances and supporting local economies through regionally appropriate manufacturing.</p>
       <p><strong>Cross-Industry Collaboration:</strong> Shared research, resources, and best practices will accelerate progress beyond what individual brands can achieve alone.</p>
       <p>True sustainability in fashion isn't a destination but an ongoing commitment to improvement. By looking beyond marketing buzzwords to substantive practices, both consumers and industry professionals can contribute to a fashion system that respects planetary boundaries and human dignity while continuing to fulfill its creative and cultural functions.</p>`,
-      coverImage: "https://images.unsplash.com/photo-1559563458-527698bf5295?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+      coverImage: "/images/blog/sustainable-fashion.jpg",
       publishedAt: new Date("2021-04-10T10:00:00Z"),
       category: "Hospitality",
       location: "Australia",
@@ -444,7 +444,7 @@ export class MemStorage implements IStorage {
       <p><strong>Increased transparency around production processes</strong> became a standard practice rather than a distinguishing feature, with many presentations incorporating information about material sources, manufacturing locations, and environmental impact.</p>
       <p><strong>The boundaries between different creative disciplines</strong> continued to dissolve, with fashion designers collaborating with architects, digital artists, scientists, and performers to create multidimensional expressions beyond clothing alone.</p>
       <p>As the fashion industry continues navigating post-pandemic realities, this Paris Fashion Week demonstrated that creativity, innovation, and cultural relevance remain central to the city's role as fashion's conceptual capital. The standout moments from this season suggest an industry increasingly willing to question its own conventions while reaffirming the power of clothing as both personal expression and cultural artifact.</p>`,
-      coverImage: "https://images.unsplash.com/photo-1509631179647-0177331693ae?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+      coverImage: "/images/blog/sydney-culinary-treasures.jpg",
       publishedAt: new Date("2020-08-15T10:00:00Z"),
       category: "Travel",
       location: "Australia",
@@ -573,7 +573,7 @@ export class MemStorage implements IStorage {
         <li>Invest in quality over quantity while still maintaining style versatility</li>
       </ul>
       <p>This strategic approach to accessories transforms them from optional extras to essential elements of thoughtful style—allowing you to do more with less while creating looks that are distinctively your own.</p>`,
-      coverImage: "https://images.unsplash.com/photo-1601121141461-9d6647bca1ed?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
+      coverImage: "/images/blog/accessories-styling.jpg",
       publishedAt: new Date("2023-06-18T10:00:00Z"),
       category: "Accessories",
       featured: 0,
@@ -662,7 +662,7 @@ export class MemStorage implements IStorage {
       </ul>
       <p>For all its challenges, today's fashion media landscape offers unprecedented diversity of perspectives and accessibility. The democratization of fashion information has expanded the conversation beyond elite circles while creating new opportunities for distinctive voices and specialized content.</p>
       <p>As consumers become increasingly sophisticated in their media consumption habits, the future likely belongs to content creators who can maintain editorial integrity and creative vision while embracing the connective possibilities of digital platforms—offering substance and style in equal measure.</p>`,
-      coverImage: "https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
+      coverImage: "/images/blog/wellness-event-design.jpg",
       publishedAt: new Date("2023-06-14T10:00:00Z"),
       category: "Industry",
       featured: 0,
