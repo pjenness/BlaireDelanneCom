@@ -4,15 +4,15 @@ const Experience = () => {
   return (
     <>
       <Helmet>
-        <title>Professional Experience | Blaire Delanne</title>
-        <meta name="description" content="Explore Blaire Delanne's professional journey across the USA, Australia, and New Zealand in hospitality, wedding design, travel, and fashion." />
-        <meta property="og:title" content="Professional Experience | Blaire Delanne" />
-        <meta property="og:description" content="Explore Blaire Delanne's professional journey across the USA, Australia, and New Zealand in hospitality, wedding design, travel, and fashion." />
+        <title>Professional Experience | Blaire Delanné</title>
+        <meta name="description" content="Explore Blaire Delanné's professional journey across the USA, Australia, and New Zealand in hospitality, wedding design, travel, and fashion." />
+        <meta property="og:title" content="Professional Experience | Blaire Delanné" />
+        <meta property="og:description" content="Explore Blaire Delanné's professional journey across the USA, Australia, and New Zealand in hospitality, wedding design, travel, and fashion." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://blairedelanne.com/experience" />
       </Helmet>
 
-      <section className="py-16 bg-secondary bg-opacity-50 bg-[url('https://images.unsplash.com/photo-1513346940221-6f673d962e97?ixlib=rb-4.0.3&auto=format&fit=crop')] bg-fixed bg-blend-soft-light">
+      <section className="py-16 bg-secondary bg-opacity-50 bg-[url('/images/hero/experience-hero.jpg')] bg-fixed bg-blend-soft-light">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h1 className="font-playfair text-4xl md:text-5xl font-bold mb-3">My Journey & Adventures</h1>

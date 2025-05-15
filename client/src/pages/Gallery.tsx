@@ -12,20 +12,21 @@ const Gallery = () => {
   return (
     <>
       <Helmet>
-        <title>Style Gallery | BlaireFashionHub</title>
-        <meta name="description" content="Browse our gallery of fashion inspiration, curated looks, and style moments captured by Blaire." />
-        <meta property="og:title" content="Style Gallery | BlaireFashionHub" />
-        <meta property="og:description" content="Browse our gallery of fashion inspiration, curated looks, and style moments captured by Blaire." />
+        <title>Visual Portfolio | Blaire Delanné</title>
+        <meta name="description" content="Explore Blaire Delanné's gallery of hospitality venues, wedding designs, travel destinations, and fashion inspiration from around the world." />
+        <meta property="og:title" content="Visual Portfolio | Blaire Delanné" />
+        <meta property="og:description" content="Explore Blaire Delanné's gallery of hospitality venues, wedding designs, travel destinations, and fashion inspiration from around the world." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://blairefashionhub.com/gallery" />
+        <meta property="og:url" content="https://blairedeanne.com/gallery" />
       </Helmet>
 
       <section className="py-16 bg-secondary">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h1 className="font-playfair text-4xl md:text-5xl font-bold mb-3">Style Gallery</h1>
+            <h1 className="font-playfair text-4xl md:text-5xl font-bold mb-3">Visual Portfolio</h1>
             <p className="text-charcoal/70 max-w-2xl mx-auto">
-              A visual journey through fashion moments, trending styles, and timeless aesthetics curated by Blaire.
+              A curated collection of my work across hospitality venues, wedding designs, 
+              memorable travel destinations, and fashion inspirations.
             </p>
             <div className="w-20 h-1 bg-accent mx-auto mt-4"></div>
           </div>

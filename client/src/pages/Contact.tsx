@@ -5,12 +5,12 @@ const Contact = () => {
   return (
     <>
       <Helmet>
-        <title>Contact Blaire | BlaireFashionHub</title>
-        <meta name="description" content="Get in touch with Blaire for collaborations, questions, or just to share your thoughts on fashion and style." />
-        <meta property="og:title" content="Contact Blaire | BlaireFashionHub" />
-        <meta property="og:description" content="Get in touch with Blaire for collaborations, questions, or just to share your thoughts on fashion and style." />
+        <title>Contact Blaire Delanné | Hospitality & Wedding Specialist</title>
+        <meta name="description" content="Get in touch with Blaire Delanné for hospitality consulting, wedding design collaborations, travel advice, or fashion styling inquiries." />
+        <meta property="og:title" content="Contact Blaire Delanné | Hospitality & Wedding Specialist" />
+        <meta property="og:description" content="Get in touch with Blaire Delanné for hospitality consulting, wedding design collaborations, travel advice, or fashion styling inquiries." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://blairefashionhub.com/contact" />
+        <meta property="og:url" content="https://blairedeanne.com/contact" />
       </Helmet>
 
       <section className="py-16 bg-secondary">

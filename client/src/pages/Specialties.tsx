@@ -4,10 +4,10 @@ const Specialties = () => {
   return (
     <>
       <Helmet>
-        <title>My Specialties | Blaire Delanne</title>
-        <meta name="description" content="Discover Blaire Delanne's expertise in hospitality, wedding design, travel experiences, and fashion styling." />
-        <meta property="og:title" content="My Specialties | Blaire Delanne" />
-        <meta property="og:description" content="Discover Blaire Delanne's expertise in hospitality, wedding design, travel experiences, and fashion styling." />
+        <title>My Specialties | Blaire Delanné</title>
+        <meta name="description" content="Discover Blaire Delanné's expertise in hospitality, wedding design, travel experiences, and fashion styling." />
+        <meta property="og:title" content="My Specialties | Blaire Delanné" />
+        <meta property="og:description" content="Discover Blaire Delanné's expertise in hospitality, wedding design, travel experiences, and fashion styling." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://blairedelanne.com/specialties" />
       </Helmet>
