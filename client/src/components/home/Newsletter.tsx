@@ -40,10 +40,10 @@ const Newsletter = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="font-playfair text-3xl md:text-4xl font-bold mb-3">
-            Join the Fashion Conversation
+            Subscribe to My Newsletter
           </h2>
           <p className="text-white/80 mb-8">
-            Subscribe to receive weekly fashion updates, styling tips, and exclusive content right in your inbox.
+            Join me for exclusive content on hospitality, wedding design, travel experiences, and fashion insights delivered directly to your inbox.
           </p>
           
           <form className="flex flex-col md:flex-row gap-4" onSubmit={handleSubmit}>
@@ -64,7 +64,7 @@ const Newsletter = () => {
             </Button>
           </form>
           <p className="text-white/60 text-sm mt-4">
-            By subscribing, you agree to our Privacy Policy and consent to receive updates from BlaireFashionHub.
+            By subscribing, you agree to our Privacy Policy and consent to receive updates from Blaire Delanne.
           </p>
         </div>
       </div>

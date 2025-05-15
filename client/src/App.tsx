@@ -7,6 +7,7 @@ import About from "@/pages/About";
 import Contact from "@/pages/Contact";
 import NotFound from "@/pages/not-found";
 import Layout from "@/components/layout/Layout";
+import Specialties from "@/pages/Specialties";
 
 function Router() {
   return (
