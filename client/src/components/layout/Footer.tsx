@@ -38,7 +38,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
           <div className="md:col-span-3 lg:col-span-1">
             <Link href="/" className="font-playfair text-2xl font-bold mb-4 block">
-              Blaire <span className="text-accent">Delanne</span>
+              Blaire <span className="text-accent">Delanné</span>
             </Link>
             <p className="text-white/70 mb-6">
               Bringing elegance and expertise to hospitality, wedding design, travel, and fashion.
@@ -166,7 +166,7 @@ const Footer = () => {
         
         <div className="border-t border-white/20 mt-12 pt-6 flex flex-col md:flex-row justify-between items-center">
           <p className="text-white/50 text-sm mb-4 md:mb-0">
-            &copy; {new Date().getFullYear()} Blaire Delanne. All rights reserved.
+            &copy; {new Date().getFullYear()} Blaire Delanné. All rights reserved.
           </p>
           <div className="flex space-x-4 text-sm text-white/50">
             <Link href="/privacy" className="hover:text-white">Privacy Policy</Link>
