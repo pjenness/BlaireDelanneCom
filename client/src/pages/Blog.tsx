@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { useLocation } from "wouter";
 import { Helmet } from "react-helmet";
@@ -22,12 +22,19 @@ const Blog = () => {
   const [category, setCategory] = useState("");
   const [location, setLocation] = useState("");
   
-  // Get category from URL if present
+  // Get URL parameters
   const params = new URLSearchParams(pathLocation.split("?")[1]);
   const categoryParam = params.get("category");
+  const locationParam = params.get("location");
+  
+  // Set initial states from URL if present
+  React.useEffect(() => {
+    if (categoryParam) setCategory(categoryParam);
+    if (locationParam) setLocation(locationParam);
+  }, [categoryParam, locationParam]);
   
   const { data: posts, isLoading, error } = useQuery<Post[]>({
-    queryKey: ['/api/posts', categoryParam || "all"],
+    queryKey: ['/api/posts', categoryParam || "all", locationParam || "all"],
   });
 
   const filteredPosts = posts?.filter(post => {
@@ -36,8 +43,9 @@ const Blog = () => {
       post.excerpt.toLowerCase().includes(searchTerm.toLowerCase());
     
     const matchesCategory = category === "" || post.category === category;
+    const matchesLocation = location === "" || post.location === location;
     
-    return matchesSearch && matchesCategory;
+    return matchesSearch && matchesCategory && matchesLocation;
   });
 
   const handleSearch = (e: React.FormEvent) => {

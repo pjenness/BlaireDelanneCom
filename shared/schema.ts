@@ -12,6 +12,7 @@ export const posts = pgTable("posts", {
   coverImage: text("cover_image").notNull(),
   publishedAt: timestamp("published_at").notNull().defaultNow(),
   category: text("category").notNull(),
+  location: text("location").notNull().default("New Zealand"),
   featured: integer("featured").default(0),
   readTime: integer("read_time").notNull(),
   prevPostId: integer("prev_post_id"),
