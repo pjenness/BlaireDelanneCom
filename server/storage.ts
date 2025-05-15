@@ -753,7 +753,7 @@ export class MemStorage implements IStorage {
     // Add gallery images
     this.createGalleryImage({
       title: "Street Chic in Milan",
-      imageUrl: "https://images.unsplash.com/photo-1509319117193-57bab727e09d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=800",
+      imageUrl: "/images/gallery/fashion-editorial-1.jpg",
       tags: "#StreetStyle #FashionWeek",
       featured: 3,
       createdAt: new Date("2023-06-20T10:00:00Z")
@@ -761,7 +761,7 @@ export class MemStorage implements IStorage {
 
     this.createGalleryImage({
       title: "Footwear Statements",
-      imageUrl: "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
+      imageUrl: "/images/gallery/fashion-editorial-2.jpg",
       tags: "#Accessories #ShoeGame",
       featured: 2,
       createdAt: new Date("2023-06-18T10:00:00Z")
@@ -769,7 +769,7 @@ export class MemStorage implements IStorage {
 
     this.createGalleryImage({
       title: "Evening Elegance",
-      imageUrl: "https://images.unsplash.com/photo-1566174053879-31528523f8ae?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=900",
+      imageUrl: "/images/gallery/fashion-editorial-3.jpg",
       tags: "#Couture #RedCarpet",
       featured: 1,
       createdAt: new Date("2023-06-15T10:00:00Z")
@@ -777,7 +777,7 @@ export class MemStorage implements IStorage {
 
     this.createGalleryImage({
       title: "Paris Fashion Week",
-      imageUrl: "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
+      imageUrl: "/images/gallery/wedding-design-1.jpg",
       tags: "#Runway #FashionWeek",
       featured: 4,
       createdAt: new Date("2023-06-12T10:00:00Z")
@@ -809,7 +809,7 @@ export class MemStorage implements IStorage {
 
     this.createGalleryImage({
       title: "Minimalist Elegance",
-      imageUrl: "https://images.unsplash.com/photo-1445205170230-053b83016050?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=900",
+      imageUrl: "/images/gallery/wedding-design-2.jpg",
       tags: "#Minimalism #Elegance",
       featured: 0,
       createdAt: new Date("2023-05-28T10:00:00Z")
@@ -817,7 +817,7 @@ export class MemStorage implements IStorage {
 
     this.createGalleryImage({
       title: "Color Theory",
-      imageUrl: "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=800",
+      imageUrl: "/images/gallery/fashion-editorial-1.jpg",
       tags: "#ColorBlock #Contemporary",
       featured: 0,
       createdAt: new Date("2023-05-25T10:00:00Z")
@@ -825,7 +825,7 @@ export class MemStorage implements IStorage {
 
     this.createGalleryImage({
       title: "Vintage Revival",
-      imageUrl: "https://images.unsplash.com/photo-1551232864-3f0890e580d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=800",
+      imageUrl: "/images/gallery/fashion-editorial-2.jpg",
       tags: "#Vintage #Retro",
       featured: 0,
       createdAt: new Date("2023-05-20T10:00:00Z")
