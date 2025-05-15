@@ -85,31 +85,26 @@ const Footer = () => {
           </div>
           
           <div>
-            <h4 className="font-playfair font-semibold text-lg mb-4">Categories</h4>
+            <h4 className="font-playfair font-semibold text-lg mb-4">Specialties</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/blog?category=trends" className="text-white/70 hover:text-accent transition duration-300">
-                  Trends & Style
+                <Link href="/specialties#hospitality" className="text-white/70 hover:text-accent transition duration-300">
+                  Hospitality
                 </Link>
               </li>
               <li>
-                <Link href="/blog?category=designers" className="text-white/70 hover:text-accent transition duration-300">
-                  Designer Spotlight
+                <Link href="/specialties#wedding" className="text-white/70 hover:text-accent transition duration-300">
+                  Wedding Design
                 </Link>
               </li>
               <li>
-                <Link href="/blog?category=fashion-week" className="text-white/70 hover:text-accent transition duration-300">
-                  Fashion Week
+                <Link href="/specialties#travel" className="text-white/70 hover:text-accent transition duration-300">
+                  Travel
                 </Link>
               </li>
               <li>
-                <Link href="/blog?category=sustainability" className="text-white/70 hover:text-accent transition duration-300">
-                  Sustainable Fashion
-                </Link>
-              </li>
-              <li>
-                <Link href="/blog?category=accessories" className="text-white/70 hover:text-accent transition duration-300">
-                  Accessories
+                <Link href="/specialties#fashion" className="text-white/70 hover:text-accent transition duration-300">
+                  Fashion
                 </Link>
               </li>
             </ul>
@@ -124,18 +119,18 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/blog" className="text-white/70 hover:text-accent transition duration-300">
-                  Blog
-                </Link>
-              </li>
-              <li>
-                <Link href="/gallery" className="text-white/70 hover:text-accent transition duration-300">
-                  Gallery
-                </Link>
-              </li>
-              <li>
                 <Link href="/about" className="text-white/70 hover:text-accent transition duration-300">
                   About
+                </Link>
+              </li>
+              <li>
+                <Link href="/experience" className="text-white/70 hover:text-accent transition duration-300">
+                  Experience
+                </Link>
+              </li>
+              <li>
+                <Link href="/journal" className="text-white/70 hover:text-accent transition duration-300">
+                  Journal
                 </Link>
               </li>
               <li>
@@ -171,7 +166,7 @@ const Footer = () => {
         
         <div className="border-t border-white/20 mt-12 pt-6 flex flex-col md:flex-row justify-between items-center">
           <p className="text-white/50 text-sm mb-4 md:mb-0">
-            &copy; {new Date().getFullYear()} BlaireFashionHub. All rights reserved.
+            &copy; {new Date().getFullYear()} Blaire Delanne. All rights reserved.
           </p>
           <div className="flex space-x-4 text-sm text-white/50">
             <Link href="/privacy" className="hover:text-white">Privacy Policy</Link>

@@ -6,7 +6,7 @@ import { Post } from "@shared/schema";
 import BlogCard from "@/components/blog/BlogCard";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { Search, Filter } from "lucide-react";
+import { Search, Filter, MapPin } from "lucide-react";
 import {
   Select,
   SelectContent,
@@ -17,12 +17,13 @@ import {
 } from "@/components/ui/select";
 
 const Blog = () => {
-  const [location] = useLocation();
+  const [pathLocation] = useLocation();
   const [searchTerm, setSearchTerm] = useState("");
   const [category, setCategory] = useState("");
+  const [location, setLocation] = useState("");
   
   // Get category from URL if present
-  const params = new URLSearchParams(location.split("?")[1]);
+  const params = new URLSearchParams(pathLocation.split("?")[1]);
   const categoryParam = params.get("category");
   
   const { data: posts, isLoading, error } = useQuery<Post[]>({
@@ -47,20 +48,20 @@ const Blog = () => {
   return (
     <>
       <Helmet>
-        <title>Fashion Blog | BlaireFashionHub</title>
-        <meta name="description" content="Discover the latest fashion insights, trend analyses, and style advice curated by Blaire." />
-        <meta property="og:title" content="Fashion Blog | BlaireFashionHub" />
-        <meta property="og:description" content="Discover the latest fashion insights, trend analyses, and style advice curated by Blaire." />
+        <title>Journal | Blaire Delanne</title>
+        <meta name="description" content="Follow Blaire's journey from New York to Sydney to New Zealand and her experiences in hospitality, wedding design, travel, and fashion." />
+        <meta property="og:title" content="Journal | Blaire Delanne" />
+        <meta property="og:description" content="Follow Blaire's journey from New York to Sydney to New Zealand and her experiences in hospitality, wedding design, travel, and fashion." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://blairefashionhub.com/blog" />
+        <meta property="og:url" content="https://blairedelanne.com/journal" />
       </Helmet>
 
       <section className="py-16 bg-secondary">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h1 className="font-playfair text-4xl md:text-5xl font-bold mb-3">The Blog</h1>
+            <h1 className="font-playfair text-4xl md:text-5xl font-bold mb-3">My Journal</h1>
             <p className="text-charcoal/70 max-w-2xl mx-auto">
-              Discover the latest fashion insights, trend analyses, and style advice curated by Blaire.
+              Following my journey from New York to Sydney to New Zealand, and my adventures in hospitality, weddings, travel, and fashion.
             </p>
             <div className="w-20 h-1 bg-accent mx-auto mt-4"></div>
           </div>
@@ -87,12 +88,11 @@ const Blog = () => {
                   <SelectContent>
                     <SelectGroup>
                       <SelectItem value="">All Categories</SelectItem>
-                      <SelectItem value="Street Style">Street Style</SelectItem>
-                      <SelectItem value="Sustainability">Sustainability</SelectItem>
-                      <SelectItem value="Fashion Week">Fashion Week</SelectItem>
-                      <SelectItem value="Accessories">Accessories</SelectItem>
-                      <SelectItem value="Industry">Industry</SelectItem>
-                      <SelectItem value="Designers">Designers</SelectItem>
+                      <SelectItem value="Wedding">Wedding</SelectItem>
+                      <SelectItem value="Travel">Travel</SelectItem>
+                      <SelectItem value="Hospitality">Hospitality</SelectItem>
+                      <SelectItem value="Fashion">Fashion</SelectItem>
+                      <SelectItem value="Personal">Personal</SelectItem>
                     </SelectGroup>
                   </SelectContent>
                 </Select>

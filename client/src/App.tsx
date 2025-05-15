@@ -12,10 +12,11 @@ function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
-      <Route path="/blog" component={Blog} />
-      <Route path="/blog/:id" component={BlogPost} />
-      <Route path="/gallery" component={Gallery} />
       <Route path="/about" component={About} />
+      <Route path="/specialties" component={() => <div>Specialties Page</div>} />
+      <Route path="/experience" component={() => <div>Experience Page</div>} />
+      <Route path="/journal" component={Blog} />
+      <Route path="/journal/:id" component={BlogPost} />
       <Route path="/contact" component={Contact} />
       <Route component={NotFound} />
     </Switch>
