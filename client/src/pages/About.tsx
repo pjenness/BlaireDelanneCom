@@ -5,13 +5,13 @@ const About = () => {
   return (
     <>
       <Helmet>
-        <title>About Blaire | BlaireFashionHub</title>
-        <meta name="description" content="Learn more about Blaire, the fashion enthusiast behind BlaireFashionHub and her journey in the world of style." />
-        <meta property="og:title" content="About Blaire | BlaireFashionHub" />
-        <meta property="og:description" content="Learn more about Blaire, the fashion enthusiast behind BlaireFashionHub and her journey in the world of style." />
+        <title>About Blaire Delanné | Hospitality & Wedding Specialist</title>
+        <meta name="description" content="Learn more about Blaire Delanné, a hospitality and wedding design specialist with extensive experience across the USA, Australia, and New Zealand." />
+        <meta property="og:title" content="About Blaire Delanné | Hospitality & Wedding Specialist" />
+        <meta property="og:description" content="Learn more about Blaire Delanné, a hospitality and wedding design specialist with extensive experience across the USA, Australia, and New Zealand." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://blairefashionhub.com/about" />
-        <meta property="og:image" content="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=1000" />
+        <meta property="og:url" content="https://blairedeanne.com/about" />
+        <meta property="og:image" content="/images/hero/about-hero.jpg" />
       </Helmet>
 
       <section className="py-16 bg-white">
