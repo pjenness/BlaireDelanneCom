@@ -88,7 +88,7 @@ const Blog = () => {
                 <Search className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={18} />
               </div>
               
-              <div className="w-full md:w-48">
+              <div className="w-full md:w-40">
                 <Select value={category} onValueChange={setCategory}>
                   <SelectTrigger>
                     <SelectValue placeholder="All Categories" />
@@ -101,6 +101,22 @@ const Blog = () => {
                       <SelectItem value="Hospitality">Hospitality</SelectItem>
                       <SelectItem value="Fashion">Fashion</SelectItem>
                       <SelectItem value="Personal">Personal</SelectItem>
+                    </SelectGroup>
+                  </SelectContent>
+                </Select>
+              </div>
+              
+              <div className="w-full md:w-40">
+                <Select value={location} onValueChange={setLocation}>
+                  <SelectTrigger>
+                    <SelectValue placeholder="All Locations" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectGroup>
+                      <SelectItem value="">All Locations</SelectItem>
+                      <SelectItem value="New York">New York</SelectItem>
+                      <SelectItem value="Australia">Australia</SelectItem>
+                      <SelectItem value="New Zealand">New Zealand</SelectItem>
                     </SelectGroup>
                   </SelectContent>
                 </Select>

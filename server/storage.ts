@@ -359,8 +359,9 @@ export class MemStorage implements IStorage {
       <p><strong>Cross-Industry Collaboration:</strong> Shared research, resources, and best practices will accelerate progress beyond what individual brands can achieve alone.</p>
       <p>True sustainability in fashion isn't a destination but an ongoing commitment to improvement. By looking beyond marketing buzzwords to substantive practices, both consumers and industry professionals can contribute to a fashion system that respects planetary boundaries and human dignity while continuing to fulfill its creative and cultural functions.</p>`,
       coverImage: "https://images.unsplash.com/photo-1559563458-527698bf5295?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-      publishedAt: new Date("2023-06-10T10:00:00Z"),
-      category: "Sustainability",
+      publishedAt: new Date("2021-04-10T10:00:00Z"),
+      category: "Hospitality",
+      location: "Australia",
       featured: 1,
       readTime: 9,
       prevPostId: 2,
@@ -368,14 +369,14 @@ export class MemStorage implements IStorage {
     });
 
     this.createPost({
-      title: "Paris Fashion Week: The Standout Moments",
-      slug: "paris-fashion-week-standout-moments",
-      excerpt: "From unexpected runway appearances to revolutionary collections, these are the moments that defined this season.",
-      content: `<p>Paris Fashion Week consistently serves as the grand finale of the international fashion month, setting the tone for the industry's direction and delivering spectacle alongside substance. This season proved no exception, with a series of memorable moments that transcended mere clothing to create cultural conversations and artistic statements.</p>
-      <p>From dramatic runway productions to unexpected celebrity appearances and conceptual breakthroughs, here are the defining moments that captured the essence of this season's presentations in the fashion capital.</p>
-      <h3 class="font-playfair text-2xl font-semibold my-4">Revolutionary Runway Concepts</h3>
-      <p>Several designers reimagined the traditional catwalk format this season, creating immersive environments that complemented their collections:</p>
-      <p><strong>Demna Gvasalia for Balenciaga</strong> transformed the venue into a post-apocalyptic landscape complete with artificially generated weather conditions—models navigated through wind, rain, and shifting light that created an atmosphere of beautiful desolation. The environmental staging reinforced the collection's themes of resilience and adaptation in unstable times.</p>
+      title: "Exploring Sydney's Culinary Treasures: A Gourmet Adventure",
+      slug: "sydney-culinary-treasures-gourmet-adventure",
+      excerpt: "Discovering the best of Sydney's diverse food scene, from iconic waterfront restaurants to hidden neighborhood gems that showcase Australia's multicultural flavors.",
+      content: `<p>Sydney's culinary landscape offers an exhilarating journey through Australia's multicultural identity, innovative cooking techniques, and exceptional local produce. My exploration of this vibrant food scene revealed a city that honors tradition while constantly reinventing its gastronomic expression.</p>
+      <p>From waterfront dining with Opera House views to tucked-away neighborhood establishments that locals treasure, here are the standout culinary experiences that showcase Sydney's position as a world-class food destination.</p>
+      <h3 class="font-playfair text-2xl font-semibold my-4">Waterfront Dining Excellence</h3>
+      <p>Sydney's relationship with its harbor extends beautifully into its dining culture, with several establishments offering exceptional cuisine enhanced by spectacular views:</p>
+      <p><strong>Quay</strong> continues to define Australian fine dining with Peter Gilmore's nature-inspired cuisine. The restaurant's redesigned space offers a more immersive connection to the harbor, while dishes like the sea scallop with koji butter and micro herbs demonstrate the kitchen's commitment to showcasing ingredients at their purest and most flavorful.</p>
       <p><strong>Thom Browne's</strong> theatrical presentation blurred the lines between fashion show and performance art, with a narrative-driven experience that unfolded in chapters. Models moved through a series of connected rooms, each representing different states of consciousness, while the clothing evolved from strictly tailored pieces to increasingly dreamlike constructions.</p>
       <p><strong>Marine Serre</strong> abandoned the traditional runway entirely, instead creating a multisensory exhibition where visitors could touch fabrics, observe craftspeople at work, and experience the collection as a living installation. This approach highlighted the designer's commitment to sustainable practices by making production processes transparent.</p>
       <p>These innovative formats suggest a growing desire to contextualize fashion within broader artistic and social frameworks rather than presenting clothes in isolation.</p>
@@ -420,8 +421,9 @@ export class MemStorage implements IStorage {
       <p><strong>The boundaries between different creative disciplines</strong> continued to dissolve, with fashion designers collaborating with architects, digital artists, scientists, and performers to create multidimensional expressions beyond clothing alone.</p>
       <p>As the fashion industry continues navigating post-pandemic realities, this Paris Fashion Week demonstrated that creativity, innovation, and cultural relevance remain central to the city's role as fashion's conceptual capital. The standout moments from this season suggest an industry increasingly willing to question its own conventions while reaffirming the power of clothing as both personal expression and cultural artifact.</p>`,
       coverImage: "https://images.unsplash.com/photo-1509631179647-0177331693ae?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-      publishedAt: new Date("2023-06-05T10:00:00Z"),
-      category: "Fashion Week",
+      publishedAt: new Date("2020-08-15T10:00:00Z"),
+      category: "Travel",
+      location: "Australia",
       featured: 0,
       readTime: 10,
       prevPostId: 3,
