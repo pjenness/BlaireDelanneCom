@@ -58,9 +58,8 @@ const ContactSection = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="font-playfair text-3xl md:text-4xl font-bold mb-3">Get in Touch</h2>
             <p className="text-charcoal/70 max-w-2xl mx-auto">
-              Have a question, suggestion, or collaboration idea? I'd love to hear from you.
+              Please fill out the form below, and I'll get back to you as soon as possible.
             </p>
             <div className="w-20 h-1 bg-accent mx-auto mt-4"></div>
           </div>
@@ -137,7 +136,7 @@ const ContactSection = () => {
               <CardContent className="p-0">
                 <Mail className="mx-auto text-accent mb-4" size={24} />
                 <h3 className="font-playfair font-semibold mb-2">Email</h3>
-                <p className="text-charcoal/70">contact@blairefashionhub.com</p>
+                <p className="text-charcoal/70">blaire@blairedelanne.com</p>
               </CardContent>
             </Card>
             
@@ -145,7 +144,7 @@ const ContactSection = () => {
               <CardContent className="p-0">
                 <MapPin className="mx-auto text-accent mb-4" size={24} />
                 <h3 className="font-playfair font-semibold mb-2">Location</h3>
-                <p className="text-charcoal/70">New York, NY</p>
+                <p className="text-charcoal/70">Martinborough, Wairarapa, New Zealand</p>
               </CardContent>
             </Card>
             
