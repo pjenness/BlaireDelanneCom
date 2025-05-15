@@ -24,27 +24,27 @@ const About = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
             <div>
               <img 
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=1000" 
-                alt="Blaire, Fashion Editor" 
+                src="/images/about/blaire-profile-1.jpg" 
+                alt="Blaire Delanné, Hospitality & Wedding Specialist" 
                 className="w-full h-auto rounded-lg shadow-lg"
               />
             </div>
             
             <div>
-              <h2 className="font-playfair text-3xl font-bold mb-6">The Face Behind the Blog</h2>
+              <h2 className="font-playfair text-3xl font-bold mb-6">The Journey of Blaire Delanné</h2>
               
               <p className="text-charcoal/80 mb-6">
-                Welcome to BlaireFashionHub. I'm Blaire, a fashion enthusiast with a passion for discovering 
-                and sharing the stories behind style. With a background in fashion journalism and a 
-                keen eye for emerging trends, I've created this space to celebrate the art of personal 
-                expression through clothing and accessories.
+                Welcome to my personal site. I'm Blaire Delanné, a specialist in hospitality, wedding design, travel, 
+                and fashion with experience spanning three countries. My expertise has been shaped through 
+                years of hands-on experience at prestigious venues and with discerning clients across 
+                the USA, Australia, and New Zealand.
               </p>
               
               <p className="text-charcoal/80 mb-6">
-                My journey in fashion began over a decade ago, working with leading publications and brands 
-                to decode the language of style for diverse audiences. I believe that fashion is more than 
-                just clothing—it's a powerful form of communication that reflects our identities, values, 
-                and aspirations.
+                My journey began in New York, where I honed my skills at luxury hospitality establishments before 
+                expanding into wedding design. Later, I brought my expertise to Sydney's vibrant scene, and now 
+                I call New Zealand home, where I continue to create elevated experiences that blend sophistication 
+                with authentic local elements.
               </p>
               
               <div className="flex space-x-4 mb-8">

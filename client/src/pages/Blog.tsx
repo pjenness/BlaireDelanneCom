@@ -56,12 +56,12 @@ const Blog = () => {
   return (
     <>
       <Helmet>
-        <title>Journal | Blaire Delanne</title>
-        <meta name="description" content="Follow Blaire's journey from New York to Sydney to New Zealand and her experiences in hospitality, wedding design, travel, and fashion." />
-        <meta property="og:title" content="Journal | Blaire Delanne" />
-        <meta property="og:description" content="Follow Blaire's journey from New York to Sydney to New Zealand and her experiences in hospitality, wedding design, travel, and fashion." />
+        <title>Journal | Blaire Delanné</title>
+        <meta name="description" content="Follow Blaire Delanné's journey from New York to Sydney to New Zealand and her experiences in hospitality, wedding design, travel, and fashion." />
+        <meta property="og:title" content="Journal | Blaire Delanné" />
+        <meta property="og:description" content="Follow Blaire Delanné's journey from New York to Sydney to New Zealand and her experiences in hospitality, wedding design, travel, and fashion." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://blairedelanne.com/journal" />
+        <meta property="og:url" content="https://blairedeanne.com/journal" />
       </Helmet>
 
       <section className="py-16 bg-secondary">
