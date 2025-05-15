@@ -64,7 +64,7 @@ const Newsletter = () => {
             </Button>
           </form>
           <p className="text-white/60 text-sm mt-4">
-            By subscribing, you agree to our Privacy Policy and consent to receive updates from Blaire Delanne.
+            By subscribing, you agree to our Privacy Policy and consent to receive updates from Blaire Delanné.
           </p>
         </div>
       </div>

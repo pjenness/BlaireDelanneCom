@@ -110,7 +110,7 @@ const Experience = () => {
                     <span className="text-charcoal/60 font-medium">2022 - Present</span>
                   </div>
                   <div className="bg-white p-6 shadow-sm mt-3 md:mt-0 border-t-2 border-accent/30">
-                    <h4 className="font-semibold text-lg mb-2 font-playfair">Blaire Delanne Consulting</h4>
+                    <h4 className="font-semibold text-lg mb-2 font-playfair">Blaire Delanné Consulting</h4>
                     <p className="text-charcoal/80 mb-3">
                       My proudest achievement—creating my own consultancy where I blend all my passions: designing intimate, soulful weddings; crafting personalized travel itineraries; and helping venues create magical experiences that touch the heart. Every day brings new creative possibilities and beautiful connections.
                     </p>
