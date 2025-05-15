@@ -914,7 +914,7 @@ export class MemStorage implements IStorage {
       slug: "fall-fashion-week-newcomer-observations",
       excerpt: "My first experience attending New York Fashion Week events and how the energy of runway shows has influenced my understanding of style narratives.",
       content: `<p>The anticipation before the lights dim. The first notes of music. The collective intake of breath as the initial look appears. There's nothing quite like the theatrical experience of a runway show during Fashion Week.</p>
-      <p>Thanks to connections through The Peninsula, I was able to attend several shows this season, and the experience has transformed how I think about fashion. Beyond the clothes themselves, I was struck by how designers create complete worlds through music, setting, and the careful sequencing of looks.</p>`,
+      <p>Thanks to connections through The Luminous Grand Hotel, I was able to attend several shows this season, and the experience has transformed how I think about fashion. Beyond the clothes themselves, I was struck by how designers create complete worlds through music, setting, and the careful sequencing of looks.</p>`,
       coverImage: "https://images.unsplash.com/photo-1509631179647-0177331693ae?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
       publishedAt: new Date("2019-09-12T10:00:00Z"),
       category: "Fashion",
@@ -1107,7 +1107,7 @@ export class MemStorage implements IStorage {
       title: "Sustainable Luxury: Redefining Hospitality for Conscious Travelers",
       slug: "sustainable-luxury-conscious-travelers",
       excerpt: "How Australia's leading hotels are pioneering eco-luxury approaches and why sustainability doesn't mean sacrificing exceptional experiences.",
-      content: `<p>The notion that luxury and sustainability exist in opposition is rapidly becoming outdated. Through my work at Four Seasons and with various hospitality clients at Luxe Society, I've observed a meaningful shift in how premium experiences are conceived and delivered.</p>
+      content: `<p>The notion that luxury and sustainability exist in opposition is rapidly becoming outdated. Through my work at Harbour View Luxury Hotel and with various hospitality clients at Celestial Celebrations, I've observed a meaningful shift in how premium experiences are conceived and delivered.</p>
       <p>The most forward-thinking Australian properties are proving that environmental consciousness can enhance rather than detract from guest experiences: hyperlocal sourcing that ensures peak freshness, plastic-free approaches that introduce beautiful alternatives, energy-efficient systems that improve comfort while reducing impact.</p>`,
       coverImage: "https://images.unsplash.com/photo-1613618948931-ef3422a4575d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
       publishedAt: new Date("2021-10-18T10:00:00Z"),
@@ -1124,7 +1124,7 @@ export class MemStorage implements IStorage {
       slug: "looking-toward-new-zealand-next-adventure",
       excerpt: "The decision to relocate to Auckland and the new professional chapter I'll be beginning in 2022 as I launch my own consultancy.",
       content: `<p>They say that once you start traveling, it's difficult to stop. My journey from New York to Sydney has been transformative both personally and professionally, and now I'm embracing another transition: a move to New Zealand in early 2022.</p>
-      <p>This next step feels different from previous ones. Rather than joining an established organization, I'll be launching my own hospitality and event design consultancy. It's a decision that combines everything I've learned from the structured excellence of places like The Peninsula and Four Seasons with the creative flexibility I've developed at Luxe Society.</p>`,
+      <p>This next step feels different from previous ones. Rather than joining an established organization, I'll be launching my own hospitality and event design consultancy. It's a decision that combines everything I've learned from the structured excellence of places like The Luminous Grand Hotel and Harbour View Luxury Hotel with the creative flexibility I've developed at Celestial Celebrations.</p>`,
       coverImage: "https://images.unsplash.com/photo-1507699622108-4be3abd695ad?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
       publishedAt: new Date("2021-12-05T10:00:00Z"),
       category: "Personal",
