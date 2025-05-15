@@ -846,10 +846,10 @@ export class MemStorage implements IStorage {
     
     // 2019 Posts (New York era)
     this.createPost({
-      title: "My First Week at The Peninsula New York",
-      slug: "first-week-peninsula-new-york",
+      title: "My First Week at The Luminous Grand Hotel",
+      slug: "first-week-luminous-grand-hotel",
       excerpt: "Reflecting on my initial days working at one of Manhattan's most iconic luxury hotels and the beginning of my hospitality journey.",
-      content: `<p>This week marked the start of an exciting new chapter in my professional life. Stepping through the doors of The Peninsula New York as a team member rather than a guest filled me with both nervousness and anticipation. The gleaming marble floors, the perfect floral arrangements, and the immaculate attention to detail that I'd always admired as a visitor suddenly became my everyday workplace.</p>
+      content: `<p>This week marked the start of an exciting new chapter in my professional life. Stepping through the doors of The Luminous Grand Hotel as a team member rather than a guest filled me with both nervousness and anticipation. The gleaming marble floors, the perfect floral arrangements, and the immaculate attention to detail that I'd always admired as a visitor suddenly became my everyday workplace.</p>
       <p>The training has been intensive but inspiring. What stands out most is how the team approaches luxury—it's never about ostentation, but rather about anticipating needs before they're expressed. I'm already learning that true hospitality is an art form that requires both technical precision and genuine warmth.</p>`,
       coverImage: "https://images.unsplash.com/photo-1519690889869-e705e59f72e1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
       publishedAt: new Date("2019-02-15T10:00:00Z"),
@@ -862,10 +862,10 @@ export class MemStorage implements IStorage {
     });
     
     this.createPost({
-      title: "Behind the Scenes at Kleinfeld Bridal",
-      slug: "behind-scenes-kleinfeld-bridal",
+      title: "Behind the Scenes at Eternal Elegance Bridal",
+      slug: "behind-scenes-eternal-elegance-bridal",
       excerpt: "My unexpected journey into the world of wedding design and the magic that happens behind the scenes at New York's most famous bridal salon.",
-      content: `<p>There's something magical about the moment a bride finds "the dress." That sudden sparkle in her eyes, the way her posture changes, and often, the tears that follow—it's a transformation I've been privileged to witness repeatedly since joining the team at Kleinfeld.</p>
+      content: `<p>There's something magical about the moment a bride finds "the dress." That sudden sparkle in her eyes, the way her posture changes, and often, the tears that follow—it's a transformation I've been privileged to witness repeatedly since joining the team at Eternal Elegance Bridal.</p>
       <p>Working here has opened my eyes to the intricate art of wedding styling. It's not just about finding a beautiful gown—it's about discovering how fabric, silhouette, and details can express a woman's personality on one of the most significant days of her life.</p>`,
       coverImage: "https://images.unsplash.com/photo-1596555559113-8c098429ef79?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
       publishedAt: new Date("2019-04-10T10:00:00Z"),

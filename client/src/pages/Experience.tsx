@@ -46,13 +46,13 @@ const Experience = () => {
                     <span className="text-charcoal/60 font-medium">2018 - 2019</span>
                   </div>
                   <div className="bg-white p-6 shadow-sm mt-3 md:mt-0 border-t-2 border-accent/30">
-                    <h4 className="font-semibold text-lg mb-2 font-playfair">The Peninsula New York</h4>
+                    <h4 className="font-semibold text-lg mb-2 font-playfair">The Luminous Grand Hotel</h4>
                     <p className="text-charcoal/80 mb-3">
-                      I was enchanted by the world of luxury hospitality at this iconic hotel, where I curated special experiences for guests and developed a keen eye for those little details that transform a stay into an unforgettable memory.
+                      I was enchanted by the world of luxury hospitality at this iconic Manhattan hotel, where I curated special experiences for guests and developed a keen eye for those little details that transform a stay into an unforgettable memory.
                     </p>
-                    <h4 className="font-semibold text-lg mb-2 mt-5 font-playfair">Kleinfeld Bridal</h4>
+                    <h4 className="font-semibold text-lg mb-2 mt-5 font-playfair">Eternal Elegance Bridal</h4>
                     <p className="text-charcoal/80">
-                      At this magical bridal destination, I discovered my passion for helping couples bring their wedding dreams to life. Each dress, each veil, each teary-eyed smile when a bride found "the one" reinforced my love for creating moments of pure joy and celebration.
+                      At this magical bridal destination in the heart of Manhattan, I discovered my passion for helping couples bring their wedding dreams to life. Each dress, each veil, each teary-eyed smile when a bride found "the one" reinforced my love for creating moments of pure joy and celebration.
                     </p>
                   </div>
                 </div>
@@ -66,13 +66,13 @@ const Experience = () => {
                     <span className="text-charcoal/60 font-medium">2020 - 2021</span>
                   </div>
                   <div className="bg-white p-6 shadow-sm mt-3 md:mt-0 border-t-2 border-accent/30">
-                    <h4 className="font-semibold text-lg mb-2 font-playfair">Four Seasons Hotel Sydney</h4>
+                    <h4 className="font-semibold text-lg mb-2 font-playfair">Harbour View Luxury Hotel</h4>
                     <p className="text-charcoal/80 mb-3">
                       The stunning harbor views from this property inspired me daily as I crafted beautiful experiences for guests. I delighted in introducing them to Sydney's hidden gems and creating personalized adventures that showcased Australia's unique blend of sophistication and natural beauty.
                     </p>
-                    <h4 className="font-semibold text-lg mb-2 mt-5 font-playfair">Luxe Society Events</h4>
+                    <h4 className="font-semibold text-lg mb-2 mt-5 font-playfair">Celestial Celebrations</h4>
                     <p className="text-charcoal/80">
-                      Here I embraced the art of designing breathtaking celebrations that reflected each couple's love story. From intimate vineyard gatherings to lavish harbor-front soirées, I wove Australian landscapes and culture into each event, creating magical spaces where memories bloom.
+                      Here I embraced the art of designing breathtaking events that reflected each couple's love story. From intimate vineyard gatherings to lavish harbor-front soirées, I wove Australian landscapes and culture into each celebration, creating magical spaces where memories bloom.
                     </p>
                   </div>
                 </div>
@@ -114,9 +114,9 @@ const Experience = () => {
                     <p className="text-charcoal/80 mb-3">
                       My proudest achievement—creating my own consultancy where I blend all my passions: designing intimate, soulful weddings; crafting personalized travel itineraries; and helping venues create magical experiences that touch the heart. Every day brings new creative possibilities and beautiful connections.
                     </p>
-                    <h4 className="font-semibold text-lg mb-2 mt-5 font-playfair">Hotel DeBrett</h4>
+                    <h4 className="font-semibold text-lg mb-2 mt-5 font-playfair">The Fern Boutique Hotel</h4>
                     <p className="text-charcoal/80">
-                      This charming boutique hotel became my creative playground, where I collaborate on special projects that marry luxury with sustainability. Here I've curated wine tasting events, seasonal dining experiences, and partnerships with local artisans that showcase New Zealand's rich cultural tapestry.
+                      This charming boutique hotel in Auckland became my creative playground, where I collaborate on special projects that marry luxury with sustainability. Here I've curated wine tasting events, seasonal dining experiences, and partnerships with local artisans that showcase New Zealand's rich cultural tapestry.
                     </p>
                   </div>
                 </div>
