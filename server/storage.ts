@@ -1004,7 +1004,7 @@ export class MemStorage implements IStorage {
       excerpt: "Reflections on adapting to COVID-19 challenges in the luxury hotel industry and finding meaningful ways to serve during global disruption.",
       content: `<p>None of us could have predicted how 2020 would unfold. Moving to a new country just before a global pandemic wasn't in my plans, but the past months have been profoundly educational as the hospitality industry navigates unprecedented challenges.</p>
       <p>At Harbour View Luxury Hotel, we've had to reimagine what luxury service means when physical distancing is required and when masks hide our smiles. The essence, I've discovered, remains unchanged even when the expression must adapt. The fundamental principle of making people feel cared for has become more important than ever.</p>`,
-      coverImage: "https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+      coverImage: "/images/blog/hospitality-pandemic.jpg",
       publishedAt: new Date("2020-06-18T10:00:00Z"),
       category: "Hospitality",
       location: "Australia",
@@ -1020,7 +1020,7 @@ export class MemStorage implements IStorage {
       excerpt: "Exploring Australia's oldest wine region and discovering how terroir translates into taste through immersive vineyard experiences.",
       content: `<p>There's something magical about standing in a vineyard, feeling the same soil beneath your feet that nourishes the vines, experiencing the particular quality of sunlight and breeze that will ultimately be expressed in what you taste. Wine appreciation begins long before the glass is poured.</p>
       <p>This past weekend, I had the privilege of visiting several Hunter Valley estates, spending time with winemakers who spoke about their craft with the same passionate precision I've observed in great chefs. The experience has fundamentally changed how I think about wine service in hospitality settings.</p>`,
-      coverImage: "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+      coverImage: "/images/blog/hunter-valley-wine.jpg",
       publishedAt: new Date("2020-08-14T10:00:00Z"),
       category: "Travel",
       location: "Australia",
@@ -1036,7 +1036,7 @@ export class MemStorage implements IStorage {
       excerpt: "How pandemic restrictions have transformed wedding celebrations and why smaller gatherings often create more meaningful experiences.",
       content: `<p>In joining the Celestial Celebrations team, I never anticipated that my first year would involve reimagining weddings for a pandemic world. Yet watching couples navigate these challenges has been unexpectedly inspiring.</p>
       <p>What we've discovered is that smaller celebrations offer unique opportunities for personalization and depth. With guest lists of 20 instead of 200, couples are investing in extraordinary individual experiences—bespoke multi-course menus, handwritten notes at each place setting, interactive elements that wouldn't be possible at larger scales.</p>`,
-      coverImage: "https://images.unsplash.com/photo-1606216794074-735e91aa2c92?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+      coverImage: "/images/blog/intimate-weddings.jpg",
       publishedAt: new Date("2020-10-25T10:00:00Z"),
       category: "Wedding",
       location: "Australia",
@@ -1052,7 +1052,7 @@ export class MemStorage implements IStorage {
       excerpt: "The delightful contradiction of Christmas in summer and how seasonal celebrations take on new meaning across hemispheres.",
       content: `<p>There's something wonderfully disorienting about preparing for Christmas while temperatures soar into the 90s. All the familiar symbols remain—the trees, the lights, the festive music—yet they exist in a completely different context. Santa hats paired with swimsuits. Elaborate seafood feasts rather than roast dinners. Carol concerts on the beach.</p>
       <p>As someone deeply attached to seasonal traditions, I've found this hemisphere shift prompts reflection on what these celebrations really mean beyond their weather-specific trappings. The essence—gathering, gratitude, marking time's passage—remains constant even when the expression evolves.</p>`,
-      coverImage: "https://images.unsplash.com/photo-1545622783-b3e021430fee?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+      coverImage: "/images/blog/australian-christmas.jpg",
       publishedAt: new Date("2020-12-20T10:00:00Z"),
       category: "Personal",
       location: "Australia",
