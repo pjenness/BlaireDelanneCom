@@ -89,8 +89,8 @@ export class MemStorage implements IStorage {
   
   async getFeaturedPosts(limit?: number): Promise<Post[]> {
     const featuredPosts = Array.from(this.postsData.values())
-      .filter(post => post.featured > 0)
-      .sort((a, b) => b.featured - a.featured);
+      .filter(post => post.featured !== null && post.featured > 0)
+      .sort((a, b) => (b.featured ?? 0) - (a.featured ?? 0));
     
     return limit ? featuredPosts.slice(0, limit) : featuredPosts;
   }
@@ -104,7 +104,15 @@ export class MemStorage implements IStorage {
   
   async createPost(post: InsertPost): Promise<Post> {
     const id = this.postId++;
-    const newPost: Post = { ...post, id };
+    const newPost: Post = { 
+      ...post, 
+      id,
+      publishedAt: post.publishedAt || new Date(),
+      location: post.location || "New Zealand",
+      featured: post.featured ?? 0,
+      prevPostId: post.prevPostId ?? null,
+      nextPostId: post.nextPostId ?? null
+    };
     this.postsData.set(id, newPost);
     return newPost;
   }
@@ -116,13 +124,18 @@ export class MemStorage implements IStorage {
   
   async getFeaturedGalleryImages(): Promise<GalleryImage[]> {
     return Array.from(this.galleryImagesData.values())
-      .filter(image => image.featured > 0)
-      .sort((a, b) => b.featured - a.featured);
+      .filter(image => image.featured !== null && image.featured > 0)
+      .sort((a, b) => (b.featured ?? 0) - (a.featured ?? 0));
   }
   
   async createGalleryImage(image: InsertGalleryImage): Promise<GalleryImage> {
     const id = this.galleryImageId++;
-    const newImage: GalleryImage = { ...image, id };
+    const newImage: GalleryImage = { 
+      ...image, 
+      id,
+      featured: image.featured ?? 0,
+      createdAt: image.createdAt || new Date() 
+    };
     this.galleryImagesData.set(id, newImage);
     return newImage;
   }
