@@ -946,7 +946,7 @@ export class MemStorage implements IStorage {
       title: "A New Chapter: Why I'm Moving to Sydney",
       slug: "new-chapter-moving-sydney",
       excerpt: "The exciting decision to relocate to Australia, the opportunities that await, and mixed emotions about leaving New York behind.",
-      content: `<p>Life has a way of presenting unexpected opportunities when you least expect them. What began as a casual conversation with an Australian guest at The Peninsula has evolved into a job offer and a significant life change: I'm moving to Sydney next month.</p>
+      content: `<p>Life has a way of presenting unexpected opportunities when you least expect them. What began as a casual conversation with an Australian guest at The Luminous Grand Hotel has evolved into a job offer and a significant life change: I'm moving to Sydney next month.</p>
       <p>The decision to leave New York wasn't easy. This vibrant city has been my home and teacher, shaping my understanding of hospitality, style, and ambition. Yet the chance to experience luxury hospitality in a completely different setting—where urban sophistication meets beach culture—feels like the next right step in my journey.</p>`,
       coverImage: "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
       publishedAt: new Date("2020-01-20T10:00:00Z"),
@@ -979,7 +979,7 @@ export class MemStorage implements IStorage {
       slug: "pandemic-hospitality-uncertain-times",
       excerpt: "Reflections on adapting to COVID-19 challenges in the luxury hotel industry and finding meaningful ways to serve during global disruption.",
       content: `<p>None of us could have predicted how 2020 would unfold. Moving to a new country just before a global pandemic wasn't in my plans, but the past months have been profoundly educational as the hospitality industry navigates unprecedented challenges.</p>
-      <p>At Four Seasons Sydney, we've had to reimagine what luxury service means when physical distancing is required and when masks hide our smiles. The essence, I've discovered, remains unchanged even when the expression must adapt. The fundamental principle of making people feel cared for has become more important than ever.</p>`,
+      <p>At Harbour View Luxury Hotel, we've had to reimagine what luxury service means when physical distancing is required and when masks hide our smiles. The essence, I've discovered, remains unchanged even when the expression must adapt. The fundamental principle of making people feel cared for has become more important than ever.</p>`,
       coverImage: "https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
       publishedAt: new Date("2020-06-18T10:00:00Z"),
       category: "Hospitality",
@@ -1010,7 +1010,7 @@ export class MemStorage implements IStorage {
       title: "Intimate Weddings: The Silver Lining of Smaller Celebrations",
       slug: "intimate-weddings-silver-lining",
       excerpt: "How pandemic restrictions have transformed wedding celebrations and why smaller gatherings often create more meaningful experiences.",
-      content: `<p>In joining the Luxe Society Events team, I never anticipated that my first year would involve reimagining weddings for a pandemic world. Yet watching couples navigate these challenges has been unexpectedly inspiring.</p>
+      content: `<p>In joining the Celestial Celebrations team, I never anticipated that my first year would involve reimagining weddings for a pandemic world. Yet watching couples navigate these challenges has been unexpectedly inspiring.</p>
       <p>What we've discovered is that smaller celebrations offer unique opportunities for personalization and depth. With guest lists of 20 instead of 200, couples are investing in extraordinary individual experiences—bespoke multi-course menus, handwritten notes at each place setting, interactive elements that wouldn't be possible at larger scales.</p>`,
       coverImage: "https://images.unsplash.com/photo-1606216794074-735e91aa2c92?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
       publishedAt: new Date("2020-10-25T10:00:00Z"),
@@ -1043,7 +1043,7 @@ export class MemStorage implements IStorage {
       title: "The Art of the Grazing Table: Australian Entertaining",
       slug: "art-grazing-table-australian-entertaining",
       excerpt: "How Australia's relaxed approach to luxury entertaining has influenced my event design philosophy and transformed my approach to hospitality.",
-      content: `<p>There's a distinctly Australian approach to hospitality that emphasizes abundance without formality, sophistication without stuffiness. Perhaps nothing embodies this philosophy better than the elaborate grazing tables that have become central to events I've planned with Luxe Society.</p>
+      content: `<p>There's a distinctly Australian approach to hospitality that emphasizes abundance without formality, sophistication without stuffiness. Perhaps nothing embodies this philosophy better than the elaborate grazing tables that have become central to events I've planned with Celestial Celebrations.</p>
       <p>These artful arrangements—where cheese, charcuterie, fruits, dips, breads, and more are assembled into an edible landscape—invite guests to interact, share, and return throughout an event. They transform food service from a scheduled activity into an ongoing experience.</p>`,
       coverImage: "https://images.unsplash.com/photo-1621963249276-decff933e521?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
       publishedAt: new Date("2021-02-05T10:00:00Z"),
