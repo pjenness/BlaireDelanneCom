@@ -1262,7 +1262,7 @@ export class MemStorage implements IStorage {
       excerpt: "Looking back on my first year of building a life and business in Auckland and the lessons learned along this unexpected journey.",
       content: `<p>Another hemisphere shift, another summer Christmas—though this one feels different from those Australian celebrations. As I mark a full year in New Zealand and the holiday season provides space for reflection, I'm struck by how profoundly this place has influenced both my personal outlook and professional approach.</p>
       <p>The decision to launch my own consultancy rather than joining an established organization was driven partly by a desire for creative autonomy, but also by recognition that New Zealand's hospitality and event landscape offered opportunities to develop approaches that wouldn't fit neatly into existing models.</p>`,
-      coverImage: "https://images.unsplash.com/photo-1635948943444-b92122753eef?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+      coverImage: "/images/blog/new-zealand-year-reflection.jpg",
       publishedAt: new Date("2022-12-28T10:00:00Z"),
       category: "Personal",
       location: "New Zealand",
@@ -1278,7 +1278,7 @@ export class MemStorage implements IStorage {
       excerpt: "How couples in New Zealand are pioneering eco-conscious celebrations and the innovative ways we're reducing the environmental impact of special events.",
       content: `<p>When a recently engaged couple approached me about planning their wedding, they had one non-negotiable requirement: the celebration needed to align with their environmental values without sacrificing beauty or guest experience. This request reflects a growing trend I've observed since establishing my consultancy in New Zealand.</p>
       <p>What's distinctive about the Kiwi approach to sustainable celebrations is how it extends beyond superficial "green" gestures to encompass thoughtful consideration of every element—from locally grown flowers arranged in reusable vessels to rental attire for the wedding party to comprehensive composting systems.</p>`,
-      coverImage: "https://images.unsplash.com/photo-1522157201180-a47e26c4dea4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+      coverImage: "/images/blog/sustainable-weddings.jpg",
       publishedAt: new Date("2023-08-14T10:00:00Z"),
       category: "Wedding",
       location: "New Zealand",
@@ -1294,7 +1294,7 @@ export class MemStorage implements IStorage {
       excerpt: "A journey through New Zealand's southern wine region during harvest season and the community celebrations that make this time special.",
       content: `<p>There's a particular quality to autumn light—golden, honeyed, nostalgic—that transforms landscapes. Nowhere have I experienced this more vividly than during my recent road trip through Central Otago, where vineyard rows blazed with amber and crimson foliage against a backdrop of snow-dusted mountains.</p>
       <p>Timing the visit to coincide with harvest festivals offered a privileged glimpse into both winemaking processes and community traditions. From helping with a pre-dawn grape pick followed by a vineyard breakfast to attending long-table harvest dinners where multiple wineries shared their first pressings, the experience deepened my appreciation for New Zealand's wine culture.</p>`,
-      coverImage: "https://images.unsplash.com/photo-1506377295352-e3154d43ea9e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+      coverImage: "/images/blog/central-otago-wine.jpg",
       publishedAt: new Date("2023-11-05T10:00:00Z"),
       category: "Travel",
       location: "New Zealand",
@@ -1310,7 +1310,7 @@ export class MemStorage implements IStorage {
       excerpt: "How thoughtful table design creates the foundation for extraordinary gatherings and the elements that elevate a dining setting from pretty to transportive.",
       content: `<p>A beautifully set table is more than an aesthetic pleasure—it's the stage upon which shared experiences unfold. Through my work designing special events, I've come to appreciate how deliberately composed dining environments influence everything from conversation flow to flavor perception to memory formation.</p>
       <p>What I find most fascinating is how cultural context shapes these settings. The tablescaping approach I've developed in New Zealand incorporates elements distinct to this place—native foliage like silver fern and nikau palm, locally crafted ceramics with volcanic glazes, pounamu (greenstone) accents that connect to Māori traditions.</p>`,
-      coverImage: "https://images.unsplash.com/photo-1586105251261-72a756497a11?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+      coverImage: "/images/blog/tablescaping-art.jpg",
       publishedAt: new Date("2024-02-20T10:00:00Z"),
       category: "Hospitality",
       location: "New Zealand",
@@ -1326,7 +1326,7 @@ export class MemStorage implements IStorage {
       excerpt: "How the wellness movement is transforming special events in New Zealand and creating meaningful experiences that nourish guests on multiple levels.",
       content: `<p>The definition of luxury hospitality continues to evolve, with wellness now taking center stage in how we design and execute special events. This shift moves beyond superficial indulgence to create experiences that genuinely nurture guests' wellbeing—addressing physical, mental, and spiritual dimensions.</p>
       <p>In my recent projects across New Zealand, I've incorporated wellness elements that reflect our unique landscape and culture: guided forest bathing experiences before wedding ceremonies, sound healing with traditional Māori instruments, and menus designed around locally-foraged ingredients with specific wellness properties.</p>`,
-      coverImage: "https://images.unsplash.com/photo-1602192509154-0b900ee1f851?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+      coverImage: "/images/blog/wellness-hospitality.jpg",
       publishedAt: new Date("2024-06-15T10:00:00Z"),
       category: "Hospitality",
       location: "New Zealand",
