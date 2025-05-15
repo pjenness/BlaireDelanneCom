@@ -15,6 +15,7 @@ import {
   type ContactFormData,
   type ContactSubmission
 } from "@shared/schema";
+import { getLocalImagePath } from "./image-mapping";
 
 // Interface for storage operations
 export interface IStorage {
@@ -104,6 +105,10 @@ export class MemStorage implements IStorage {
   
   async createPost(post: InsertPost): Promise<Post> {
     const id = this.postId++;
+    
+    // Replace remote image URLs with local paths
+    const localCoverImage = getLocalImagePath(post.coverImage);
+    
     const newPost: Post = { 
       ...post, 
       id,
@@ -111,7 +116,8 @@ export class MemStorage implements IStorage {
       location: post.location || "New Zealand",
       featured: post.featured ?? 0,
       prevPostId: post.prevPostId ?? null,
-      nextPostId: post.nextPostId ?? null
+      nextPostId: post.nextPostId ?? null,
+      coverImage: localCoverImage
     };
     this.postsData.set(id, newPost);
     return newPost;
@@ -130,11 +136,16 @@ export class MemStorage implements IStorage {
   
   async createGalleryImage(image: InsertGalleryImage): Promise<GalleryImage> {
     const id = this.galleryImageId++;
+    
+    // Replace remote image URLs with local paths
+    const localImageUrl = getLocalImagePath(image.imageUrl);
+    
     const newImage: GalleryImage = { 
       ...image, 
       id,
       featured: image.featured ?? 0,
-      createdAt: image.createdAt || new Date() 
+      createdAt: image.createdAt || new Date(),
+      imageUrl: localImageUrl
     };
     this.galleryImagesData.set(id, newImage);
     return newImage;
