@@ -42,8 +42,8 @@ const Blog = () => {
       post.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
       post.excerpt.toLowerCase().includes(searchTerm.toLowerCase());
     
-    const matchesCategory = category === "" || post.category === category;
-    const matchesLocation = location === "" || post.location === location;
+    const matchesCategory = category === "all" || category === "" || post.category === category;
+    const matchesLocation = location === "all" || location === "" || post.location === location;
     
     return matchesSearch && matchesCategory && matchesLocation;
   });
@@ -95,7 +95,7 @@ const Blog = () => {
                   </SelectTrigger>
                   <SelectContent>
                     <SelectGroup>
-                      <SelectItem value="">All Categories</SelectItem>
+                      <SelectItem value="all">All Categories</SelectItem>
                       <SelectItem value="Wedding">Wedding</SelectItem>
                       <SelectItem value="Travel">Travel</SelectItem>
                       <SelectItem value="Hospitality">Hospitality</SelectItem>
@@ -113,7 +113,7 @@ const Blog = () => {
                   </SelectTrigger>
                   <SelectContent>
                     <SelectGroup>
-                      <SelectItem value="">All Locations</SelectItem>
+                      <SelectItem value="all">All Locations</SelectItem>
                       <SelectItem value="New York">New York</SelectItem>
                       <SelectItem value="Australia">Australia</SelectItem>
                       <SelectItem value="New Zealand">New Zealand</SelectItem>
