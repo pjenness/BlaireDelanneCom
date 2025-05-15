@@ -785,7 +785,7 @@ export class MemStorage implements IStorage {
 
     this.createGalleryImage({
       title: "Statement Pieces",
-      imageUrl: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600",
+      imageUrl: "/images/gallery/fashion-editorial-3.jpg",
       tags: "#Jewelry #Accessories",
       featured: 5,
       createdAt: new Date("2023-06-10T10:00:00Z")
@@ -793,7 +793,7 @@ export class MemStorage implements IStorage {
 
     this.createGalleryImage({
       title: "Nature's Runway",
-      imageUrl: "https://images.unsplash.com/photo-1581044777550-4cfa60707c03?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=800",
+      imageUrl: "/images/gallery/wedding-design-1.jpg",
       tags: "#Editorial #Sustainable",
       featured: 6,
       createdAt: new Date("2023-06-05T10:00:00Z")
@@ -801,7 +801,7 @@ export class MemStorage implements IStorage {
 
     this.createGalleryImage({
       title: "Urban Expression",
-      imageUrl: "https://images.unsplash.com/photo-1509631179647-0177331693ae?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
+      imageUrl: "/images/gallery/luxury-hotel-1.jpg",
       tags: "#StreetStyle #Urban",
       featured: 0,
       createdAt: new Date("2023-06-02T10:00:00Z")
@@ -833,7 +833,7 @@ export class MemStorage implements IStorage {
 
     this.createGalleryImage({
       title: "Sustainable Luxury",
-      imageUrl: "https://images.unsplash.com/photo-1542295669297-4d352b042bca?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
+      imageUrl: "/images/gallery/luxury-travel-1.jpg",
       tags: "#Sustainable #Luxury",
       featured: 0,
       createdAt: new Date("2023-05-18T10:00:00Z")
@@ -841,7 +841,7 @@ export class MemStorage implements IStorage {
 
     this.createGalleryImage({
       title: "Autumn Layers",
-      imageUrl: "https://images.unsplash.com/photo-1520012218364-3dbe62c99bee?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=800",
+      imageUrl: "/images/gallery/luxury-hotel-1.jpg",
       tags: "#Autumn #Layers",
       featured: 0,
       createdAt: new Date("2023-05-15T10:00:00Z")
@@ -875,7 +875,7 @@ export class MemStorage implements IStorage {
       excerpt: "Reflecting on my initial days working at one of Manhattan's most iconic luxury hotels and the beginning of my hospitality journey.",
       content: `<p>This week marked the start of an exciting new chapter in my professional life. Stepping through the doors of The Luminous Grand Hotel as a team member rather than a guest filled me with both nervousness and anticipation. The gleaming marble floors, the perfect floral arrangements, and the immaculate attention to detail that I'd always admired as a visitor suddenly became my everyday workplace.</p>
       <p>The training has been intensive but inspiring. What stands out most is how the team approaches luxury—it's never about ostentation, but rather about anticipating needs before they're expressed. I'm already learning that true hospitality is an art form that requires both technical precision and genuine warmth.</p>`,
-      coverImage: "https://images.unsplash.com/photo-1519690889869-e705e59f72e1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+      coverImage: "/images/blog/moving-to-sydney.jpg",
       publishedAt: new Date("2019-02-15T10:00:00Z"),
       category: "Hospitality",
       location: "New York",
@@ -891,7 +891,7 @@ export class MemStorage implements IStorage {
       excerpt: "My unexpected journey into the world of wedding design and the magic that happens behind the scenes at New York's most famous bridal salon.",
       content: `<p>There's something magical about the moment a bride finds "the dress." That sudden sparkle in her eyes, the way her posture changes, and often, the tears that follow—it's a transformation I've been privileged to witness repeatedly since joining the team at Eternal Elegance Bridal.</p>
       <p>Working here has opened my eyes to the intricate art of wedding styling. It's not just about finding a beautiful gown—it's about discovering how fabric, silhouette, and details can express a woman's personality on one of the most significant days of her life.</p>`,
-      coverImage: "https://images.unsplash.com/photo-1596555559113-8c098429ef79?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+      coverImage: "/images/blog/autumn-harvest-festivals-otago.jpg",
       publishedAt: new Date("2019-04-10T10:00:00Z"),
       category: "Wedding",
       location: "New York",
@@ -907,7 +907,7 @@ export class MemStorage implements IStorage {
       excerpt: "Discovering moments of peace in Manhattan's urban oasis and how these quiet retreats help me maintain balance in the city's constant bustle.",
       content: `<p>In a city that never sleeps, finding moments of stillness becomes essential. Despite the reputation for constant motion, New York offers remarkable pockets of tranquility if you know where to look.</p>
       <p>Central Park, that magnificent green heart of Manhattan, has become my sanctuary. Each morning before work, I've been exploring different corners, discovering secret spots where the city's soundtrack fades just enough to hear my own thoughts again.</p>`,
-      coverImage: "https://images.unsplash.com/photo-1568515045052-f9a854d70bfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+      coverImage: "/images/blog/sustainable-weddings-nz.jpg",
       publishedAt: new Date("2019-05-22T10:00:00Z"),
       category: "Personal",
       location: "New York",
