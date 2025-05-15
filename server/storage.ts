@@ -229,7 +229,7 @@ export class MemStorage implements IStorage {
       <p>While I'll still work with clients in Auckland and throughout New Zealand, making Martinborough my home base has already transformed my perspective and approach. There's something about the slower pace here that allows for deeper creative thinking and more meaningful connections.</p>
       <p>If you're planning a visit to the Wairarapa wine region, or considering it as a destination for your wedding or special event, I'd love to show you the magic of this place through local eyes. And if you simply appreciate good wine and cheese—well, my porch has plenty of room for new friends.</p>
       <p>Here's to new beginnings, to embracing change, and to finding inspiration in unexpected places. I raise my glass of local Pinot to you!</p>`,
-      coverImage: "/images/blog/wine-country-journal.jpg",
+      coverImage: "/images/blog/new-zealand-adventure.jpg",
       publishedAt: new Date("2025-05-12T10:00:00Z"),
       category: "Hospitality",
       location: "New Zealand",
