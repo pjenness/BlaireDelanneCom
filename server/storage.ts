@@ -1069,7 +1069,7 @@ export class MemStorage implements IStorage {
       excerpt: "How Australia's relaxed approach to luxury entertaining has influenced my event design philosophy and transformed my approach to hospitality.",
       content: `<p>There's a distinctly Australian approach to hospitality that emphasizes abundance without formality, sophistication without stuffiness. Perhaps nothing embodies this philosophy better than the elaborate grazing tables that have become central to events I've planned with Celestial Celebrations.</p>
       <p>These artful arrangements—where cheese, charcuterie, fruits, dips, breads, and more are assembled into an edible landscape—invite guests to interact, share, and return throughout an event. They transform food service from a scheduled activity into an ongoing experience.</p>`,
-      coverImage: "https://images.unsplash.com/photo-1621963249276-decff933e521?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+      coverImage: "/images/blog/grazing-tables.jpg",
       publishedAt: new Date("2021-02-05T10:00:00Z"),
       category: "Hospitality",
       location: "Australia",
@@ -1085,7 +1085,7 @@ export class MemStorage implements IStorage {
       excerpt: "The magic of planning celebrations in Australia's boho-luxury coastal paradise and why it has become my favorite wedding destination.",
       content: `<p>There are certain places that seem designed by nature specifically for celebration. Byron Bay, with its pristine beaches, subtropical hinterland, and golden quality of light, is undoubtedly one such location. Over the past year, it has become my favorite destination for the weddings I plan through Celestial Celebrations.</p>
       <p>What makes Byron special isn't just its physical beauty, but the particular energy of the place—a blend of laid-back coastal ease and unexpected sophistication. It attracts couples who want celebrations that feel both elegant and authentic, refined yet connected to nature.</p>`,
-      coverImage: "https://images.unsplash.com/photo-1533993036450-7c48a147e09c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+      coverImage: "/images/blog/byron-bay-weddings.jpg",
       publishedAt: new Date("2021-04-12T10:00:00Z"),
       category: "Wedding",
       location: "Australia",
@@ -1101,7 +1101,7 @@ export class MemStorage implements IStorage {
       excerpt: "Discovering the rich culinary heritage of Australian native foods and how these ancient ingredients are transforming modern hospitality experiences.",
       content: `<p>My culinary education has expanded dramatically since moving to Australia, thanks to exposure to ingredients that have been used by Indigenous peoples for thousands of years but are only recently gaining recognition in contemporary cuisine.</p>
       <p>Finger lime with its citrus caviar texture. Peppery mountain pepper. Fragrant lemon myrtle. Nutty wattleseed. These distinctive flavors not only create memorable tasting experiences but also connect diners to this continent's unique ecological history.</p>`,
-      coverImage: "https://images.unsplash.com/photo-1527515886233-325e577d014a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+      coverImage: "/images/blog/bush-tucker-cuisine.jpg",
       publishedAt: new Date("2021-06-30T10:00:00Z"),
       category: "Hospitality",
       location: "Australia",
@@ -1117,7 +1117,7 @@ export class MemStorage implements IStorage {
       excerpt: "Finding unexpected winter magic in the misty valleys and charming villages of New South Wales' most iconic mountain range.",
       content: `<p>There's something undeniably romantic about mountain mist. The way it softens edges, creates depth and mystery, transforms familiar landscapes into dreamscapes. This past weekend, I experienced the Blue Mountains in winter for the first time—a completely different environment from the sun-drenched Sydney I've grown accustomed to.</p>
       <p>Staying in a heritage cottage with a wood-burning fireplace, wandering through gardens shrouded in morning fog, and savoring long dinners in cozy village restaurants offered a wonderful counterpoint to coastal living.</p>`,
-      coverImage: "https://images.unsplash.com/photo-1572297500749-85e8dfed9a2e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+      coverImage: "/images/blog/blue-mountains.jpg",
       publishedAt: new Date("2021-08-10T10:00:00Z"),
       category: "Travel",
       location: "Australia",
