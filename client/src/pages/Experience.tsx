@@ -93,10 +93,10 @@ const Experience = () => {
               {/* New Zealand - 2022-2023 */}
               <div className="relative md:flex items-center">
                 <div className="hidden md:block w-1/2 pr-12 text-right">
-                  <h3 className="font-playfair text-2xl font-semibold mb-2">Auckland, New Zealand</h3>
-                  <span className="text-charcoal/60 font-medium">2022 - Present</span>
+                  <h3 className="font-playfair text-2xl font-semibold mb-2">Martinborough, Wairarapa, New Zealand</h3>
+                  <span className="text-charcoal/60 font-medium">2025 - Present</span>
                   <p className="mt-2 text-charcoal/80">
-                    New Zealand's majestic landscapes and warm culture became my newest canvas and inspiration. Here I found my true voice as I embraced sustainability and mindful luxury, weaving local traditions, indigenous elements, and the country's spectacular natural beauty into unforgettable experiences.
+                    My journey through New Zealand has evolved from Auckland to Martinborough's renowned wine region. Here, I've found a perfect blend of rural charm and sophisticated wine culture that inspires my work with local vineyards and artisans. The Wairarapa's stunning landscapes and intimate community have become the ideal canvas for creating authentic, memorable experiences.
                   </p>
                 </div>
                 
@@ -106,17 +106,17 @@ const Experience = () => {
                 
                 <div className="md:w-1/2 md:pl-12 mt-0 md:mt-0">
                   <div className="md:hidden">
-                    <h3 className="font-playfair text-2xl font-semibold mb-2">Auckland, New Zealand</h3>
-                    <span className="text-charcoal/60 font-medium">2022 - Present</span>
+                    <h3 className="font-playfair text-2xl font-semibold mb-2">Martinborough, Wairarapa, New Zealand</h3>
+                    <span className="text-charcoal/60 font-medium">2025 - Present</span>
                   </div>
                   <div className="bg-white p-6 shadow-sm mt-3 md:mt-0 border-t-2 border-accent/30">
                     <h4 className="font-semibold text-lg mb-2 font-playfair">Blaire Delanné Consulting</h4>
                     <p className="text-charcoal/80 mb-3">
-                      My proudest achievement—creating my own consultancy where I blend all my passions: designing intimate, soulful weddings; crafting personalized travel itineraries; and helping venues create magical experiences that touch the heart. Every day brings new creative possibilities and beautiful connections.
+                      A new chapter in my journey has brought me to Martinborough, the wine hub near Wellington. Here I've expanded my consultancy to embrace the region's rich wine culture, working with local vineyards and boutique accommodations to create immersive experiences that celebrate the terroir and artisanal community of this special corner of New Zealand.
                     </p>
-                    <h4 className="font-semibold text-lg mb-2 mt-5 font-playfair">The Fern Boutique Hotel</h4>
+                    <h4 className="font-semibold text-lg mb-2 mt-5 font-playfair">Auckland Legacy (2022-2024)</h4>
                     <p className="text-charcoal/80">
-                      This charming boutique hotel in Auckland became my creative playground, where I collaborate on special projects that marry luxury with sustainability. Here I've curated wine tasting events, seasonal dining experiences, and partnerships with local artisans that showcase New Zealand's rich cultural tapestry.
+                      During my years in Auckland at The Fern Boutique Hotel, I developed my approach to hospitality and events, curating wine tastings, seasonal dining experiences, and partnerships with local artisans. This foundation prepared me for my current focus on the intimate, personalized experiences that Martinborough's wine country allows me to create.
                     </p>
                   </div>
                 </div>
