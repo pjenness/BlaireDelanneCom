@@ -111,8 +111,13 @@ export async function registerRoutes(app: Express): Promise<Server> {
       // Validate request body
       const validatedData = contactFormSchema.parse(req.body);
       
+      // Store submission in our database/storage
       const submission = await storage.createContactSubmission(validatedData);
-      res.status(201).json({ success: true, message: "Contact form submitted successfully" });
+      
+      res.status(201).json({ 
+        success: true, 
+        message: "Contact form submitted successfully"
+      });
     } catch (error: any) {
       if (error instanceof z.ZodError) {
         return res.status(400).json({ 
@@ -120,6 +125,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
           errors: fromZodError(error).message 
         });
       }
+      console.error("Contact form error:", error);
       res.status(500).json({ message: "Failed to submit contact form" });
     }
   });

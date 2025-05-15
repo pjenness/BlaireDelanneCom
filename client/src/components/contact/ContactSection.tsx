@@ -23,12 +23,12 @@ const ContactSection = () => {
 
   const { mutate, isPending } = useMutation({
     mutationFn: async (data: ContactFormData) => {
-      await apiRequest("POST", "/api/contact", data);
+      return await apiRequest("POST", "/api/contact", data);
     },
     onSuccess: () => {
       toast({
-        title: "Success!",
-        description: "Your message has been sent. We'll get back to you soon.",
+        title: "Message Received",
+        description: "Thank you for your message. Blaire will review it soon.",
       });
       setFormData({ name: "", email: "", subject: "", message: "" });
     },
