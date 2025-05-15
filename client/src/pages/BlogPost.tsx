@@ -105,12 +105,12 @@ const BlogPost = () => {
   return (
     <>
       <Helmet>
-        <title>{post.title} | BlaireFashionHub</title>
+        <title>{post.title} | Blaire Delanné Journal</title>
         <meta name="description" content={post.excerpt} />
-        <meta property="og:title" content={`${post.title} | BlaireFashionHub`} />
+        <meta property="og:title" content={`${post.title} | Blaire Delanné Journal`} />
         <meta property="og:description" content={post.excerpt} />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content={`https://blairefashionhub.com/blog/${post.id}`} />
+        <meta property="og:url" content={`https://blairedeanne.com/journal/${post.id}`} />
         <meta property="og:image" content={post.coverImage} />
         <meta property="article:published_time" content={new Date(post.publishedAt).toISOString()} />
         <meta property="article:section" content={post.category} />
