@@ -12,12 +12,12 @@ const Experience = () => {
         <meta property="og:url" content="https://blairedelanne.com/experience" />
       </Helmet>
 
-      <section className="py-16 bg-secondary">
+      <section className="py-16 bg-secondary bg-opacity-50 bg-[url('https://images.unsplash.com/photo-1513346940221-6f673d962e97?ixlib=rb-4.0.3&auto=format&fit=crop')] bg-fixed bg-blend-soft-light">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h1 className="font-playfair text-4xl md:text-5xl font-bold mb-3">My Professional Journey</h1>
+            <h1 className="font-playfair text-4xl md:text-5xl font-bold mb-3">My Journey & Adventures</h1>
             <p className="text-charcoal/70 max-w-2xl mx-auto">
-              From New York to Sydney to Auckland, explore my experience across different cultures and industries.
+              From the bustling streets of New York to the scenic shores of Sydney to the breathtaking landscapes of New Zealand — my story of passion, creativity, and growth.
             </p>
             <div className="w-20 h-1 bg-accent mx-auto mt-4"></div>
           </div>
@@ -32,11 +32,11 @@ const Experience = () => {
                   <h3 className="font-playfair text-2xl font-semibold mb-2">New York, USA</h3>
                   <span className="text-charcoal/60 font-medium">2018 - 2019</span>
                   <p className="mt-2 text-charcoal/80">
-                    Beginning my professional career in Manhattan's competitive hospitality and fashion scene, where I developed a foundation in luxury service and style.
+                    My journey began in the vibrant, fast-paced energy of Manhattan, where I fell in love with the intoxicating blend of luxury hospitality and fashion. These formative experiences shaped my aesthetic and passion for creating memorable moments.
                   </p>
                 </div>
                 
-                <div className="absolute top-0 -left-4 md:left-1/2 md:-ml-2.5 h-8 w-8 rounded-full bg-accent flex items-center justify-center">
+                <div className="absolute top-0 -left-4 md:left-1/2 md:-ml-2.5 h-8 w-8 rounded-full bg-accent flex items-center justify-center shadow-md">
                   <span className="text-white font-semibold">NY</span>
                 </div>
                 
@@ -45,14 +45,14 @@ const Experience = () => {
                     <h3 className="font-playfair text-2xl font-semibold mb-2">New York, USA</h3>
                     <span className="text-charcoal/60 font-medium">2018 - 2019</span>
                   </div>
-                  <div className="bg-white p-6 shadow-sm mt-3 md:mt-0">
-                    <h4 className="font-semibold text-lg mb-2">The Peninsula New York</h4>
+                  <div className="bg-white p-6 shadow-sm mt-3 md:mt-0 border-t-2 border-accent/30">
+                    <h4 className="font-semibold text-lg mb-2 font-playfair">The Peninsula New York</h4>
                     <p className="text-charcoal/80 mb-3">
-                      Worked in guest relations at this five-star hotel, developing skills in luxury hospitality and event coordination for high-profile clients.
+                      I was enchanted by the world of luxury hospitality at this iconic hotel, where I curated special experiences for guests and developed a keen eye for those little details that transform a stay into an unforgettable memory.
                     </p>
-                    <h4 className="font-semibold text-lg mb-2 mt-5">Kleinfeld Bridal</h4>
+                    <h4 className="font-semibold text-lg mb-2 mt-5 font-playfair">Kleinfeld Bridal</h4>
                     <p className="text-charcoal/80">
-                      Assisted with wedding styling and coordination, learning the intricacies of luxury wedding planning and client management.
+                      At this magical bridal destination, I discovered my passion for helping couples bring their wedding dreams to life. Each dress, each veil, each teary-eyed smile when a bride found "the one" reinforced my love for creating moments of pure joy and celebration.
                     </p>
                   </div>
                 </div>
@@ -65,19 +65,19 @@ const Experience = () => {
                     <h3 className="font-playfair text-2xl font-semibold mb-2">Sydney, Australia</h3>
                     <span className="text-charcoal/60 font-medium">2020 - 2021</span>
                   </div>
-                  <div className="bg-white p-6 shadow-sm mt-3 md:mt-0">
-                    <h4 className="font-semibold text-lg mb-2">Four Seasons Hotel Sydney</h4>
+                  <div className="bg-white p-6 shadow-sm mt-3 md:mt-0 border-t-2 border-accent/30">
+                    <h4 className="font-semibold text-lg mb-2 font-playfair">Four Seasons Hotel Sydney</h4>
                     <p className="text-charcoal/80 mb-3">
-                      Managed VIP relations and coordinated luxury experiences for hotel guests, specializing in creating bespoke itineraries.
+                      The stunning harbor views from this property inspired me daily as I crafted beautiful experiences for guests. I delighted in introducing them to Sydney's hidden gems and creating personalized adventures that showcased Australia's unique blend of sophistication and natural beauty.
                     </p>
-                    <h4 className="font-semibold text-lg mb-2 mt-5">Luxe Society Events</h4>
+                    <h4 className="font-semibold text-lg mb-2 mt-5 font-playfair">Luxe Society Events</h4>
                     <p className="text-charcoal/80">
-                      Planned and executed high-end events and weddings across Australia, focusing on destination celebrations and cultural integration.
+                      Here I embraced the art of designing breathtaking celebrations that reflected each couple's love story. From intimate vineyard gatherings to lavish harbor-front soirées, I wove Australian landscapes and culture into each event, creating magical spaces where memories bloom.
                     </p>
                   </div>
                 </div>
                 
-                <div className="absolute top-0 -left-4 md:left-1/2 md:-ml-2.5 h-8 w-8 rounded-full bg-accent flex items-center justify-center">
+                <div className="absolute top-0 -left-4 md:left-1/2 md:-ml-2.5 h-8 w-8 rounded-full bg-accent flex items-center justify-center shadow-md">
                   <span className="text-white font-semibold">SY</span>
                 </div>
                 
@@ -85,7 +85,7 @@ const Experience = () => {
                   <h3 className="font-playfair text-2xl font-semibold mb-2">Sydney, Australia</h3>
                   <span className="text-charcoal/60 font-medium">2020 - 2021</span>
                   <p className="mt-2 text-charcoal/80">
-                    Expanding my expertise in the Asia-Pacific region, embracing Australian approaches to hospitality and developing skills in destination event management.
+                    Australia captured my heart with its breathtaking beauty and relaxed elegance. Here, I embraced the laid-back sophistication of Australian style while learning to incorporate native flowers, local wines, and stunning natural settings into my event designs.
                   </p>
                 </div>
               </div>
@@ -96,11 +96,11 @@ const Experience = () => {
                   <h3 className="font-playfair text-2xl font-semibold mb-2">Auckland, New Zealand</h3>
                   <span className="text-charcoal/60 font-medium">2022 - Present</span>
                   <p className="mt-2 text-charcoal/80">
-                    Establishing my independent consultancy while continuing to grow my expertise in sustainable hospitality and authentic travel experiences.
+                    New Zealand's majestic landscapes and warm culture became my newest canvas and inspiration. Here I found my true voice as I embraced sustainability and mindful luxury, weaving local traditions, indigenous elements, and the country's spectacular natural beauty into unforgettable experiences.
                   </p>
                 </div>
                 
-                <div className="absolute top-0 -left-4 md:left-1/2 md:-ml-2.5 h-8 w-8 rounded-full bg-accent flex items-center justify-center">
+                <div className="absolute top-0 -left-4 md:left-1/2 md:-ml-2.5 h-8 w-8 rounded-full bg-accent flex items-center justify-center shadow-md">
                   <span className="text-white font-semibold">NZ</span>
                 </div>
                 
@@ -109,14 +109,14 @@ const Experience = () => {
                     <h3 className="font-playfair text-2xl font-semibold mb-2">Auckland, New Zealand</h3>
                     <span className="text-charcoal/60 font-medium">2022 - Present</span>
                   </div>
-                  <div className="bg-white p-6 shadow-sm mt-3 md:mt-0">
-                    <h4 className="font-semibold text-lg mb-2">Blaire Delanne Consulting</h4>
+                  <div className="bg-white p-6 shadow-sm mt-3 md:mt-0 border-t-2 border-accent/30">
+                    <h4 className="font-semibold text-lg mb-2 font-playfair">Blaire Delanne Consulting</h4>
                     <p className="text-charcoal/80 mb-3">
-                      Founded my independent consultancy focusing on hospitality excellence, wedding design, and curated travel experiences across New Zealand and beyond.
+                      My proudest achievement—creating my own consultancy where I blend all my passions: designing intimate, soulful weddings; crafting personalized travel itineraries; and helping venues create magical experiences that touch the heart. Every day brings new creative possibilities and beautiful connections.
                     </p>
-                    <h4 className="font-semibold text-lg mb-2 mt-5">Hotel DeBrett</h4>
+                    <h4 className="font-semibold text-lg mb-2 mt-5 font-playfair">Hotel DeBrett</h4>
                     <p className="text-charcoal/80">
-                      Collaborate with this boutique luxury hotel on special projects, bringing innovative approaches to guest experiences and sustainability practices.
+                      This charming boutique hotel became my creative playground, where I collaborate on special projects that marry luxury with sustainability. Here I've curated wine tasting events, seasonal dining experiences, and partnerships with local artisans that showcase New Zealand's rich cultural tapestry.
                     </p>
                   </div>
                 </div>
