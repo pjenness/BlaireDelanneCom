@@ -231,7 +231,8 @@ export class MemStorage implements IStorage {
       <p>As you embark on your investment dressing journey, remember that building a lasting wardrobe is a marathon, not a sprint. Take your time, save for pieces that truly speak to you, and enjoy the process of creating a collection that expresses your unique style while standing the test of time.</p>`,
       coverImage: "https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=600",
       publishedAt: new Date("2023-06-20T10:00:00Z"),
-      category: "Trends & Style",
+      category: "Fashion",
+      location: "New Zealand",
       featured: 3,
       readTime: 8,
       prevPostId: null,
@@ -239,9 +240,9 @@ export class MemStorage implements IStorage {
     });
 
     this.createPost({
-      title: "The Rise of Maximalism: How More is Becoming More Again",
-      slug: "rise-of-maximalism-how-more-is-becoming-more-again",
-      excerpt: "After years of minimalist dominance, fashion is embracing bold patterns, vibrant colors, and statement accessories once again.",
+      title: "Luxury Wedding Planning: The Art of Creating Memorable Celebrations",
+      slug: "luxury-wedding-planning-memorable-celebrations",
+      excerpt: "Discover the secrets to planning elegant, personalized weddings that leave a lasting impression on guests and create beautiful memories for couples.",
       content: `<p>After nearly a decade where minimalism reigned supreme, fashion is experiencing a seismic shift toward the bold, the bright, and the brilliantly excessive. Maximalism, with its celebration of "more is more," is making a triumphant return to runways, street style, and home decor alike.</p>
       <p>This resurgence represents more than just a pendulum swing in taste—it reflects broader cultural currents and a collective desire for self-expression following years of restraint. Let's explore the rise of maximalism, its cultural context, and how to embrace this exuberant aesthetic in your own style.</p>
       <h3 class="font-playfair text-2xl font-semibold my-4">The Minimalist Backdrop</h3>
@@ -287,8 +288,9 @@ export class MemStorage implements IStorage {
       <p>At its heart, maximalism is about self-expression, creativity, and the joy of aesthetic abundance. Whether you embrace it fully or incorporate elements into a more moderate style, the movement offers everyone permission to be more playful and expressive with their personal style.</p>
       <p>As we continue to see maximalism evolve on runways and streets worldwide, remember that the most authentic interpretation is the one that feels genuinely you—bold, unapologetic, and full of the personal details that make fashion such a powerful form of individual expression.</p>`,
       coverImage: "https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-      publishedAt: new Date("2023-06-15T10:00:00Z"),
-      category: "Street Style",
+      publishedAt: new Date("2022-10-15T10:00:00Z"),
+      category: "Wedding",
+      location: "New Zealand",
       featured: 2,
       readTime: 7,
       prevPostId: null,
