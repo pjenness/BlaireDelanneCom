@@ -77,13 +77,13 @@ const BlogPost = () => {
             <div className="flex items-center mb-8">
               <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
                 <img 
-                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100" 
+                  src="/images/about/profile.jpg" 
                   alt="Blaire" 
                   className="w-full h-full object-cover"
                 />
               </div>
               <div>
-                <span className="block text-charcoal font-medium">Blaire</span>
+                <span className="block text-charcoal font-medium">Blaire Delanné</span>
                 <span className="text-sm text-charcoal/60">
                   {formatDate(post.publishedAt)} • {post.readTime} min read
                 </span>

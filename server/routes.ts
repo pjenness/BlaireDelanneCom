@@ -2,7 +2,6 @@ import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { 
-  insertCommentSchema, 
   insertSubscriberSchema, 
   contactFormSchema 
 } from "@shared/schema";
@@ -66,47 +65,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
-  // Comments routes
-  app.get("/api/posts/:id/comments", async (req, res) => {
-    try {
-      const postId = parseInt(req.params.id);
-      if (isNaN(postId)) {
-        return res.status(400).json({ message: "Invalid post ID" });
-      }
-      
-      const comments = await storage.getCommentsByPostId(postId);
-      res.json(comments);
-    } catch (error) {
-      res.status(500).json({ message: "Failed to fetch comments" });
-    }
-  });
-
-  app.post("/api/posts/:id/comments", async (req, res) => {
-    try {
-      const postId = parseInt(req.params.id);
-      if (isNaN(postId)) {
-        return res.status(400).json({ message: "Invalid post ID" });
-      }
-      
-      // Validate request body
-      const validatedData = insertCommentSchema.parse(req.body);
-      
-      const comment = await storage.createComment({
-        ...validatedData,
-        postId
-      });
-      
-      res.status(201).json(comment);
-    } catch (error: any) {
-      if (error instanceof z.ZodError) {
-        return res.status(400).json({ 
-          message: "Invalid comment data", 
-          errors: fromZodError(error).message 
-        });
-      }
-      res.status(500).json({ message: "Failed to create comment" });
-    }
-  });
+  // Comments routes have been removed to simplify the application
 
   // Gallery routes
   app.get("/api/gallery", async (req, res) => {
