@@ -923,7 +923,7 @@ export class MemStorage implements IStorage {
       excerpt: "Exploring New York's secretive cocktail culture and how these intimate spaces have influenced my approach to hospitality and ambiance.",
       content: `<p>There's something wonderfully theatrical about New York's speakeasy scene. The hidden entrances, the whispered passwords, the sense of being transported to another era—it creates an experience that goes far beyond simply enjoying a well-crafted drink.</p>
       <p>As someone working in hospitality, I've become fascinated by how these intimate spaces create such powerful atmosphere. The careful lighting, the thoughtfully selected music, the rituals of preparation—every element works together to tell a story.</p>`,
-      coverImage: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+      coverImage: "/images/blog/byron-bay-weddings.jpg",
       publishedAt: new Date("2019-07-08T10:00:00Z"),
       category: "Hospitality",
       location: "New York",
@@ -939,7 +939,7 @@ export class MemStorage implements IStorage {
       excerpt: "My first experience attending New York Fashion Week events and how the energy of runway shows has influenced my understanding of style narratives.",
       content: `<p>The anticipation before the lights dim. The first notes of music. The collective intake of breath as the initial look appears. There's nothing quite like the theatrical experience of a runway show during Fashion Week.</p>
       <p>Thanks to connections through The Luminous Grand Hotel, I was able to attend several shows this season, and the experience has transformed how I think about fashion. Beyond the clothes themselves, I was struck by how designers create complete worlds through music, setting, and the careful sequencing of looks.</p>`,
-      coverImage: "https://images.unsplash.com/photo-1509631179647-0177331693ae?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+      coverImage: "/images/blog/sydney-culinary-treasures.jpg",
       publishedAt: new Date("2019-09-12T10:00:00Z"),
       category: "Fashion",
       location: "New York",
@@ -955,7 +955,7 @@ export class MemStorage implements IStorage {
       excerpt: "How my work in hospitality has transformed my approach to entertaining at home, with ideas for bringing hotel magic into your own gatherings.",
       content: `<p>Working in a luxury hotel during the holiday season is like a masterclass in the art of celebration. From the perfectly dressed Christmas tree in the lobby to the meticulously planned New Year's gala, every detail is considered in creating memorable experiences.</p>
       <p>As I prepare to host friends in my small Manhattan apartment this season, I've been reflecting on the principles that could translate from grand hotel spaces to intimate home gatherings. The essence, I've realized, remains the same: anticipating needs, creating moments of delight, and making everyone feel seen and valued.</p>`,
-      coverImage: "https://images.unsplash.com/photo-1482575832494-7f979a7b20e8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+      coverImage: "/images/blog/new-zealand-adventure.jpg",
       publishedAt: new Date("2019-12-05T10:00:00Z"),
       category: "Hospitality",
       location: "New York",
@@ -972,7 +972,7 @@ export class MemStorage implements IStorage {
       excerpt: "The exciting decision to relocate to Australia, the opportunities that await, and mixed emotions about leaving New York behind.",
       content: `<p>Life has a way of presenting unexpected opportunities when you least expect them. What began as a casual conversation with an Australian guest at The Luminous Grand Hotel has evolved into a job offer and a significant life change: I'm moving to Sydney next month.</p>
       <p>The decision to leave New York wasn't easy. This vibrant city has been my home and teacher, shaping my understanding of hospitality, style, and ambition. Yet the chance to experience luxury hospitality in a completely different setting—where urban sophistication meets beach culture—feels like the next right step in my journey.</p>`,
-      coverImage: "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+      coverImage: "/images/blog/moving-to-sydney.jpg",
       publishedAt: new Date("2020-01-20T10:00:00Z"),
       category: "Personal",
       location: "New York",
@@ -988,7 +988,7 @@ export class MemStorage implements IStorage {
       excerpt: "The surprising elements of Australian life that have captured my imagination and how the quality of light changes everything.",
       content: `<p>They say the light in Sydney is different, and now I understand why artists and photographers have long been drawn to this harbor city. There's a clarity and warmth to the sunshine here that transforms everything it touches—from the gleaming white sails of the Opera House to the golden stretches of beach.</p>
       <p>What has surprised me most is how the city's relationship with the ocean shapes daily life. Even in luxury settings, there's a relaxed elegance that feels distinctly Australian—a refinement that never tips into stiffness. You might see someone in a beautifully tailored linen suit in a five-star hotel who just came from a morning swim at Bondi.</p>`,
-      coverImage: "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+      coverImage: "/images/blog/sydney-culinary-treasures.jpg",
       publishedAt: new Date("2020-03-10T10:00:00Z"),
       category: "Travel",
       location: "Australia",
