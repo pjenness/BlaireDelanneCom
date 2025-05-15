@@ -841,6 +841,460 @@ export class MemStorage implements IStorage {
       name: "Emma Wilson",
       content: "Great points about focusing on versatility. I've found that having a consistent color palette makes such a difference—everything just works together so much better!"
     });
+    
+    // Add more historical posts to create a fuller history (2019-2023)
+    
+    // 2019 Posts (New York era)
+    this.createPost({
+      title: "My First Week at The Peninsula New York",
+      slug: "first-week-peninsula-new-york",
+      excerpt: "Reflecting on my initial days working at one of Manhattan's most iconic luxury hotels and the beginning of my hospitality journey.",
+      content: `<p>This week marked the start of an exciting new chapter in my professional life. Stepping through the doors of The Peninsula New York as a team member rather than a guest filled me with both nervousness and anticipation. The gleaming marble floors, the perfect floral arrangements, and the immaculate attention to detail that I'd always admired as a visitor suddenly became my everyday workplace.</p>
+      <p>The training has been intensive but inspiring. What stands out most is how the team approaches luxury—it's never about ostentation, but rather about anticipating needs before they're expressed. I'm already learning that true hospitality is an art form that requires both technical precision and genuine warmth.</p>`,
+      coverImage: "https://images.unsplash.com/photo-1519690889869-e705e59f72e1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+      publishedAt: new Date("2019-02-15T10:00:00Z"),
+      category: "Hospitality",
+      location: "New York",
+      featured: 0,
+      readTime: 4,
+      prevPostId: null,
+      nextPostId: null
+    });
+    
+    this.createPost({
+      title: "Behind the Scenes at Kleinfeld Bridal",
+      slug: "behind-scenes-kleinfeld-bridal",
+      excerpt: "My unexpected journey into the world of wedding design and the magic that happens behind the scenes at New York's most famous bridal salon.",
+      content: `<p>There's something magical about the moment a bride finds "the dress." That sudden sparkle in her eyes, the way her posture changes, and often, the tears that follow—it's a transformation I've been privileged to witness repeatedly since joining the team at Kleinfeld.</p>
+      <p>Working here has opened my eyes to the intricate art of wedding styling. It's not just about finding a beautiful gown—it's about discovering how fabric, silhouette, and details can express a woman's personality on one of the most significant days of her life.</p>`,
+      coverImage: "https://images.unsplash.com/photo-1596555559113-8c098429ef79?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+      publishedAt: new Date("2019-04-10T10:00:00Z"),
+      category: "Wedding",
+      location: "New York",
+      featured: 0,
+      readTime: 5,
+      prevPostId: null,
+      nextPostId: null
+    });
+    
+    this.createPost({
+      title: "Spring in Central Park: My Favorite Meditation Spots",
+      slug: "spring-central-park-meditation-spots",
+      excerpt: "Discovering moments of peace in Manhattan's urban oasis and how these quiet retreats help me maintain balance in the city's constant bustle.",
+      content: `<p>In a city that never sleeps, finding moments of stillness becomes essential. Despite the reputation for constant motion, New York offers remarkable pockets of tranquility if you know where to look.</p>
+      <p>Central Park, that magnificent green heart of Manhattan, has become my sanctuary. Each morning before work, I've been exploring different corners, discovering secret spots where the city's soundtrack fades just enough to hear my own thoughts again.</p>`,
+      coverImage: "https://images.unsplash.com/photo-1568515045052-f9a854d70bfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+      publishedAt: new Date("2019-05-22T10:00:00Z"),
+      category: "Personal",
+      location: "New York",
+      featured: 0,
+      readTime: 3,
+      prevPostId: null,
+      nextPostId: null
+    });
+    
+    this.createPost({
+      title: "Summer Cocktails: Manhattan's Hidden Speakeasies",
+      slug: "summer-cocktails-manhattan-speakeasies",
+      excerpt: "Exploring New York's secretive cocktail culture and how these intimate spaces have influenced my approach to hospitality and ambiance.",
+      content: `<p>There's something wonderfully theatrical about New York's speakeasy scene. The hidden entrances, the whispered passwords, the sense of being transported to another era—it creates an experience that goes far beyond simply enjoying a well-crafted drink.</p>
+      <p>As someone working in hospitality, I've become fascinated by how these intimate spaces create such powerful atmosphere. The careful lighting, the thoughtfully selected music, the rituals of preparation—every element works together to tell a story.</p>`,
+      coverImage: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+      publishedAt: new Date("2019-07-08T10:00:00Z"),
+      category: "Hospitality",
+      location: "New York",
+      featured: 0,
+      readTime: 4,
+      prevPostId: null,
+      nextPostId: null
+    });
+    
+    this.createPost({
+      title: "Fall Fashion Week: Observations from a Newcomer",
+      slug: "fall-fashion-week-newcomer-observations",
+      excerpt: "My first experience attending New York Fashion Week events and how the energy of runway shows has influenced my understanding of style narratives.",
+      content: `<p>The anticipation before the lights dim. The first notes of music. The collective intake of breath as the initial look appears. There's nothing quite like the theatrical experience of a runway show during Fashion Week.</p>
+      <p>Thanks to connections through The Peninsula, I was able to attend several shows this season, and the experience has transformed how I think about fashion. Beyond the clothes themselves, I was struck by how designers create complete worlds through music, setting, and the careful sequencing of looks.</p>`,
+      coverImage: "https://images.unsplash.com/photo-1509631179647-0177331693ae?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+      publishedAt: new Date("2019-09-12T10:00:00Z"),
+      category: "Fashion",
+      location: "New York",
+      featured: 0,
+      readTime: 5,
+      prevPostId: null,
+      nextPostId: null
+    });
+    
+    this.createPost({
+      title: "Holiday Hosting: Lessons from Luxury Hotels",
+      slug: "holiday-hosting-luxury-hotel-lessons",
+      excerpt: "How my work in hospitality has transformed my approach to entertaining at home, with ideas for bringing hotel magic into your own gatherings.",
+      content: `<p>Working in a luxury hotel during the holiday season is like a masterclass in the art of celebration. From the perfectly dressed Christmas tree in the lobby to the meticulously planned New Year's gala, every detail is considered in creating memorable experiences.</p>
+      <p>As I prepare to host friends in my small Manhattan apartment this season, I've been reflecting on the principles that could translate from grand hotel spaces to intimate home gatherings. The essence, I've realized, remains the same: anticipating needs, creating moments of delight, and making everyone feel seen and valued.</p>`,
+      coverImage: "https://images.unsplash.com/photo-1482575832494-7f979a7b20e8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+      publishedAt: new Date("2019-12-05T10:00:00Z"),
+      category: "Hospitality",
+      location: "New York",
+      featured: 0,
+      readTime: 6,
+      prevPostId: null,
+      nextPostId: null
+    });
+    
+    // 2020 Posts (Australia transition)
+    this.createPost({
+      title: "A New Chapter: Why I'm Moving to Sydney",
+      slug: "new-chapter-moving-sydney",
+      excerpt: "The exciting decision to relocate to Australia, the opportunities that await, and mixed emotions about leaving New York behind.",
+      content: `<p>Life has a way of presenting unexpected opportunities when you least expect them. What began as a casual conversation with an Australian guest at The Peninsula has evolved into a job offer and a significant life change: I'm moving to Sydney next month.</p>
+      <p>The decision to leave New York wasn't easy. This vibrant city has been my home and teacher, shaping my understanding of hospitality, style, and ambition. Yet the chance to experience luxury hospitality in a completely different setting—where urban sophistication meets beach culture—feels like the next right step in my journey.</p>`,
+      coverImage: "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+      publishedAt: new Date("2020-01-20T10:00:00Z"),
+      category: "Personal",
+      location: "New York",
+      featured: 0,
+      readTime: 4,
+      prevPostId: null,
+      nextPostId: null
+    });
+    
+    this.createPost({
+      title: "Sydney First Impressions: Ocean, Light, and Lifestyle",
+      slug: "sydney-first-impressions",
+      excerpt: "The surprising elements of Australian life that have captured my imagination and how the quality of light changes everything.",
+      content: `<p>They say the light in Sydney is different, and now I understand why artists and photographers have long been drawn to this harbor city. There's a clarity and warmth to the sunshine here that transforms everything it touches—from the gleaming white sails of the Opera House to the golden stretches of beach.</p>
+      <p>What has surprised me most is how the city's relationship with the ocean shapes daily life. Even in luxury settings, there's a relaxed elegance that feels distinctly Australian—a refinement that never tips into stiffness. You might see someone in a beautifully tailored linen suit in a five-star hotel who just came from a morning swim at Bondi.</p>`,
+      coverImage: "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+      publishedAt: new Date("2020-03-10T10:00:00Z"),
+      category: "Travel",
+      location: "Australia",
+      featured: 0,
+      readTime: 5,
+      prevPostId: null,
+      nextPostId: null
+    });
+    
+    this.createPost({
+      title: "Working Through a Pandemic: Hospitality in Uncertain Times",
+      slug: "pandemic-hospitality-uncertain-times",
+      excerpt: "Reflections on adapting to COVID-19 challenges in the luxury hotel industry and finding meaningful ways to serve during global disruption.",
+      content: `<p>None of us could have predicted how 2020 would unfold. Moving to a new country just before a global pandemic wasn't in my plans, but the past months have been profoundly educational as the hospitality industry navigates unprecedented challenges.</p>
+      <p>At Four Seasons Sydney, we've had to reimagine what luxury service means when physical distancing is required and when masks hide our smiles. The essence, I've discovered, remains unchanged even when the expression must adapt. The fundamental principle of making people feel cared for has become more important than ever.</p>`,
+      coverImage: "https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+      publishedAt: new Date("2020-06-18T10:00:00Z"),
+      category: "Hospitality",
+      location: "Australia",
+      featured: 0,
+      readTime: 6,
+      prevPostId: null,
+      nextPostId: null
+    });
+    
+    this.createPost({
+      title: "Hunter Valley Vineyards: A Wine Education",
+      slug: "hunter-valley-vineyards-wine-education",
+      excerpt: "Exploring Australia's oldest wine region and discovering how terroir translates into taste through immersive vineyard experiences.",
+      content: `<p>There's something magical about standing in a vineyard, feeling the same soil beneath your feet that nourishes the vines, experiencing the particular quality of sunlight and breeze that will ultimately be expressed in what you taste. Wine appreciation begins long before the glass is poured.</p>
+      <p>This past weekend, I had the privilege of visiting several Hunter Valley estates, spending time with winemakers who spoke about their craft with the same passionate precision I've observed in great chefs. The experience has fundamentally changed how I think about wine service in hospitality settings.</p>`,
+      coverImage: "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+      publishedAt: new Date("2020-08-14T10:00:00Z"),
+      category: "Travel",
+      location: "Australia",
+      featured: 0,
+      readTime: 4,
+      prevPostId: null,
+      nextPostId: null
+    });
+    
+    this.createPost({
+      title: "Intimate Weddings: The Silver Lining of Smaller Celebrations",
+      slug: "intimate-weddings-silver-lining",
+      excerpt: "How pandemic restrictions have transformed wedding celebrations and why smaller gatherings often create more meaningful experiences.",
+      content: `<p>In joining the Luxe Society Events team, I never anticipated that my first year would involve reimagining weddings for a pandemic world. Yet watching couples navigate these challenges has been unexpectedly inspiring.</p>
+      <p>What we've discovered is that smaller celebrations offer unique opportunities for personalization and depth. With guest lists of 20 instead of 200, couples are investing in extraordinary individual experiences—bespoke multi-course menus, handwritten notes at each place setting, interactive elements that wouldn't be possible at larger scales.</p>`,
+      coverImage: "https://images.unsplash.com/photo-1606216794074-735e91aa2c92?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+      publishedAt: new Date("2020-10-25T10:00:00Z"),
+      category: "Wedding",
+      location: "Australia",
+      featured: 0,
+      readTime: 5,
+      prevPostId: null,
+      nextPostId: null
+    });
+    
+    this.createPost({
+      title: "Australian Holiday Traditions: A Northern Hemisphere Transplant Adjusts",
+      slug: "australian-holiday-traditions",
+      excerpt: "The delightful contradiction of Christmas in summer and how seasonal celebrations take on new meaning across hemispheres.",
+      content: `<p>There's something wonderfully disorienting about preparing for Christmas while temperatures soar into the 90s. All the familiar symbols remain—the trees, the lights, the festive music—yet they exist in a completely different context. Santa hats paired with swimsuits. Elaborate seafood feasts rather than roast dinners. Carol concerts on the beach.</p>
+      <p>As someone deeply attached to seasonal traditions, I've found this hemisphere shift prompts reflection on what these celebrations really mean beyond their weather-specific trappings. The essence—gathering, gratitude, marking time's passage—remains constant even when the expression evolves.</p>`,
+      coverImage: "https://images.unsplash.com/photo-1545622783-b3e021430fee?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+      publishedAt: new Date("2020-12-20T10:00:00Z"),
+      category: "Personal",
+      location: "Australia",
+      featured: 0,
+      readTime: 4,
+      prevPostId: null,
+      nextPostId: null
+    });
+    
+    // 2021 Posts (Australia continued)
+    this.createPost({
+      title: "The Art of the Grazing Table: Australian Entertaining",
+      slug: "art-grazing-table-australian-entertaining",
+      excerpt: "How Australia's relaxed approach to luxury entertaining has influenced my event design philosophy and transformed my approach to hospitality.",
+      content: `<p>There's a distinctly Australian approach to hospitality that emphasizes abundance without formality, sophistication without stuffiness. Perhaps nothing embodies this philosophy better than the elaborate grazing tables that have become central to events I've planned with Luxe Society.</p>
+      <p>These artful arrangements—where cheese, charcuterie, fruits, dips, breads, and more are assembled into an edible landscape—invite guests to interact, share, and return throughout an event. They transform food service from a scheduled activity into an ongoing experience.</p>`,
+      coverImage: "https://images.unsplash.com/photo-1621963249276-decff933e521?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+      publishedAt: new Date("2021-02-05T10:00:00Z"),
+      category: "Hospitality",
+      location: "Australia",
+      featured: 0,
+      readTime: 4,
+      prevPostId: null,
+      nextPostId: null
+    });
+    
+    this.createPost({
+      title: "Destination Weddings: Byron Bay Edition",
+      slug: "destination-weddings-byron-bay",
+      excerpt: "The magic of planning celebrations in Australia's boho-luxury coastal paradise and why it has become my favorite wedding destination.",
+      content: `<p>There are certain places that seem designed by nature specifically for celebration. Byron Bay, with its pristine beaches, subtropical hinterland, and golden quality of light, is undoubtedly one such location. Over the past year, it has become my favorite destination for the weddings I plan through Luxe Society.</p>
+      <p>What makes Byron special isn't just its physical beauty, but the particular energy of the place—a blend of laid-back coastal ease and unexpected sophistication. It attracts couples who want celebrations that feel both elegant and authentic, refined yet connected to nature.</p>`,
+      coverImage: "https://images.unsplash.com/photo-1533993036450-7c48a147e09c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+      publishedAt: new Date("2021-04-12T10:00:00Z"),
+      category: "Wedding",
+      location: "Australia",
+      featured: 0,
+      readTime: 5,
+      prevPostId: null,
+      nextPostId: null
+    });
+    
+    this.createPost({
+      title: "Indigenous Ingredients: Australia's Native Flavor Revolution",
+      slug: "indigenous-ingredients-australian-flavor",
+      excerpt: "Discovering the rich culinary heritage of Australian native foods and how these ancient ingredients are transforming modern hospitality experiences.",
+      content: `<p>My culinary education has expanded dramatically since moving to Australia, thanks to exposure to ingredients that have been used by Indigenous peoples for thousands of years but are only recently gaining recognition in contemporary cuisine.</p>
+      <p>Finger lime with its citrus caviar texture. Peppery mountain pepper. Fragrant lemon myrtle. Nutty wattleseed. These distinctive flavors not only create memorable tasting experiences but also connect diners to this continent's unique ecological history.</p>`,
+      coverImage: "https://images.unsplash.com/photo-1527515886233-325e577d014a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+      publishedAt: new Date("2021-06-30T10:00:00Z"),
+      category: "Hospitality",
+      location: "Australia",
+      featured: 0,
+      readTime: 4,
+      prevPostId: null,
+      nextPostId: null
+    });
+    
+    this.createPost({
+      title: "Winter in the Blue Mountains: A Weekend Retreat",
+      slug: "winter-blue-mountains-retreat",
+      excerpt: "Finding unexpected winter magic in the misty valleys and charming villages of New South Wales' most iconic mountain range.",
+      content: `<p>There's something undeniably romantic about mountain mist. The way it softens edges, creates depth and mystery, transforms familiar landscapes into dreamscapes. This past weekend, I experienced the Blue Mountains in winter for the first time—a completely different environment from the sun-drenched Sydney I've grown accustomed to.</p>
+      <p>Staying in a heritage cottage with a wood-burning fireplace, wandering through gardens shrouded in morning fog, and savoring long dinners in cozy village restaurants offered a wonderful counterpoint to coastal living.</p>`,
+      coverImage: "https://images.unsplash.com/photo-1572297500749-85e8dfed9a2e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+      publishedAt: new Date("2021-08-10T10:00:00Z"),
+      category: "Travel",
+      location: "Australia",
+      featured: 0,
+      readTime: 4,
+      prevPostId: null,
+      nextPostId: null
+    });
+    
+    this.createPost({
+      title: "Sustainable Luxury: Redefining Hospitality for Conscious Travelers",
+      slug: "sustainable-luxury-conscious-travelers",
+      excerpt: "How Australia's leading hotels are pioneering eco-luxury approaches and why sustainability doesn't mean sacrificing exceptional experiences.",
+      content: `<p>The notion that luxury and sustainability exist in opposition is rapidly becoming outdated. Through my work at Four Seasons and with various hospitality clients at Luxe Society, I've observed a meaningful shift in how premium experiences are conceived and delivered.</p>
+      <p>The most forward-thinking Australian properties are proving that environmental consciousness can enhance rather than detract from guest experiences: hyperlocal sourcing that ensures peak freshness, plastic-free approaches that introduce beautiful alternatives, energy-efficient systems that improve comfort while reducing impact.</p>`,
+      coverImage: "https://images.unsplash.com/photo-1613618948931-ef3422a4575d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+      publishedAt: new Date("2021-10-18T10:00:00Z"),
+      category: "Hospitality",
+      location: "Australia",
+      featured: 0,
+      readTime: 5,
+      prevPostId: null,
+      nextPostId: null
+    });
+    
+    this.createPost({
+      title: "Looking Toward New Zealand: My Next Adventure",
+      slug: "looking-toward-new-zealand-next-adventure",
+      excerpt: "The decision to relocate to Auckland and the new professional chapter I'll be beginning in 2022 as I launch my own consultancy.",
+      content: `<p>They say that once you start traveling, it's difficult to stop. My journey from New York to Sydney has been transformative both personally and professionally, and now I'm embracing another transition: a move to New Zealand in early 2022.</p>
+      <p>This next step feels different from previous ones. Rather than joining an established organization, I'll be launching my own hospitality and event design consultancy. It's a decision that combines everything I've learned from the structured excellence of places like The Peninsula and Four Seasons with the creative flexibility I've developed at Luxe Society.</p>`,
+      coverImage: "https://images.unsplash.com/photo-1507699622108-4be3abd695ad?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+      publishedAt: new Date("2021-12-05T10:00:00Z"),
+      category: "Personal",
+      location: "Australia",
+      featured: 0,
+      readTime: 4,
+      prevPostId: null,
+      nextPostId: null
+    });
+    
+    // 2022-2023 Posts (New Zealand era)
+    this.createPost({
+      title: "Auckland Arrival: Urban Sophistication Meets Island Paradise",
+      slug: "auckland-arrival-urban-sophistication",
+      excerpt: "First impressions of New Zealand's largest city and the unexpected ways it differs from both New York and Sydney.",
+      content: `<p>They call Auckland the City of Sails, and it's immediately apparent why. The harbor bristles with masts, the horizon is dotted with white triangles catching the breeze, and it seems everyone has a story about being on the water. This intimate relationship with the harbor shapes Auckland's character in ways that feel distinct from other coastal cities I've called home.</p>
+      <p>What's most striking about Auckland is the seamless integration of urban sophistication and natural beauty. Within thirty minutes of downtown's sleek high-rises, you can be on a black sand beach, hiking through rainforest, or sampling wines at a vineyard. This accessibility to diverse experiences creates unique possibilities for the hospitality experiences I hope to design here.</p>`,
+      coverImage: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+      publishedAt: new Date("2022-01-20T10:00:00Z"),
+      category: "Travel",
+      location: "New Zealand",
+      featured: 0,
+      readTime: 4,
+      prevPostId: null,
+      nextPostId: null
+    });
+    
+    this.createPost({
+      title: "Launching a Boutique Consultancy: Lessons from Month One",
+      slug: "launching-boutique-consultancy-month-one",
+      excerpt: "The exhilarating reality of building a business from scratch and the unexpected skills I've had to develop beyond my hospitality expertise.",
+      content: `<p>They don't teach you about bookkeeping systems or contract templates in hospitality school. The past month of establishing my consultancy has been an education in aspects of business I never considered while focused on creating beautiful experiences for others.</p>
+      <p>The learning curve has been steep but exhilarating. Each day brings new challenges—from designing my brand identity to establishing service packages to building a network in a new country. What sustains me through the administrative details is the vision of creating truly distinctive, personalized experiences that honor New Zealand's exceptional landscapes and cultures.</p>`,
+      coverImage: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+      publishedAt: new Date("2022-03-08T10:00:00Z"),
+      category: "Personal",
+      location: "New Zealand",
+      featured: 0,
+      readTime: 5,
+      prevPostId: null,
+      nextPostId: null
+    });
+    
+    this.createPost({
+      title: "Māori-Inspired Hospitality: The Concept of Manaakitanga",
+      slug: "maori-inspired-hospitality-manaakitanga",
+      excerpt: "Learning from New Zealand's Indigenous concepts of hospitality and how they're shaping my approach to creating meaningful guest experiences.",
+      content: `<p>One of the most beautiful words I've encountered since moving to New Zealand is "manaakitanga"—a Māori concept that encompasses hospitality, kindness, generosity, and respect for others. It's a philosophy that extends far beyond service transactions to embrace genuine care for visitors' wellbeing and the sharing of place and culture.</p>
+      <p>Through conversations with Māori cultural experts and hospitality professionals, I've been deepening my understanding of how this concept manifests in everything from arrival rituals to food sharing to storytelling. These principles are profoundly influencing how I'm developing experiences for my clients.</p>`,
+      coverImage: "https://images.unsplash.com/photo-1528495612343-9ca9f4a9f67c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+      publishedAt: new Date("2022-05-12T10:00:00Z"),
+      category: "Hospitality",
+      location: "New Zealand",
+      featured: 0,
+      readTime: 6,
+      prevPostId: null,
+      nextPostId: null
+    });
+    
+    this.createPost({
+      title: "Queenstown Wedding Planning: Logistics in Paradise",
+      slug: "queenstown-wedding-planning-logistics",
+      excerpt: "The challenges and rewards of orchestrating destination weddings in New Zealand's adventure capital and why the extra effort creates incomparable celebrations.",
+      content: `<p>Planning a wedding in one of the world's most photogenic locations comes with unique challenges. The same dramatic landscapes that make Queenstown an unforgettable backdrop—soaring mountains, crystal lakes, remote valleys—also create logistical complexities that demand creative solutions.</p>
+      <p>For a celebration I'm currently designing, we're arranging helicopter transportation to a mountain plateau for the ceremony, coordinating with weather specialists to identify the optimal timing window, and working with local artisans to create an experience that honors the remarkable setting while ensuring guests' comfort.</p>`,
+      coverImage: "https://images.unsplash.com/photo-1464288550599-43d5a73451b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+      publishedAt: new Date("2022-07-25T10:00:00Z"),
+      category: "Wedding",
+      location: "New Zealand",
+      featured: 0,
+      readTime: 5,
+      prevPostId: null,
+      nextPostId: null
+    });
+    
+    this.createPost({
+      title: "Waiheke Island: A Wine Lover's Paradise",
+      slug: "waiheke-island-wine-paradise",
+      excerpt: "Exploring Auckland's island wine region and how its distinctive terroir creates world-class wines with a character all their own.",
+      content: `<p>Just a 40-minute ferry ride from downtown Auckland lies a world of vineyards cascading down hills to sparkling blue bays. Waiheke Island has rapidly become one of my favorite places to bring visitors seeking an experience that combines natural beauty, exceptional food and wine, and a distinctly New Zealand sense of relaxed sophistication.</p>
+      <p>What makes Waiheke wines special is not just the stunning settings of the vineyards, but the distinctive growing conditions. The island's maritime climate, with its cooling sea breezes and varied topography, creates ideal conditions for Bordeaux-style reds and elegant Chardonnays with a character that couldn't be replicated elsewhere.</p>`,
+      coverImage: "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+      publishedAt: new Date("2022-09-14T10:00:00Z"),
+      category: "Travel",
+      location: "New Zealand",
+      featured: 0,
+      readTime: 4,
+      prevPostId: null,
+      nextPostId: null
+    });
+    
+    this.createPost({
+      title: "Hotel DeBrett: Collaborating with Auckland's Design Icon",
+      slug: "hotel-debrett-auckland-design-icon",
+      excerpt: "The joy of partnering with one of New Zealand's most distinctive boutique hotels and how our collaboration is creating unique guest experiences.",
+      content: `<p>Some spaces have a soul that's immediately perceptible when you enter. Hotel DeBrett, with its soaring art deco-inspired atrium, bold striped carpets, and eclectic collection of New Zealand art, is such a place. I knew upon my first visit that this was an environment that aligned with my own vision of hospitality—design-forward yet deeply comfortable, distinctive without being pretentious.</p>
+      <p>When the opportunity arose to collaborate with them on special events and guest experiences, it felt like a natural partnership. Together, we're developing a series of cultural salons that bring together local artists, winemakers, and culinary talents for intimate evenings that showcase the creative spirit of Auckland.</p>`,
+      coverImage: "https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+      publishedAt: new Date("2022-11-10T10:00:00Z"),
+      category: "Hospitality",
+      location: "New Zealand",
+      featured: 0,
+      readTime: 5,
+      prevPostId: null,
+      nextPostId: null
+    });
+    
+    this.createPost({
+      title: "Summer Holiday Reflections: One Year in New Zealand",
+      slug: "summer-holiday-reflections-one-year",
+      excerpt: "Looking back on my first year of building a life and business in Auckland and the lessons learned along this unexpected journey.",
+      content: `<p>Another hemisphere shift, another summer Christmas—though this one feels different from those Australian celebrations. As I mark a full year in New Zealand and the holiday season provides space for reflection, I'm struck by how profoundly this place has influenced both my personal outlook and professional approach.</p>
+      <p>The decision to launch my own consultancy rather than joining an established organization was driven partly by a desire for creative autonomy, but also by recognition that New Zealand's hospitality and event landscape offered opportunities to develop approaches that wouldn't fit neatly into existing models.</p>`,
+      coverImage: "https://images.unsplash.com/photo-1635948943444-b92122753eef?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+      publishedAt: new Date("2022-12-28T10:00:00Z"),
+      category: "Personal",
+      location: "New Zealand",
+      featured: 0,
+      readTime: 5,
+      prevPostId: null,
+      nextPostId: null
+    });
+    
+    this.createPost({
+      title: "Sustainable Weddings: The New Zealand Approach",
+      slug: "sustainable-weddings-new-zealand",
+      excerpt: "How couples in New Zealand are pioneering eco-conscious celebrations and the innovative ways we're reducing the environmental impact of special events.",
+      content: `<p>When a recently engaged couple approached me about planning their wedding, they had one non-negotiable requirement: the celebration needed to align with their environmental values without sacrificing beauty or guest experience. This request reflects a growing trend I've observed since establishing my consultancy in New Zealand.</p>
+      <p>What's distinctive about the Kiwi approach to sustainable celebrations is how it extends beyond superficial "green" gestures to encompass thoughtful consideration of every element—from locally grown flowers arranged in reusable vessels to rental attire for the wedding party to comprehensive composting systems.</p>`,
+      coverImage: "https://images.unsplash.com/photo-1522157201180-a47e26c4dea4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+      publishedAt: new Date("2023-02-14T10:00:00Z"),
+      category: "Wedding",
+      location: "New Zealand",
+      featured: 0,
+      readTime: 5,
+      prevPostId: null,
+      nextPostId: null
+    });
+    
+    this.createPost({
+      title: "Autumn Harvest Festivals: Central Otago Road Trip",
+      slug: "autumn-harvest-festivals-otago",
+      excerpt: "A journey through New Zealand's southern wine region during harvest season and the community celebrations that make this time special.",
+      content: `<p>There's a particular quality to autumn light—golden, honeyed, nostalgic—that transforms landscapes. Nowhere have I experienced this more vividly than during my recent road trip through Central Otago, where vineyard rows blazed with amber and crimson foliage against a backdrop of snow-dusted mountains.</p>
+      <p>Timing the visit to coincide with harvest festivals offered a privileged glimpse into both winemaking processes and community traditions. From helping with a pre-dawn grape pick followed by a vineyard breakfast to attending long-table harvest dinners where multiple wineries shared their first pressings, the experience deepened my appreciation for New Zealand's wine culture.</p>`,
+      coverImage: "https://images.unsplash.com/photo-1506377295352-e3154d43ea9e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+      publishedAt: new Date("2023-04-05T10:00:00Z"),
+      category: "Travel",
+      location: "New Zealand",
+      featured: 0,
+      readTime: 5,
+      prevPostId: null,
+      nextPostId: null
+    });
+    
+    this.createPost({
+      title: "The Art of Tablescaping: Creating Memorable Dining Experiences",
+      slug: "art-tablescaping-memorable-dining",
+      excerpt: "How thoughtful table design creates the foundation for extraordinary gatherings and the elements that elevate a dining setting from pretty to transportive.",
+      content: `<p>A beautifully set table is more than an aesthetic pleasure—it's the stage upon which shared experiences unfold. Through my work designing special events, I've come to appreciate how deliberately composed dining environments influence everything from conversation flow to flavor perception to memory formation.</p>
+      <p>What I find most fascinating is how cultural context shapes these settings. The tablescaping approach I've developed in New Zealand incorporates elements distinct to this place—native foliage like silver fern and nikau palm, locally crafted ceramics with volcanic glazes, pounamu (greenstone) accents that connect to Māori traditions.</p>`,
+      coverImage: "https://images.unsplash.com/photo-1586105251261-72a756497a11?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+      publishedAt: new Date("2023-06-20T10:00:00Z"),
+      category: "Hospitality",
+      location: "New Zealand",
+      featured: 0,
+      readTime: 4,
+      prevPostId: null,
+      nextPostId: null
+    });
   }
 }
 
