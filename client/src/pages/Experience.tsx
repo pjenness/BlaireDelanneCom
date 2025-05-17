@@ -94,7 +94,7 @@ const Experience = () => {
               <div className="relative md:flex items-center">
                 <div className="hidden md:block w-1/2 pr-12 text-right">
                   <h3 className="font-playfair text-2xl font-semibold mb-2">Martinborough, Wairarapa, New Zealand</h3>
-                  <span className="text-charcoal/60 font-medium">2025 - Present</span>
+                  <span className="text-charcoal/60 font-medium">2022 - Present</span>
                   <p className="mt-2 text-charcoal/80">
                     My journey through New Zealand has evolved from Auckland to Martinborough's renowned wine region. Here, I've found a perfect blend of rural charm and sophisticated wine culture that inspires my work with local vineyards and artisans. The Wairarapa's stunning landscapes and intimate community have become the ideal canvas for creating authentic, memorable experiences.
                   </p>
@@ -107,16 +107,20 @@ const Experience = () => {
                 <div className="md:w-1/2 md:pl-12 mt-0 md:mt-0">
                   <div className="md:hidden">
                     <h3 className="font-playfair text-2xl font-semibold mb-2">Martinborough, Wairarapa, New Zealand</h3>
-                    <span className="text-charcoal/60 font-medium">2025 - Present</span>
+                    <span className="text-charcoal/60 font-medium">2022 - Present</span>
                   </div>
                   <div className="bg-white p-6 shadow-sm mt-3 md:mt-0 border-t-2 border-accent/30">
-                    <h4 className="font-semibold text-lg mb-2 font-playfair">Blaire Delanné Consulting</h4>
+                    <h4 className="font-semibold text-lg mb-2 font-playfair">The Drift Agentic – Aesthetic Director (2025 - Present)</h4>
                     <p className="text-charcoal/80 mb-3">
-                      A new chapter in my journey has brought me to Martinborough, the wine hub near Wellington. Here I've expanded my consultancy to embrace the region's rich wine culture, working with local vineyards and boutique accommodations to create immersive experiences that celebrate the terroir and artisanal community of this special corner of New Zealand.
+                      In my role as Aesthetic Director at The Drift Agentic, I oversee visual storytelling and design-forward brand experiences that blend elegance with authenticity. My focus spans fashion, hospitality, culinary events, wedding planning, and lifestyle consultancy, allowing me to create immersive, memorable experiences that reflect the unique character of New Zealand's wine country.
                     </p>
-                    <h4 className="font-semibold text-lg mb-2 mt-5 font-playfair">Auckland Legacy (2022-2024)</h4>
+                    <h4 className="font-semibold text-lg mb-2 mt-5 font-playfair">Blaire Delanné Consulting (2023-2025)</h4>
+                    <p className="text-charcoal/80 mb-3">
+                      After relocating to Martinborough, the wine hub near Wellington, I expanded my consultancy to embrace the region's rich wine culture, working with local vineyards and boutique accommodations to create immersive experiences that celebrate the terroir and artisanal community of this special corner of New Zealand.
+                    </p>
+                    <h4 className="font-semibold text-lg mb-2 mt-5 font-playfair">Auckland Legacy (2022-2023)</h4>
                     <p className="text-charcoal/80">
-                      During my years in Auckland at The Fern Boutique Hotel, I developed my approach to hospitality and events, curating wine tastings, seasonal dining experiences, and partnerships with local artisans. This foundation prepared me for my current focus on the intimate, personalized experiences that Martinborough's wine country allows me to create.
+                      During my time in Auckland at The Fern Boutique Hotel, I developed my approach to hospitality and events, curating wine tastings, seasonal dining experiences, and partnerships with local artisans. This foundation prepared me for my current focus on the intimate, personalized experiences that Martinborough's wine country allows me to create.
                     </p>
                   </div>
                 </div>
