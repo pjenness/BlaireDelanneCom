@@ -110,13 +110,13 @@ const Experience = () => {
                     <span className="text-charcoal/60 font-medium">2022 - Present</span>
                   </div>
                   <div className="bg-white p-6 shadow-sm mt-3 md:mt-0 border-t-2 border-accent/30">
-                    <h4 className="font-semibold text-lg mb-2 font-playfair">The Drift Agentic – Aesthetic Director (2025 - Present)</h4>
+                    <h4 className="font-semibold text-lg mb-2 font-playfair">The Drift Agentic – Aesthetic Director (2023 - Present)</h4>
                     <p className="text-charcoal/80 mb-3">
                       In my role as Aesthetic Director at The Drift Agentic, I oversee visual storytelling and design-forward brand experiences that blend elegance with authenticity. My focus spans fashion, hospitality, culinary events, wedding planning, and lifestyle consultancy, allowing me to create immersive, memorable experiences that reflect the unique character of New Zealand's wine country.
                     </p>
-                    <h4 className="font-semibold text-lg mb-2 mt-5 font-playfair">Blaire Delanné Consulting (2023-2025)</h4>
+                    <h4 className="font-semibold text-lg mb-2 mt-5 font-playfair">Blaire Delanné Consulting (2023 - Present)</h4>
                     <p className="text-charcoal/80 mb-3">
-                      After relocating to Martinborough, the wine hub near Wellington, I expanded my consultancy to embrace the region's rich wine culture, working with local vineyards and boutique accommodations to create immersive experiences that celebrate the terroir and artisanal community of this special corner of New Zealand.
+                      After relocating to Martinborough, the wine hub near Wellington, I expanded my consultancy to embrace the region's rich wine culture, working with local vineyards and boutique accommodations. I continue this work alongside my role at The Drift Agentic, creating bespoke experiences that celebrate the terroir and artisanal community of this special corner of New Zealand.
                     </p>
                     <h4 className="font-semibold text-lg mb-2 mt-5 font-playfair">Auckland Legacy (2022-2023)</h4>
                     <p className="text-charcoal/80">
