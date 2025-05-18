@@ -2,78 +2,52 @@ import express, { type Request, Response, NextFunction } from "express";
 import { registerRoutes } from "./routes";
 import { setupVite, serveStatic, log } from "./vite";
 import path from "path";
+import fs from "fs";
 
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-// Image path mapping for backward compatibility
-const categoryImageMapping = {
-  // Fashion images
-  'investment-dressing.jpg': 'fashion-category.jpg',
-  'sustainable-fashion.jpg': 'fashion-category.jpg',
-  'accessories-styling.jpg': 'fashion-category.jpg',
-  
-  // Travel images
-  'luxury-travel.jpg': 'travel-category.jpg',
-  'new-zealand-adventure.jpg': 'travel-category.jpg',
-  'moving-to-sydney.jpg': 'travel-category.jpg',
-  'sydney-culinary-treasures.jpg': 'travel-category.jpg',
-  'waiheke-vineyards.jpg': 'travel-category.jpg',
-  'central-otago-wine.jpg': 'travel-category.jpg',
-  
-  // Wedding images
-  'byron-bay-weddings.jpg': 'wedding-category.jpg',
-  'luxury-wedding-planning.jpg': 'wedding-category.jpg',
-  'queenstown-weddings.jpg': 'wedding-category.jpg',
-  'sustainable-weddings.jpg': 'wedding-category.jpg',
-  'sustainable-weddings-nz.jpg': 'wedding-category.jpg',
-  
-  // Hospitality images
-  'wellness-hospitality.jpg': 'hospitality-category.jpg',
-  'tablescaping-art.jpg': 'hospitality-category.jpg',
-  'boutique-hotel-partnership.jpg': 'hospitality-category.jpg',
-  'wellness-event-design.jpg': 'hospitality-category.jpg',
-  
-  // Personal/other images
-  'new-zealand-year-reflection.jpg': 'personal-category.jpg',
-  'autumn-harvest-festivals-otago.jpg': 'personal-category.jpg'
-};
-
-// Handle image requests with mapping for backward compatibility
+// Handle image requests with mapping for date-based filenames
 app.use('/images/blog/:filename', (req, res, next) => {
   const requestedFile = req.params.filename;
   
-  // Check if it's already a category image
-  if (requestedFile === 'fashion-category.jpg' || 
-      requestedFile === 'wedding-category.jpg' || 
-      requestedFile === 'travel-category.jpg' || 
-      requestedFile === 'hospitality-category.jpg' || 
-      requestedFile === 'personal-category.jpg') {
-    // It's already a category image, proceed to static handling
+  // Check if it has a date format already (YYYY_MM_DD)
+  if (requestedFile.match(/^\d{4}_\d{2}_\d{2}/)) {
+    // It's already a properly formatted date-based filename, proceed
     next();
     return;
   }
   
-  // If the requested file is in our mapping, redirect to the category image
-  if (requestedFile in categoryImageMapping) {
-    const categoryImage = categoryImageMapping[requestedFile];
-    res.redirect(`/images/blog/${categoryImage}`);
-  } else {
-    // For any other image request, try to determine category from filename
-    if (requestedFile.includes('fashion')) {
-      res.redirect('/images/blog/fashion-category.jpg');
-    } else if (requestedFile.includes('wedding')) {
-      res.redirect('/images/blog/wedding-category.jpg');
-    } else if (requestedFile.includes('travel')) {
-      res.redirect('/images/blog/travel-category.jpg');
-    } else if (requestedFile.includes('hospitality')) {
-      res.redirect('/images/blog/hospitality-category.jpg');
-    } else {
-      // Default to personal category
-      res.redirect('/images/blog/personal-category.jpg');
-    }
+  // If the filename contains a date but with hyphens, normalize to underscores
+  const dateParts = requestedFile.match(/^(\d{4})-(\d{2})-(\d{2})-(.+)$/);
+  if (dateParts) {
+    const [_, year, month, day, slug] = dateParts;
+    const normalizedFilename = `${year}_${month}_${day}-${slug}`;
+    res.redirect(`/images/blog/${normalizedFilename}`);
+    return;
   }
+  
+  // For legacy filenames without dates, try to find a matching file with date prefix
+  fs.readdir(path.join(process.cwd(), 'images/blog'), (err, files) => {
+    if (err) {
+      console.error('Error reading blog images directory:', err);
+      next();
+      return;
+    }
+    
+    // Extract the slug part (remove .jpg extension)
+    const slug = requestedFile.replace(/\.jpg$/, '');
+    
+    // Look for a file that contains this slug
+    const matchingFile = files.find(file => file.includes(slug));
+    if (matchingFile) {
+      res.redirect(`/images/blog/${matchingFile}`);
+    } else {
+      // If no match, pass to the next middleware
+      next();
+    }
+  });
 });
 
 // Serve static image files before any other routes
