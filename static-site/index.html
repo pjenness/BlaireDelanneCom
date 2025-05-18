@@ -11,7 +11,43 @@
     <link rel="canonical" href="https://blairedelanne.com" />
     <script type="module" crossorigin src="assets/index-CbYRjpeF.js"></script>
     <link rel="stylesheet" crossorigin href="assets/index-CfmtFJFL.css">
-    <script src="static-data/site-data.js"></script>
+  
+  <script src="static-data/site-data.js"></script>
+  <script>
+    // Override fetch to use our static data when API calls are made
+    const originalFetch = window.fetch;
+    window.fetch = function(url, options) {
+      if (typeof url === 'string') {
+        // Handle API endpoints with static data
+        if (url.includes('/api/posts/featured/main')) {
+          return Promise.resolve({
+            ok: true,
+            json: () => Promise.resolve(window.STATIC_DATA.featuredMain)
+          });
+        }
+        if (url.includes('/api/posts/featured')) {
+          return Promise.resolve({
+            ok: true,
+            json: () => Promise.resolve(window.STATIC_DATA.featuredPosts)
+          });
+        }
+        if (url.includes('/api/posts/recent')) {
+          return Promise.resolve({
+            ok: true,
+            json: () => Promise.resolve(window.STATIC_DATA.recentPosts)
+          });
+        }
+        if (url.includes('/api/gallery/featured')) {
+          return Promise.resolve({
+            ok: true,
+            json: () => Promise.resolve(window.STATIC_DATA.galleryFeatured)
+          });
+        }
+      }
+      // Use original fetch for anything else
+      return originalFetch.apply(this, arguments);
+    };
+  </script>
   </head>
   <body>
     <div id="root"></div>

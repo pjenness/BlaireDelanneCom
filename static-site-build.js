@@ -101,12 +101,49 @@ window.STATIC_DATA = {
       indexContent = indexContent.replace(/src="\/assets\//g, 'src="assets/');
       indexContent = indexContent.replace(/href="\/assets\//g, 'href="assets/');
       
-      // Add our static data file
-      indexContent = indexContent.replace('</head>',
-        '  <script src="static-data/site-data.js"></script>\n  </head>');
+      // Add our static data file and override for API calls
+      const staticDataScript = `
+  <script src="static-data/site-data.js"></script>
+  <script>
+    // Override fetch to use our static data when API calls are made
+    const originalFetch = window.fetch;
+    window.fetch = function(url, options) {
+      if (typeof url === 'string') {
+        // Handle API endpoints with static data
+        if (url.includes('/api/posts/featured/main')) {
+          return Promise.resolve({
+            ok: true,
+            json: () => Promise.resolve(window.STATIC_DATA.featuredMain)
+          });
+        }
+        if (url.includes('/api/posts/featured')) {
+          return Promise.resolve({
+            ok: true,
+            json: () => Promise.resolve(window.STATIC_DATA.featuredPosts)
+          });
+        }
+        if (url.includes('/api/posts/recent')) {
+          return Promise.resolve({
+            ok: true,
+            json: () => Promise.resolve(window.STATIC_DATA.recentPosts)
+          });
+        }
+        if (url.includes('/api/gallery/featured')) {
+          return Promise.resolve({
+            ok: true,
+            json: () => Promise.resolve(window.STATIC_DATA.galleryFeatured)
+          });
+        }
+      }
+      // Use original fetch for anything else
+      return originalFetch.apply(this, arguments);
+    };
+  </script>`;
+      
+      indexContent = indexContent.replace('</head>', staticDataScript + '\n  </head>');
       
       await writeFile(path.join(BUILD_DIR, 'index.html'), indexContent);
-      console.log('Created modified index.html with static data');
+      console.log('Created modified index.html with static data and API overrides');
     } else {
       console.log('No dist/public/index.html found - please run the Replit server first');
     }
