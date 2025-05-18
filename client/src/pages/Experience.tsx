@@ -68,11 +68,11 @@ const Experience = () => {
                   <div className="bg-white p-6 shadow-sm mt-3 md:mt-0 border-t-2 border-accent/30">
                     <h4 className="font-semibold text-lg mb-2 font-playfair">Harbour View Luxury Hotel</h4>
                     <p className="text-charcoal/80 mb-3">
-                      The stunning harbor views from this property inspired me daily as I crafted beautiful experiences for guests. I delighted in introducing them to Sydney's hidden gems and creating personalized adventures that showcased Australia's unique blend of sophistication and natural beauty.
+                      Scored a dream gig at this fancy harborside spot where I basically got paid to show off Sydney to rich tourists. Became an expert at finding the cool local spots that weren't in guidebooks. Got pretty good at translating between Aussie slang and American English too - turns out "thongs" means something very different down under!
                     </p>
                     <h4 className="font-semibold text-lg mb-2 mt-5 font-playfair">Celestial Celebrations</h4>
                     <p className="text-charcoal/80">
-                      Here I embraced the art of designing breathtaking events that reflected each couple's love story. From intimate vineyard gatherings to lavish harbor-front soirées, I wove Australian landscapes and culture into each celebration, creating magical spaces where memories bloom.
+                      Spent weekends designing weddings that didn't look like Pinterest vomit. Found out Aussies actually let you have fun with wedding planning - beach ceremonies, vineyard parties, even did one on a boat (never again, seasickness + open bar = disaster). Got obsessed with using native Australian plants that look like they're from another planet.
                     </p>
                   </div>
                 </div>
@@ -85,7 +85,7 @@ const Experience = () => {
                   <h3 className="font-playfair text-2xl font-semibold mb-2">Sydney, Australia</h3>
                   <span className="text-charcoal/60 font-medium">2020 - 2021</span>
                   <p className="mt-2 text-charcoal/80">
-                    Australia captured my heart with its breathtaking beauty and relaxed elegance. Here, I embraced the laid-back sophistication of Australian style while learning to incorporate native flowers, local wines, and stunning natural settings into my event designs.
+                    Sydney was my covid refuge - ended up staying way longer than planned when travel shut down. Fell for Aussie's no-BS approach to luxury and their incredible native plants (those banksia flowers are wild!). Learned to work with local wines and beachside venues while soaking up that sunshine. Miss those Sydney sunsets but not the housing prices, yikes.
                   </p>
                 </div>
               </div>
@@ -96,7 +96,7 @@ const Experience = () => {
                   <h3 className="font-playfair text-2xl font-semibold mb-2">New Zealand</h3>
                   <span className="text-charcoal/60 font-medium">2022 - Present</span>
                   <p className="mt-2 text-charcoal/80">
-                    My journey in New Zealand began in Auckland, where I established my consultancy work. In early 2025, I made a deliberate move to the wine region of Martinborough in the Wairarapa, where I've found a perfect blend of rural charm and sophisticated wine culture. Working with local vineyards and artisans, I'm inspired daily by the stunning landscapes and intimate community that provide the ideal canvas for creating authentic, memorable experiences.
+                    Started my NZ chapter in Auckland (big city training wheels after Sydney) where I built up my own consultancy from scratch. Three years of city hustle later, shocked everyone by ditching Auckland for tiny Martinborough in early 2025. Seriously, the place has ONE traffic light! But the wine is incredible, the people are real, and I can breathe again. Working with local winemakers and food producers who actually care about what they're creating. Turns out small town doesn't mean small thinking - just means I can walk to work and drink world-class pinot with the people who made it.
                   </p>
                 </div>
                 
@@ -112,15 +112,15 @@ const Experience = () => {
                   <div className="bg-white p-6 shadow-sm mt-3 md:mt-0 border-t-2 border-accent/30">
                     <h4 className="font-semibold text-lg mb-2 font-playfair">Martinborough Consultancy (2025 - Present)</h4>
                     <p className="text-charcoal/80 mb-3">
-                      Since moving to Martinborough in early 2025, I've been working with various vineyards and hospitality venues throughout the Wairarapa region. My consultancy focuses on event design, hospitality experiences, and helping venues create memorable moments that showcase the distinctive terroir and artisanal culture of this special wine region.
+                      Since escaping to Martinborough in early 2025, I've been helping local vineyards and venues throughout Wairarapa create experiences that don't suck. Working with smaller, passionate operations means we can get creative with event design that actually shows off what makes this wine region special - the people, the land, and of course, the wine.
                     </p>
                     <h4 className="font-semibold text-lg mb-2 mt-5 font-playfair">The Drift Agentic – Aesthetic Producer (2025 - Present)</h4>
                     <p className="text-charcoal/80 mb-3">
-                      As a part-time consultant with this innovative AI startup, I help design the visual styles and personalities for AI agents used in social media and commercial applications. This fascinating side project allows me to apply my aesthetic sensibilities to emerging technology while maintaining my base in Martinborough's wine country.
+                      Got roped into this weird side hustle with an AI startup where I basically make sure their robot personalities don't look and sound like total garbage. About 5 hours a week remote work that keeps my brain from turning completely to wine-soaked mush while living in Martinborough. Surprisingly fun applying my design instincts to tech.
                     </p>
                     <h4 className="font-semibold text-lg mb-2 mt-5 font-playfair">Auckland Experience (2022-2025)</h4>
                     <p className="text-charcoal/80">
-                      During my time in Auckland, I established my consultancy work focusing on boutique hospitality and event design. My work at The Fern Boutique Hotel helped me develop a distinctive approach to hospitality, curating wine tastings, seasonal dining experiences, and partnerships with local artisans. This foundation prepared me for my current focus on the intimate, personalized experiences that Martinborough's wine country allows me to create.
+                      Built my consulting biz in Auckland focusing on boutique hotels and custom events. My stint at The Fern Boutique Hotel taught me how to craft experiences worth the ridiculous price tag - from wine tastings that don't bore people to death to seasonal menus people actually remember. All that big city experience translates surprisingly well to small-town wine country, just with fewer traffic jams.
                     </p>
                   </div>
                 </div>
