@@ -119,13 +119,40 @@ export async function registerRoutes(app: Express): Promise<Server> {
         return res.status(400).json({ message: "Invalid post ID" });
       }
       
+      // First try to load directly from the JSON files
+      const fs = require('fs');
+      const path = require('path');
+      const BLOG_DIR = path.join(process.cwd(), 'content', 'blog');
+      
+      // Look for JSON files with the matching ID
+      if (fs.existsSync(BLOG_DIR)) {
+        const files = fs.readdirSync(BLOG_DIR).filter(file => file.endsWith('.json'));
+        
+        for (const file of files) {
+          try {
+            const filePath = path.join(BLOG_DIR, file);
+            const fileContent = fs.readFileSync(filePath, 'utf8');
+            const blogPost = JSON.parse(fileContent);
+            
+            if (blogPost.id === postId) {
+              // Found the matching post, convert to the expected format
+              const post = {
+                ...blogPost,
+                publishedAt: new Date(blogPost.publishedAt)
+              };
+              return res.json(post);
+            }
+          } catch (err) {
+            console.error(`Error reading file ${file}:`, err);
+          }
+        }
+      }
+      
+      // Fallback to storage if not found in files
       const post = await storage.getPost(postId);
       if (!post) {
         return res.status(404).json({ message: "Post not found" });
       }
-      
-      // Preserve the original image path from content file
-      // We don't need to modify this path as it's already correct in the blog post JSON file
       
       res.json(post);
     } catch (error) {
