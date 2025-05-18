@@ -1,5 +1,6 @@
 node_modules
-dist
+# dist is now commented out to include it in Git
+# dist
 .DS_Store
 server/public
 vite.config.ts.*
