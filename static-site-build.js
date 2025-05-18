@@ -201,6 +201,59 @@ window.STATIC_DATA = {
 
     // Fix for client-side routing in static site
     document.addEventListener('DOMContentLoaded', function() {
+      // Make all article images clickable
+      const makeImagesClickable = function() {
+        // Find all images inside articles that should be clickable
+        const articleImages = document.querySelectorAll('article img');
+        articleImages.forEach(function(img) {
+          // Find the article parent
+          const article = img.closest('article');
+          if (article) {
+            // Find the blog post ID from nearby links
+            const links = article.querySelectorAll('a');
+            let blogPath = '';
+            for (let i = 0; i < links.length; i++) {
+              const href = links[i].getAttribute('href');
+              if (href && (href.startsWith('/blog/') || href.startsWith('blog/') || 
+                           href.startsWith('/journal/') || href.startsWith('journal/'))) {
+                blogPath = href;
+                break;
+              }
+            }
+            
+            if (blogPath) {
+              // Make the image and its container clickable
+              img.style.cursor = 'pointer';
+              const imgContainer = img.parentNode;
+              if (imgContainer) {
+                imgContainer.style.cursor = 'pointer';
+                
+                // Add click event to navigate to the blog post
+                img.addEventListener('click', function(e) {
+                  e.preventDefault();
+                  // Navigate to the blog post
+                  history.pushState(null, '', blogPath);
+                  window.dispatchEvent(new PopStateEvent('popstate'));
+                });
+              }
+            }
+          }
+        });
+      };
+      
+      // Run initially and whenever the DOM changes
+      makeImagesClickable();
+      
+      // Use a MutationObserver to detect when new content is added
+      const observer = new MutationObserver(function(mutations) {
+        makeImagesClickable();
+      });
+      
+      observer.observe(document.body, { 
+        childList: true, 
+        subtree: true 
+      });
+      
       // Make all links work with the static site structure
       document.addEventListener('click', function(e) {
         // Find closest anchor tag
