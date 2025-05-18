@@ -125,6 +125,16 @@ window.STATIC_DATA = {
       indexContent = indexContent.replace(/src="\/assets\//g, 'src="assets/');
       indexContent = indexContent.replace(/href="\/assets\//g, 'href="assets/');
       
+      // Ensure image paths are correct
+      indexContent = indexContent.replace(/src="\/images\//g, 'src="images/');
+      indexContent = indexContent.replace(/href="\/images\//g, 'href="images/');
+      
+      // Fix any absolute paths in event handlers
+      indexContent = indexContent.replace(/href="\/journal\//g, 'href="journal/');
+      indexContent = indexContent.replace(/href="\/blog\//g, 'href="blog/');
+      indexContent = indexContent.replace(/navigate\("\/journal\//g, 'navigate("journal/');
+      indexContent = indexContent.replace(/navigate\("\/blog\//g, 'navigate("blog/');
+      
       // Add our static data file and override for API calls
       const staticDataScript = `
   <script src="static-data/site-data.js"></script>
