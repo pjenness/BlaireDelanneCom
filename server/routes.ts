@@ -119,43 +119,43 @@ export async function registerRoutes(app: Express): Promise<Server> {
         return res.status(400).json({ message: "Invalid post ID" });
       }
       
-      // First try to load directly from the JSON files
-      const fs = require('fs');
-      const path = require('path');
-      const BLOG_DIR = path.join(process.cwd(), 'content', 'blog');
-      
-      // Look for JSON files with the matching ID
-      if (fs.existsSync(BLOG_DIR)) {
-        const files = fs.readdirSync(BLOG_DIR).filter(file => file.endsWith('.json'));
-        
-        for (const file of files) {
-          try {
-            const filePath = path.join(BLOG_DIR, file);
-            const fileContent = fs.readFileSync(filePath, 'utf8');
-            const blogPost = JSON.parse(fileContent);
-            
-            if (blogPost.id === postId) {
-              // Found the matching post, convert to the expected format
-              const post = {
-                ...blogPost,
-                publishedAt: new Date(blogPost.publishedAt)
-              };
-              return res.json(post);
-            }
-          } catch (err) {
-            console.error(`Error reading file ${file}:`, err);
-          }
-        }
-      }
-      
-      // Fallback to storage if not found in files
+      // Try to get the post from storage first
       const post = await storage.getPost(postId);
       if (!post) {
         return res.status(404).json({ message: "Post not found" });
       }
       
+      // Check if there's a corresponding JSON file with updated content
+      const fs = require('fs');
+      const path = require('path');
+      const BLOG_DIR = path.join(process.cwd(), 'content', 'blog');
+      
+      try {
+        // Look for the matching JSON file using a pattern
+        const files = fs.readdirSync(BLOG_DIR).filter(file => file.endsWith('.json'));
+        for (const file of files) {
+          const filePath = path.join(BLOG_DIR, file);
+          const content = fs.readFileSync(filePath, 'utf8');
+          const data = JSON.parse(content);
+          
+          if (data.id === postId) {
+            console.log(`Found updated content for post ID ${postId}`);
+            // Return the updated post content from the file
+            return res.json({
+              ...data,
+              publishedAt: new Date(data.publishedAt)
+            });
+          }
+        }
+      } catch (fileError) {
+        console.error('Error reading blog files:', fileError);
+        // Continue with the original post if there's an error reading files
+      }
+      
+      // If no updated content was found, return the original post
       res.json(post);
     } catch (error) {
+      console.error('Error fetching post:', error);
       res.status(500).json({ message: "Failed to fetch post" });
     }
   });
