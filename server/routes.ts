@@ -90,7 +90,23 @@ export async function registerRoutes(app: Express): Promise<Server> {
   app.get("/api/posts/recent", async (req, res) => {
     try {
       const recentPosts = await storage.getRecentPosts(3);
-      res.json(recentPosts);
+      
+      // Fix image paths on recent posts
+      const fixedPosts = recentPosts.map(post => {
+        // Get date from publishedAt
+        const date = new Date(post.publishedAt);
+        const year = date.getFullYear();
+        const month = String(date.getMonth() + 1).padStart(2, '0');
+        const day = String(date.getDate()).padStart(2, '0');
+        
+        // Create date-formatted image path
+        const formattedDate = `${year}_${month}_${day}`;
+        post.coverImage = `/images/blog/${formattedDate}-${post.slug}.jpg`;
+        
+        return post;
+      });
+      
+      res.json(fixedPosts);
     } catch (error) {
       res.status(500).json({ message: "Failed to fetch recent posts" });
     }
@@ -107,6 +123,16 @@ export async function registerRoutes(app: Express): Promise<Server> {
       if (!post) {
         return res.status(404).json({ message: "Post not found" });
       }
+      
+      // Fix the image path for the individual blog post
+      const date = new Date(post.publishedAt);
+      const year = date.getFullYear();
+      const month = String(date.getMonth() + 1).padStart(2, '0');
+      const day = String(date.getDate()).padStart(2, '0');
+      
+      // Create date-formatted image path
+      const formattedDate = `${year}_${month}_${day}`;
+      post.coverImage = `/images/blog/${formattedDate}-${post.slug}.jpg`;
       
       res.json(post);
     } catch (error) {
