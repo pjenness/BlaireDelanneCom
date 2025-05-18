@@ -1,14 +1,14 @@
 import { Switch, Route } from "wouter";
-import Home from "@/pages/Home";
-import Blog from "@/pages/Blog";
-import BlogPost from "@/pages/BlogPost";
-import Gallery from "@/pages/Gallery";
-import About from "@/pages/About";
-import Contact from "@/pages/Contact";
-import NotFound from "@/pages/not-found";
-import Layout from "@/components/layout/Layout";
-import Specialties from "@/pages/Specialties";
-import Experience from "@/pages/Experience";
+import Home from "./pages/Home";
+import Blog from "./pages/Blog";
+import BlogPost from "./pages/BlogPost";
+import Gallery from "./pages/Gallery";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import NotFound from "./pages/not-found";
+import Layout from "./components/layout/Layout";
+import Specialties from "./pages/Specialties";
+import Experience from "./pages/Experience";
 
 function Router() {
   return (
