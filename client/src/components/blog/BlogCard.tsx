@@ -14,10 +14,6 @@ const BlogCard = ({ post }: BlogCardProps) => {
           src={post.coverImage} 
           alt={post.title} 
           className="w-full h-full object-cover"
-          onError={(e) => {
-            // Fallback to numbered images if the custom image fails
-            e.currentTarget.src = `/images/blog/${(post.id % 10) + 1}.jpg`;
-          }}
         />
       </div>
       <div className="p-6">
