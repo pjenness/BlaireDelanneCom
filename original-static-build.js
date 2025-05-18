@@ -1,4 +1,118 @@
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import fetch from 'node-fetch';
 
+// Get current file directory (equivalent to __dirname in CommonJS)
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const BUILD_DIR = 'static-site';
+
+// Main build function
+async function build() {
+  try {
+    console.log('Building static website...');
+    
+    // 1. Create the build directory
+    if (!fs.existsSync(BUILD_DIR)) {
+      fs.mkdirSync(BUILD_DIR, { recursive: true });
+    }
+    
+    // 2. Copy .htaccess with proper configuration
+    const htaccessContent = `Options -MultiViews
+RewriteEngine On
+RewriteBase /
+
+# Handle client-side routing
+RewriteRule ^index\\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(blog|journal|about|experience|contact|specialties|gallery)/(.*)$ /index.html [L]
+RewriteRule ^(blog|journal|about|experience|contact|specialties|gallery)$ /index.html [L]
+
+# Fallback rule - for any other paths, redirect to index.html
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]
+
+# Set MIME types
+AddType text/html .html .htm
+AddType text/css .css
+AddType application/javascript .js
+AddType image/svg+xml .svg
+AddType image/jpeg .jpg .jpeg
+AddType image/png .png
+AddType image/gif .gif`;
+    
+    fs.writeFileSync(path.join(BUILD_DIR, '.htaccess'), htaccessContent);
+    console.log('Created .htaccess file');
+    
+    // 3. Copy public assets
+    if (fs.existsSync('client/public')) {
+      copyDirectory('client/public', BUILD_DIR);
+      console.log('Copied public assets');
+    }
+    
+    // 4. Copy all images
+    if (fs.existsSync('images')) {
+      copyDirectory('images', path.join(BUILD_DIR, 'images'));
+      console.log('Copied all images');
+    }
+    
+    // 5. Copy assets from dist if they exist
+    if (fs.existsSync('dist/client/assets')) {
+      copyDirectory('dist/client/assets', path.join(BUILD_DIR, 'assets'));
+      console.log('Copied built assets');
+    }
+    
+    // 6. Create a directory for static data
+    if (!fs.existsSync(path.join(BUILD_DIR, 'static-data'))) {
+      fs.mkdirSync(path.join(BUILD_DIR, 'static-data'), { recursive: true });
+    }
+    
+    // 7. Fetch API data
+    console.log('Fetching API data...');
+    const [featuredPosts, recentPosts, allPosts] = await Promise.all([
+      fetch('http://localhost:5000/api/posts/featured').then(res => res.json()),
+      fetch('http://localhost:5000/api/posts/recent').then(res => res.json()),
+      fetch('http://localhost:5000/api/posts').then(res => res.json())
+    ]);
+    
+    // 8. Fetch individual blog posts
+    console.log('Fetching individual blog posts...');
+    
+    // Get all post IDs from the posts we already have
+    const allPostIds = new Set();
+    featuredPosts.forEach(post => allPostIds.add(post.id));
+    recentPosts.forEach(post => allPostIds.add(post.id));
+    
+    // Create an object to store individual posts
+    const individualPosts = {};
+    
+    // Fetch each post individually
+    for (const id of allPostIds) {
+      console.log(`  - Fetching post ID ${id}`);
+      const post = await fetch(`http://localhost:5000/api/posts/${id}`).then(res => res.json());
+      individualPosts[id] = post;
+    }
+    
+    // 9. Create the static data file
+    const staticData = {
+      featuredPosts,
+      recentPosts,
+      allPosts,
+      individualPosts
+    };
+    
+    fs.writeFileSync(
+      path.join(BUILD_DIR, 'static-data', 'site-data.js'), 
+      `window.STATIC_DATA = ${JSON.stringify(staticData)};`
+    );
+    console.log('Created static data file');
+    
+    // 10. Create the index.html file
+    let indexHtml = `
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -80,7 +194,7 @@
             });
           }
           
-          if (url === '/api/posts' || url.match(/\/api\/posts\?/)) {
+          if (url === '/api/posts' || url.match(/\\/api\\/posts\\?/)) {
             return Promise.resolve({
               ok: true,
               json: () => Promise.resolve(window.STATIC_DATA.allPosts)
@@ -88,7 +202,7 @@
           }
           
           // Handle individual blog post requests
-          const postMatch = url.match(/\/api\/posts\/(\d+)/);
+          const postMatch = url.match(/\\/api\\/posts\\/(\\d+)/);
           if (postMatch && postMatch[1]) {
             const postId = parseInt(postMatch[1], 10);
             if (window.STATIC_DATA.individualPosts[postId]) {
@@ -186,4 +300,35 @@
   <!-- Include your bundled assets -->
   <script src="/assets/index.js"></script>
 </body>
-</html>
+</html>`;
+    
+    fs.writeFileSync(path.join(BUILD_DIR, 'index.html'), indexHtml);
+    console.log('Created index.html');
+    
+    console.log('\nBuild completed! Upload the contents of the "static-site" folder to your Apache server.');
+  } catch (error) {
+    console.error('Error:', error);
+  }
+}
+
+// Helper function to copy directories recursively
+function copyDirectory(src, dest) {
+  if (!fs.existsSync(dest)) {
+    fs.mkdirSync(dest, { recursive: true });
+  }
+  
+  const entries = fs.readdirSync(src, { withFileTypes: true });
+  
+  for (const entry of entries) {
+    const srcPath = path.join(src, entry.name);
+    const destPath = path.join(dest, entry.name);
+    
+    if (entry.isDirectory()) {
+      copyDirectory(srcPath, destPath);
+    } else {
+      fs.copyFileSync(srcPath, destPath);
+    }
+  }
+}
+
+build();
