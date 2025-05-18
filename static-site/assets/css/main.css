@@ -1,0 +1,89 @@
+
+/* Basic styling for the static site */
+:root {
+  --font-sans: 'Raleway', system-ui, sans-serif;
+  --font-serif: 'Playfair Display', serif;
+  --color-accent: #9D8F68;
+  --color-charcoal: #333333;
+  --color-light: #F5F5F5;
+  --color-white: #FFFFFF;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-charcoal);
+  line-height: 1.6;
+  background-color: var(--color-light);
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  font-weight: 600;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--color-accent-dark);
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Navigation */
+nav {
+  background-color: var(--color-white);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  padding: 1rem 0;
+}
+
+/* Hero section */
+.hero {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  padding: 4rem 0;
+  text-align: center;
+}
+
+/* Cards and blog posts */
+.card {
+  background-color: var(--color-white);
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+article img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+article img:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  background-color: var(--color-charcoal);
+  color: var(--color-white);
+  padding: 3rem 0;
+}

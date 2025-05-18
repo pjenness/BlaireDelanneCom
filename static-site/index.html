@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>Blaire Delanné | Hospitality & Wedding Design Expert</title>
+    <meta name="description" content="Blaire Delanné - Hospitality, Wedding Design, Travel & Fashion Expert in Martinborough, New Zealand. Discover professional consulting services and inspiration." />
+    <meta property="og:title" content="Blaire Delanné | Hospitality & Wedding Design Expert" />
+    <meta property="og:description" content="Professional consultancy in hospitality, wedding design, travel and fashion from Martinborough, New Zealand." />
+    <meta property="og:type" content="website" />
+    <link rel="canonical" href="https://blairedelanne.com" />
+  
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script src="assets/js/main.js"></script>
+  <script src="static-data/site-data.js"></script>
+  <style>
+    article img {
+      cursor: pointer !important;
+      transition: transform 0.3s ease;
+    }
+    article img:hover {
+      transform: scale(1.05);
+    }
+    .hover-up {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .hover-up:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <!-- This is a replit script which adds a banner on the top of the page when opened in development mode outside the replit environment -->
+    <script type="text/javascript" src="https://replit.com/public/js/replit-dev-banner.js"></script>
+  
+<script>
+  // Override fetch to use our static data when API calls are made
+  const originalFetch = window.fetch;
+  window.fetch = function(url, options) {
+    if (typeof url === 'string') {
+      // Handle API endpoints with static data
+      if (url.includes('/api/posts/featured/main')) {
+        return Promise.resolve({
+          ok: true,
+          json: () => Promise.resolve(window.STATIC_DATA.featuredMain)
+        });
+      }
+      if (url.includes('/api/posts/featured')) {
+        return Promise.resolve({
+          ok: true,
+          json: () => Promise.resolve(window.STATIC_DATA.featuredPosts)
+        });
+      }
+      if (url.includes('/api/posts/recent')) {
+        return Promise.resolve({
+          ok: true,
+          json: () => Promise.resolve(window.STATIC_DATA.recentPosts)
+        });
+      }
+      if (url.includes('/api/gallery/featured')) {
+        return Promise.resolve({
+          ok: true,
+          json: () => Promise.resolve(window.STATIC_DATA.galleryFeatured)
+        });
+      }
+      
+      // Main blog page posts (all posts)
+      if (url === '/api/posts' || url.match(/\/api\/posts\?/)) {
+        return Promise.resolve({
+          ok: true,
+          json: () => Promise.resolve(window.STATIC_DATA.allPosts)
+        });
+      }
+      
+      // Handle individual blog post requests
+      const postMatch = url.match(/\/api\/posts\/(\d+)/);
+      if (postMatch && postMatch[1]) {
+        const postId = parseInt(postMatch[1], 10);
+        if (window.STATIC_DATA.individualPosts[postId]) {
+          return Promise.resolve({
+            ok: true,
+            json: () => Promise.resolve(window.STATIC_DATA.individualPosts[postId])
+          });
+        }
+      }
+    }
+    // Use original fetch for anything else
+    return originalFetch.apply(this, arguments);
+  };
+
+  // Fix for client-side routing in static site
+  document.addEventListener('DOMContentLoaded', function() {
+    // Make all article images clickable
+    const makeImagesClickable = function() {
+      // Find all images inside articles that should be clickable
+      const articleImages = document.querySelectorAll('article img');
+      articleImages.forEach(function(img) {
+        // Find the article parent
+        const article = img.closest('article');
+        if (article) {
+          // Find the blog post ID from nearby links
+          const links = article.querySelectorAll('a');
+          let blogPath = '';
+          for (let i = 0; i < links.length; i++) {
+            const href = links[i].getAttribute('href');
+            if (href && (href.startsWith('/blog/') || href.startsWith('blog/') || 
+                        href.startsWith('/journal/') || href.startsWith('journal/'))) {
+              blogPath = href;
+              break;
+            }
+          }
+          
+          if (blogPath) {
+            // Make the image and its container clickable
+            img.style.cursor = 'pointer';
+            const imgContainer = img.parentNode;
+            if (imgContainer) {
+              imgContainer.style.cursor = 'pointer';
+              
+              // Add click event to navigate to the blog post
+              img.addEventListener('click', function(e) {
+                e.preventDefault();
+                // Navigate to the blog post
+                window.location.href = blogPath;
+              });
+            }
+          }
+        }
+      });
+    };
+    
+    // Run initially and whenever the DOM changes
+    makeImagesClickable();
+    
+    // Use a MutationObserver to detect when new content is added
+    const observer = new MutationObserver(function(mutations) {
+      makeImagesClickable();
+    });
+    
+    observer.observe(document.body, { 
+      childList: true, 
+      subtree: true 
+    });
+    
+    // Make all links work with the static site structure
+    document.addEventListener('click', function(e) {
+      // Find closest anchor tag
+      let target = e.target;
+      while (target && target.tagName !== 'A') {
+        target = target.parentNode;
+        if (!target) return;
+      }
+      
+      // If it's an internal link
+      if (target && target.href && target.href.includes(window.location.hostname)) {
+        // Extract the path from the href
+        const url = new URL(target.href);
+        const path = url.pathname;
+        
+        // If it's a path that should be handled by client-side routing
+        if (path.startsWith('/journal/') || path.startsWith('/blog/') || 
+            path === '/about' || path === '/experience' || path === '/contact' || 
+            path === '/specialties' || path === '/gallery') {
+          
+          e.preventDefault();
+          
+          // Update browser history and trigger route change
+          history.pushState(null, '', path);
+          
+          // Trigger a popstate event to make the router update
+          window.dispatchEvent(new PopStateEvent('popstate'));
+        }
+      }
+    });
+  });
+</script>
+</body>
+</html>
