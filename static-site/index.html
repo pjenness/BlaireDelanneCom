@@ -44,6 +44,14 @@
           });
         }
         
+        // Main blog page posts (all posts)
+        if (url === '/api/posts' || url.match(/\/api\/posts\?/)) {
+          return Promise.resolve({
+            ok: true,
+            json: () => Promise.resolve(window.STATIC_DATA.allPosts)
+          });
+        }
+        
         // Handle individual blog post requests
         const postMatch = url.match(/\/api\/posts\/(\d+)/);
         if (postMatch && postMatch[1]) {
