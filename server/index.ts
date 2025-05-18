@@ -44,13 +44,35 @@ const categoryImageMapping = {
 app.use('/images/blog/:filename', (req, res, next) => {
   const requestedFile = req.params.filename;
   
+  // Check if it's already a category image
+  if (requestedFile === 'fashion-category.jpg' || 
+      requestedFile === 'wedding-category.jpg' || 
+      requestedFile === 'travel-category.jpg' || 
+      requestedFile === 'hospitality-category.jpg' || 
+      requestedFile === 'personal-category.jpg') {
+    // It's already a category image, proceed to static handling
+    next();
+    return;
+  }
+  
   // If the requested file is in our mapping, redirect to the category image
-  if (categoryImageMapping[requestedFile]) {
+  if (requestedFile in categoryImageMapping) {
     const categoryImage = categoryImageMapping[requestedFile];
     res.redirect(`/images/blog/${categoryImage}`);
   } else {
-    // Otherwise continue to the regular static file handling
-    next();
+    // For any other image request, try to determine category from filename
+    if (requestedFile.includes('fashion')) {
+      res.redirect('/images/blog/fashion-category.jpg');
+    } else if (requestedFile.includes('wedding')) {
+      res.redirect('/images/blog/wedding-category.jpg');
+    } else if (requestedFile.includes('travel')) {
+      res.redirect('/images/blog/travel-category.jpg');
+    } else if (requestedFile.includes('hospitality')) {
+      res.redirect('/images/blog/hospitality-category.jpg');
+    } else {
+      // Default to personal category
+      res.redirect('/images/blog/personal-category.jpg');
+    }
   }
 });
 
