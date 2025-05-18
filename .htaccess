@@ -7,6 +7,15 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-l
 RewriteRule . /index.html [L]
 
+# Set MIME types
+AddType text/html .html .htm
+AddType text/css .css
+AddType application/javascript .js
+AddType image/svg+xml .svg
+AddType image/jpeg .jpg .jpeg
+AddType image/png .png
+AddType image/gif .gif
+
 # Set default permissions
 <FilesMatch ".(html|htm|js|css|svg|jpg|jpeg|png|gif|ico)$">
   Header set Access-Control-Allow-Origin "*"
