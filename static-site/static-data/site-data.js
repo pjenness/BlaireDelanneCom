@@ -131,7 +131,7 @@ window.STATIC_DATA = {
     "imageUrl": "/images/gallery/natures-runway.jpg",
     "description": "Outdoor wedding setup with natural elements",
     "featured": 1,
-    "createdAt": "2025-05-18T11:20:45.498Z"
+    "createdAt": "2025-05-18T11:23:32.062Z"
   },
   {
     "id": 2,
@@ -139,7 +139,7 @@ window.STATIC_DATA = {
     "imageUrl": "/images/gallery/urban-elegance.jpg",
     "description": "City hotel event with modern design elements",
     "featured": 1,
-    "createdAt": "2025-05-18T11:20:45.498Z"
+    "createdAt": "2025-05-18T11:23:32.063Z"
   }
 ],
   individualPosts: {

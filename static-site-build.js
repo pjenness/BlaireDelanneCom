@@ -294,7 +294,250 @@ window.STATIC_DATA = {
   </style>
 </head>`);
     
-    // Add script to override fetch and handle routing
+    // Add a direct HTML fallback instead of trying to load React dynamically
+    const htmlTemplate = `
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blaire Delanné | Hospitality & Wedding Design Expert</title>
+  <meta name="description" content="Blaire Delanné - Hospitality, Wedding Design, Travel & Fashion Expert in Martinborough, New Zealand. Discover professional consulting services and inspiration." />
+  <link rel="stylesheet" href="assets/css/main.css">
+  <style>
+    body {
+      font-family: 'Playfair Display', 'Raleway', system-ui, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f9f9f9;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    header {
+      background-color: white;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      padding: 20px 0;
+    }
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      font-weight: bold;
+      color: #333;
+      text-decoration: none;
+    }
+    .accent {
+      color: #9D8F68;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      margin-left: 20px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover {
+      color: #9D8F68;
+    }
+    .hero {
+      background-color: #9D8F68;
+      color: white;
+      padding: 80px 0;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: 0 auto 30px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 30px;
+      background-color: #333;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: 500;
+      transition: background-color 0.3s;
+    }
+    .btn:hover {
+      background-color: #444;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 30px;
+      margin: 60px 0;
+    }
+    .card {
+      background-color: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      cursor: pointer;
+    }
+    .card-content {
+      padding: 20px;
+    }
+    .card-content h3 {
+      margin-top: 0;
+      font-size: 22px;
+    }
+    .card-content p {
+      margin-bottom: 15px;
+      color: #666;
+    }
+    .card-content a {
+      color: #9D8F68;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 60px 0;
+      text-align: center;
+    }
+    footer a {
+      color: #9D8F68;
+      text-decoration: none;
+    }
+    .social-links {
+      margin-top: 20px;
+    }
+    .social-links a {
+      display: inline-block;
+      margin: 0 10px;
+      font-size: 20px;
+    }
+  </style>
+</head>`;
+
+    // Replace the entire HTML with our static template
+    indexContent = htmlTemplate;
+    
+    // Now add the body content with real data
+    let bodyContent = `
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <a href="index.html" class="logo">Blaire <span class="accent">Delanné</span></a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="blog.html">Journal</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Hospitality & Wine Expert</h1>
+      <p>With over a decade of experience in luxury hospitality and wine across three continents, I bring a unique perspective to every project.</p>
+      <a href="contact.html" class="btn">Get in Touch</a>
+    </div>
+  </section>
+
+  <section class="container">
+    <h2>Latest Journal Entries</h2>
+    <div class="grid">
+`;
+
+    // Add featured posts data to the body content
+    const staticData = JSON.parse(staticDataContent.replace('window.STATIC_DATA = ', '').replace(';', ''));
+    const featuredPosts = staticData.featuredPosts;
+    
+    featuredPosts.forEach(post => {
+      bodyContent += `
+      <div class="card">
+        <img src="${post.coverImage}" alt="${post.title}" onclick="window.location.href='blog.html?id=${post.id}'">
+        <div class="card-content">
+          <h3>${post.title}</h3>
+          <p>${post.excerpt.substring(0, 120)}...</p>
+          <a href="blog.html?id=${post.id}">Read More</a>
+        </div>
+      </div>`;
+    });
+
+    // Complete the body content
+    bodyContent += `
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; ${new Date().getFullYear()} Blaire Delanné. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://instagram.com/blairedelanne" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+        <a href="mailto:info@blairedelanne.com" aria-label="Email"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Add JavaScript for handling basic navigation -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Make all card images clickable (already handled by onclick in the HTML)
+
+      // Handle URL parameters for blog view
+      const getUrlParameter = function(name) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(name);
+      };
+
+      // Set up smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+          });
+        });
+      });
+    });
+  </script>
+</body>
+</html>`;
+
+    // Add the body content to our template
+    indexContent += bodyContent;
+
+    // Add script to store data in a traditional way (not relying on fetch API overrides)
     const scriptContent = `
 <script>
   // Override fetch to use our static data when API calls are made
