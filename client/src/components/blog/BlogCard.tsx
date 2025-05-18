@@ -11,9 +11,13 @@ const BlogCard = ({ post }: BlogCardProps) => {
     <article className="bg-white shadow-sm hover-up">
       <div className="h-60 overflow-hidden">
         <img 
-          src={post.coverImage} 
+          src={`${post.coverImage}?v=${Date.now()}`} 
           alt={post.title} 
           className="w-full h-full object-cover"
+          onError={(e) => {
+            console.error("Failed to load image:", post.coverImage);
+            e.currentTarget.src = `/images/blog/${post.id % 10 + 1}.jpg`;
+          }}
         />
       </div>
       <div className="p-6">
