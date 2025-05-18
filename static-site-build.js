@@ -63,6 +63,10 @@ AddType image/gif .gif`;
     await copyDir('client/public', BUILD_DIR);
     console.log('Copied public assets');
     
+    // 3.5. Copy all images from the images directory
+    await copyDir('images', path.join(BUILD_DIR, 'images'));
+    console.log('Copied all images');
+    
     // 4. Copy assets from dist if they exist
     const assetsDir = 'dist/public/assets';
     if (fs.existsSync(assetsDir)) {
