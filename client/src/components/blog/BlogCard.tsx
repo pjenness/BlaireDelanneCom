@@ -11,9 +11,13 @@ const BlogCard = ({ post }: BlogCardProps) => {
     <article className="bg-white shadow-sm hover-up">
       <div className="h-60 overflow-hidden">
         <img 
-          src={`/images/blog/${(post.id % 10) + 1}.jpg`} 
+          src={post.coverImage} 
           alt={post.title} 
           className="w-full h-full object-cover"
+          onError={(e) => {
+            // Fallback to numbered images if the custom image fails
+            e.currentTarget.src = `/images/blog/${(post.id % 10) + 1}.jpg`;
+          }}
         />
       </div>
       <div className="p-6">
