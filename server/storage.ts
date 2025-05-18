@@ -16,6 +16,7 @@ import {
   type ContactSubmission
 } from "@shared/schema";
 import { getLocalImagePath } from "./image-mapping";
+import { loadBlogPosts, convertFileToPost, saveBlogPost } from "./content-loader";
 
 // Interface for storage operations
 export interface IStorage {
