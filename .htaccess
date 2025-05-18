@@ -1,8 +1,13 @@
+Options -MultiViews
 RewriteEngine On
 RewriteBase /
-# Don't rewrite files or directories
-RewriteCond %{REQUEST_FILENAME} -f [OR]
-RewriteCond %{REQUEST_FILENAME} -d
-RewriteRule ^ - [L]
-# Rewrite everything else to index.html to allow HTML5 routing
-RewriteRule ^ index.html [QSA,L]
+RewriteRule ^index\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteRule . /index.html [L]
+
+# Set default permissions
+<FilesMatch ".(html|htm|js|css|svg|jpg|jpeg|png|gif|ico)$">
+  Header set Access-Control-Allow-Origin "*"
+</FilesMatch>
