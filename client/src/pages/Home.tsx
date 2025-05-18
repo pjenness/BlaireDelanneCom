@@ -11,9 +11,9 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Blaire Delanné | Hospitality & Wedding Design Specialist</title>
-        <meta name="description" content="Blaire Delanné is a hospitality, wedding design, travel, and fashion specialist with experience across New York, Sydney, and New Zealand." />
-        <meta property="og:title" content="Blaire Delanné | Hospitality & Wedding Design Specialist" />
+        <title>Blaire Delanné | Hospitality, Wine and Wedding Design. Travel, Cheese and Fashion With Ease.</title>
+        <meta name="description" content="Blaire Delanné specializes in hospitality, wine and wedding design while sharing insights on travel, cheese, and fashion from New York, Sydney, and New Zealand." />
+        <meta property="og:title" content="Blaire Delanné | Hospitality, Wine and Wedding Design. Travel, Cheese and Fashion With Ease." />
         <meta property="og:description" content="Discover hospitality expertise, wedding design, travel insights, and fashion advice from Blaire Delanné's journey across three countries." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://blairedeanne.com" />

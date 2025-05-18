@@ -34,17 +34,17 @@ const About = () => {
               <h2 className="font-playfair text-3xl font-bold mb-6">The Journey of Blaire Delanné</h2>
               
               <p className="text-charcoal/80 mb-6">
-                Welcome to my personal site. I'm Blaire Delanné, a specialist in hospitality, wedding design, travel, 
-                and fashion with experience spanning three countries. My expertise has been shaped through 
-                years of hands-on experience at prestigious venues and with discerning clients across 
-                the USA, Australia, and New Zealand.
+                Welcome! I'm Blaire Delanné. I've spent the last several years bouncing between three countries, 
+                collecting experiences and perspectives that shape my approach to hospitality, event design, and creative consulting.
+                My career has taken me from the high-energy luxury hotels of Manhattan to Sydney's stunning harbor venues,
+                and now to the intimate wine country of New Zealand's Wairarapa region.
               </p>
               
               <p className="text-charcoal/80 mb-6">
-                My journey began in New York, where I honed my skills at luxury hospitality establishments before 
-                expanding into wedding design. Later, I brought my expertise to Sydney's vibrant scene, and now 
-                I call New Zealand home, where I continue to create elevated experiences that blend sophistication 
-                with authentic local elements.
+                Each location has taught me something valuable - New York showed me the fine details of luxury service,
+                Australia introduced me to a more relaxed approach to sophistication, and New Zealand has connected me 
+                with the importance of authentic, terroir-driven hospitality. I bring these diverse influences together 
+                in everything I create.
               </p>
               
               <div className="flex space-x-4 mb-8">
