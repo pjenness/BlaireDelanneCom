@@ -4,33 +4,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog | Blaire Delanné</title>
-  <meta name="description" content="Read Blaire Delanné's journal about hospitality, wedding design, travel, and fashion experiences.">
-  <link rel="stylesheet" href="assets/css/main.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@300;400;500;600&display=swap">
+  <title>Journal | Blaire Delanné</title>
+  <meta name="description" content="Read about Blaire Delanné's adventures in hospitality, wedding design, travel, and fashion.">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <script src="/assets/js/main.js"></script>
 </head>
 <body>
   <header>
-    <div class="container nav-container">
-      <a href="index.html" class="logo">Blaire <span>Delanné</span></a>
+    <div class="container">
       <nav>
-        <ul id="nav-menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="experience.html">Experience</a></li>
-          <li><a href="blog.html">Journal</a></li>
-          <li><a href="contact.html">Contact</a></li>
+        <a href="/" class="logo">Blaire <span>Delanné</span></a>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/experience">Experience</a></li>
+          <li><a href="/blog">Journal</a></li>
+          <li><a href="/contact">Contact</a></li>
         </ul>
-        <button id="menu-toggle" class="menu-toggle">Menu</button>
       </nav>
     </div>
   </header>
 
-  <div id="blog-container" class="container">
-    <h1>Journal</h1>
+  <div class="container">
+    <h1 style="margin-top: 40px;">Journal</h1>
     <div class="grid">
       <div class="card">
-        <img src="/images/blog/2025_05_12-new-chapter-martinborough-wine-culture.jpg" alt="A New Chapter: Embracing Martinborough's Wine Culture">
+        <div class="card-image">
+          <img src="/images/blog/2025_05_12-new-chapter-martinborough-wine-culture.jpg" alt="A New Chapter: Embracing Martinborough's Wine Culture">
+        </div>
         <div class="card-content">
           <div class="card-meta">
             <span>Hospitality</span>
@@ -38,11 +39,13 @@
           </div>
           <h3>A New Chapter: Embracing Martinborough's Wine Culture</h3>
           <p>My journey from Auckland to Martinborough has opened a new world of inspiration, combining the region's renowned wines w...</p>
-          <a href="blog.html?id=40">Read More</a>
+          <a href="/blog/40" class="read-more">Read More</a>
         </div>
       </div>
       <div class="card">
-        <img src="/images/blog/2025_03_25-ai-agents-social-media-aesthetic-producer.jpg" alt="My New Side Hustle: Aesthetic Producer for AI Agents">
+        <div class="card-image">
+          <img src="/images/blog/2025_03_25-ai-agents-social-media-aesthetic-producer.jpg" alt="My New Side Hustle: Aesthetic Producer for AI Agents">
+        </div>
         <div class="card-content">
           <div class="card-meta">
             <span>Hospitality</span>
@@ -50,11 +53,13 @@
           </div>
           <h3>My New Side Hustle: Aesthetic Producer for AI Agents</h3>
           <p>A friend's AI startup has created an unexpected opportunity for me to apply my aesthetic sensibilities to the emerging w...</p>
-          <a href="blog.html?id=44">Read More</a>
+          <a href="/blog/44" class="read-more">Read More</a>
         </div>
       </div>
       <div class="card">
-        <img src="/images/blog/2025_02_10-martinborough-first-impressions.jpg" alt="First Week in Martinborough: Town Square, Wine Streets & Good Eats">
+        <div class="card-image">
+          <img src="/images/blog/2025_02_10-martinborough-first-impressions.jpg" alt="First Week in Martinborough: Town Square, Wine Streets & Good Eats">
+        </div>
         <div class="card-content">
           <div class="card-meta">
             <span>Travel</span>
@@ -62,11 +67,13 @@
           </div>
           <h3>First Week in Martinborough: Town Square, Wine Streets & Good Eats</h3>
           <p>A few days into settling in Martinborough and I'm noticing the quirky details of this wine town....</p>
-          <a href="blog.html?id=45">Read More</a>
+          <a href="/blog/45" class="read-more">Read More</a>
         </div>
       </div>
       <div class="card">
-        <img src="/images/blog/2025_01_10-luxury-travel-conscious-exploration.jpg" alt="Luxury Travel in a Changing World: Conscious Exploration">
+        <div class="card-image">
+          <img src="/images/blog/2025_01_10-luxury-travel-conscious-exploration.jpg" alt="Luxury Travel in a Changing World: Conscious Exploration">
+        </div>
         <div class="card-content">
           <div class="card-meta">
             <span>Travel</span>
@@ -74,11 +81,13 @@
           </div>
           <h3>Luxury Travel in a Changing World: Conscious Exploration</h3>
           <p>How the concept of luxury travel has evolved to embrace sustainability, cultural respect, and meaningful connection with...</p>
-          <a href="blog.html?id=39">Read More</a>
+          <a href="/blog/39" class="read-more">Read More</a>
         </div>
       </div>
       <div class="card">
-        <img src="/images/blog/2025_01_05-leaving-auckland-for-small-town-life.jpg" alt="Trading City Lights for Vineyard Nights: My Move to Martinborough">
+        <div class="card-image">
+          <img src="/images/blog/2025_01_05-leaving-auckland-for-small-town-life.jpg" alt="Trading City Lights for Vineyard Nights: My Move to Martinborough">
+        </div>
         <div class="card-content">
           <div class="card-meta">
             <span>Personal</span>
@@ -86,11 +95,13 @@
           </div>
           <h3>Trading City Lights for Vineyard Nights: My Move to Martinborough</h3>
           <p>After years in major cities, I'm making the leap to small-town life in wine country, trading convenience for connection ...</p>
-          <a href="blog.html?id=98">Read More</a>
+          <a href="/blog/98" class="read-more">Read More</a>
         </div>
       </div>
       <div class="card">
-        <img src="/images/blog/2024_06_15-wellness-event-design-mind-body-soul.jpg" alt="Embracing Wellness in Event Design: Mind, Body, and Soul Experiences">
+        <div class="card-image">
+          <img src="/images/blog/2024_06_15-wellness-event-design-mind-body-soul.jpg" alt="Embracing Wellness in Event Design: Mind, Body, and Soul Experiences">
+        </div>
         <div class="card-content">
           <div class="card-meta">
             <span>Hospitality</span>
@@ -98,11 +109,13 @@
           </div>
           <h3>Embracing Wellness in Event Design: Mind, Body, and Soul Experiences</h3>
           <p>How the wellness movement is transforming special events in New Zealand and creating meaningful experiences that nourish...</p>
-          <a href="blog.html?id=38">Read More</a>
+          <a href="/blog/38" class="read-more">Read More</a>
         </div>
       </div>
       <div class="card">
-        <img src="/images/blog/2024_02_20-art-tablescaping-memorable-dining.jpg" alt="The Art of Tablescaping: Creating Memorable Dining Experiences">
+        <div class="card-image">
+          <img src="/images/blog/2024_02_20-art-tablescaping-memorable-dining.jpg" alt="The Art of Tablescaping: Creating Memorable Dining Experiences">
+        </div>
         <div class="card-content">
           <div class="card-meta">
             <span>Hospitality</span>
@@ -110,11 +123,13 @@
           </div>
           <h3>The Art of Tablescaping: Creating Memorable Dining Experiences</h3>
           <p>How thoughtful table design creates the foundation for extraordinary gatherings and the elements that elevate a dining s...</p>
-          <a href="blog.html?id=37">Read More</a>
+          <a href="/blog/37" class="read-more">Read More</a>
         </div>
       </div>
       <div class="card">
-        <img src="/images/blog/2024_01_10-ai-fashion-video-content-creation.jpg" alt="AI in Fashion and Video: New Tools for Hospitality Content Creation">
+        <div class="card-image">
+          <img src="/images/blog/2024_01_10-ai-fashion-video-content-creation.jpg" alt="AI in Fashion and Video: New Tools for Hospitality Content Creation">
+        </div>
         <div class="card-content">
           <div class="card-meta">
             <span>Hospitality</span>
@@ -122,11 +137,13 @@
           </div>
           <h3>AI in Fashion and Video: New Tools for Hospitality Content Creation</h3>
           <p>How I'm exploring AI-powered video and fashion visualization tools to create more engaging content for my hospitality an...</p>
-          <a href="blog.html?id=43">Read More</a>
+          <a href="/blog/43" class="read-more">Read More</a>
         </div>
       </div>
       <div class="card">
-        <img src="/images/blog/2023_11_05-autumn-harvest-festivals-otago.jpg" alt="Autumn Harvest Festivals: Central Otago Road Trip">
+        <div class="card-image">
+          <img src="/images/blog/2023_11_05-autumn-harvest-festivals-otago.jpg" alt="Autumn Harvest Festivals: Central Otago Road Trip">
+        </div>
         <div class="card-content">
           <div class="card-meta">
             <span>Travel</span>
@@ -134,11 +151,13 @@
           </div>
           <h3>Autumn Harvest Festivals: Central Otago Road Trip</h3>
           <p>A journey through New Zealand's southern wine region during harvest season and the community celebrations that make this...</p>
-          <a href="blog.html?id=36">Read More</a>
+          <a href="/blog/36" class="read-more">Read More</a>
         </div>
       </div>
       <div class="card">
-        <img src="/images/blog/2023_06_20-investment-dressing-building-wardrobe-that-lasts.jpg" alt="The Art of Investment Dressing: Building a Wardrobe That Lasts">
+        <div class="card-image">
+          <img src="/images/blog/2023_06_20-investment-dressing-building-wardrobe-that-lasts.jpg" alt="The Art of Investment Dressing: Building a Wardrobe That Lasts">
+        </div>
         <div class="card-content">
           <div class="card-meta">
             <span>Fashion</span>
@@ -146,11 +165,13 @@
           </div>
           <h3>The Art of Investment Dressing: Building a Wardrobe That Lasts</h3>
           <p>In a world of fast fashion and fleeting trends, the concept of investment dressing stands as a counterpoint to disposabl...</p>
-          <a href="blog.html?id=2">Read More</a>
+          <a href="/blog/2" class="read-more">Read More</a>
         </div>
       </div>
       <div class="card">
-        <img src="/images/blog/2023_04_15-chatgpt-business-writing-workflow.jpg" alt="How ChatGPT is Revolutionizing My Business Writing Workflow">
+        <div class="card-image">
+          <img src="/images/blog/2023_04_15-chatgpt-business-writing-workflow.jpg" alt="How ChatGPT is Revolutionizing My Business Writing Workflow">
+        </div>
         <div class="card-content">
           <div class="card-meta">
             <span>Hospitality</span>
@@ -158,11 +179,13 @@
           </div>
           <h3>How ChatGPT is Revolutionizing My Business Writing Workflow</h3>
           <p>My evolving relationship with AI writing tools and how they're helping me create more effective client proposals, websit...</p>
-          <a href="blog.html?id=42">Read More</a>
+          <a href="/blog/42" class="read-more">Read More</a>
         </div>
       </div>
       <div class="card">
-        <img src="/images/blog/2022_12_28-summer-holiday-reflections-one-year.jpg" alt="Summer Holiday Reflections: One Year in New Zealand">
+        <div class="card-image">
+          <img src="/images/blog/2022_12_28-summer-holiday-reflections-one-year.jpg" alt="Summer Holiday Reflections: One Year in New Zealand">
+        </div>
         <div class="card-content">
           <div class="card-meta">
             <span>Personal</span>
@@ -170,11 +193,13 @@
           </div>
           <h3>Summer Holiday Reflections: One Year in New Zealand</h3>
           <p>Looking back on my first year of building a life and business in Auckland and the lessons learned along this unexpected ...</p>
-          <a href="blog.html?id=35">Read More</a>
+          <a href="/blog/35" class="read-more">Read More</a>
         </div>
       </div>
       <div class="card">
-        <img src="/images/blog/2022_11_10-fern-boutique-hotel-auckland-design-icon.jpg" alt="The Fern Boutique Hotel: Collaborating with Auckland's Design Icon">
+        <div class="card-image">
+          <img src="/images/blog/2022_11_10-fern-boutique-hotel-auckland-design-icon.jpg" alt="The Fern Boutique Hotel: Collaborating with Auckland's Design Icon">
+        </div>
         <div class="card-content">
           <div class="card-meta">
             <span>Hospitality</span>
@@ -182,11 +207,13 @@
           </div>
           <h3>The Fern Boutique Hotel: Collaborating with Auckland's Design Icon</h3>
           <p>The joy of partnering with one of New Zealand's most distinctive boutique hotels and how our collaboration is creating u...</p>
-          <a href="blog.html?id=34">Read More</a>
+          <a href="/blog/34" class="read-more">Read More</a>
         </div>
       </div>
       <div class="card">
-        <img src="/images/blog/2022_10_15-luxury-wedding-planning-memorable-celebrations.jpg" alt="Luxury Wedding Planning: The Art of Creating Memorable Celebrations">
+        <div class="card-image">
+          <img src="/images/blog/2022_10_15-luxury-wedding-planning-memorable-celebrations.jpg" alt="Luxury Wedding Planning: The Art of Creating Memorable Celebrations">
+        </div>
         <div class="card-content">
           <div class="card-meta">
             <span>Wedding</span>
@@ -194,11 +221,13 @@
           </div>
           <h3>Luxury Wedding Planning: The Art of Creating Memorable Celebrations</h3>
           <p>Discover the secrets to planning elegant, personalized weddings that leave a lasting impression on guests and create bea...</p>
-          <a href="blog.html?id=33">Read More</a>
+          <a href="/blog/33" class="read-more">Read More</a>
         </div>
       </div>
       <div class="card">
-        <img src="/images/blog/2022_09_14-waiheke-island-wine-paradise.jpg" alt="Waiheke Island: A Wine Lover's Paradise">
+        <div class="card-image">
+          <img src="/images/blog/2022_09_14-waiheke-island-wine-paradise.jpg" alt="Waiheke Island: A Wine Lover's Paradise">
+        </div>
         <div class="card-content">
           <div class="card-meta">
             <span>Travel</span>
@@ -206,11 +235,13 @@
           </div>
           <h3>Waiheke Island: A Wine Lover's Paradise</h3>
           <p>Exploring Auckland's island wine region and how its distinctive terroir creates world-class wines with a character all t...</p>
-          <a href="blog.html?id=32">Read More</a>
+          <a href="/blog/32" class="read-more">Read More</a>
         </div>
       </div>
       <div class="card">
-        <img src="/images/blog/2022_08_15-ai-design-tools-event-planning-midjourney.jpg" alt="AI Design Tools: The Future of Event Planning Inspiration?">
+        <div class="card-image">
+          <img src="/images/blog/2022_08_15-ai-design-tools-event-planning-midjourney.jpg" alt="AI Design Tools: The Future of Event Planning Inspiration?">
+        </div>
         <div class="card-content">
           <div class="card-meta">
             <span>Hospitality</span>
@@ -218,11 +249,13 @@
           </div>
           <h3>AI Design Tools: The Future of Event Planning Inspiration?</h3>
           <p>Exploring how new AI image generation technology is changing how I create mood boards and communicate design concepts to...</p>
-          <a href="blog.html?id=41">Read More</a>
+          <a href="/blog/41" class="read-more">Read More</a>
         </div>
       </div>
       <div class="card">
-        <img src="/images/blog/2022_07_25-queenstown-wedding-planning-logistics.jpg" alt="Queenstown Wedding Planning: Logistics in Paradise">
+        <div class="card-image">
+          <img src="/images/blog/2022_07_25-queenstown-wedding-planning-logistics.jpg" alt="Queenstown Wedding Planning: Logistics in Paradise">
+        </div>
         <div class="card-content">
           <div class="card-meta">
             <span>Wedding</span>
@@ -230,11 +263,13 @@
           </div>
           <h3>Queenstown Wedding Planning: Logistics in Paradise</h3>
           <p>The challenges and rewards of orchestrating destination weddings in New Zealand's adventure capital and why the extra ef...</p>
-          <a href="blog.html?id=31">Read More</a>
+          <a href="/blog/31" class="read-more">Read More</a>
         </div>
       </div>
       <div class="card">
-        <img src="/images/blog/2022_05_12-maori-inspired-hospitality-manaakitanga.jpg" alt="Māori-Inspired Hospitality: The Concept of Manaakitanga">
+        <div class="card-image">
+          <img src="/images/blog/2022_05_12-maori-inspired-hospitality-manaakitanga.jpg" alt="Māori-Inspired Hospitality: The Concept of Manaakitanga">
+        </div>
         <div class="card-content">
           <div class="card-meta">
             <span>Hospitality</span>
@@ -242,11 +277,13 @@
           </div>
           <h3>Māori-Inspired Hospitality: The Concept of Manaakitanga</h3>
           <p>Learning from New Zealand's Indigenous concepts of hospitality and how they're shaping my approach to creating meaningfu...</p>
-          <a href="blog.html?id=30">Read More</a>
+          <a href="/blog/30" class="read-more">Read More</a>
         </div>
       </div>
       <div class="card">
-        <img src="/images/blog/2022_03_08-launching-boutique-consultancy-month-one.jpg" alt="Launching a Boutique Consultancy: Lessons from Month One">
+        <div class="card-image">
+          <img src="/images/blog/2022_03_08-launching-boutique-consultancy-month-one.jpg" alt="Launching a Boutique Consultancy: Lessons from Month One">
+        </div>
         <div class="card-content">
           <div class="card-meta">
             <span>Personal</span>
@@ -254,11 +291,13 @@
           </div>
           <h3>Launching a Boutique Consultancy: Lessons from Month One</h3>
           <p>The exhilarating reality of building a business from scratch and the unexpected skills I've had to develop beyond my hos...</p>
-          <a href="blog.html?id=29">Read More</a>
+          <a href="/blog/29" class="read-more">Read More</a>
         </div>
       </div>
       <div class="card">
-        <img src="/images/blog/2022_01_20-auckland-arrival-urban-sophistication.jpg" alt="Auckland Arrival: Urban Sophistication Meets Island Paradise">
+        <div class="card-image">
+          <img src="/images/blog/2022_01_20-auckland-arrival-urban-sophistication.jpg" alt="Auckland Arrival: Urban Sophistication Meets Island Paradise">
+        </div>
         <div class="card-content">
           <div class="card-meta">
             <span>Travel</span>
@@ -266,11 +305,13 @@
           </div>
           <h3>Auckland Arrival: Urban Sophistication Meets Island Paradise</h3>
           <p>First impressions of New Zealand's largest city and the unexpected ways it differs from both New York and Sydney....</p>
-          <a href="blog.html?id=28">Read More</a>
+          <a href="/blog/28" class="read-more">Read More</a>
         </div>
       </div>
       <div class="card">
-        <img src="/images/blog/2021_12_01-time-for-another-change-new-zealand-calling.jpg" alt="Time for Another Change: New Zealand Calling">
+        <div class="card-image">
+          <img src="/images/blog/2021_12_01-time-for-another-change-new-zealand-calling.jpg" alt="Time for Another Change: New Zealand Calling">
+        </div>
         <div class="card-content">
           <div class="card-meta">
             <span>Personal</span>
@@ -278,11 +319,13 @@
           </div>
           <h3>Time for Another Change: New Zealand Calling</h3>
           <p>When life starts to feel too comfortable, sometimes it's a sign to shake things up again. Reflections on the decision to...</p>
-          <a href="blog.html?id=26">Read More</a>
+          <a href="/blog/26" class="read-more">Read More</a>
         </div>
       </div>
       <div class="card">
-        <img src="/images/blog/2021_10_18-sustainable-luxury-conscious-travelers.jpg" alt="Sustainable Luxury: Redefining Hospitality for Conscious Travelers">
+        <div class="card-image">
+          <img src="/images/blog/2021_10_18-sustainable-luxury-conscious-travelers.jpg" alt="Sustainable Luxury: Redefining Hospitality for Conscious Travelers">
+        </div>
         <div class="card-content">
           <div class="card-meta">
             <span>Hospitality</span>
@@ -290,11 +333,13 @@
           </div>
           <h3>Sustainable Luxury: Redefining Hospitality for Conscious Travelers</h3>
           <p>How Australia's leading hotels are pioneering eco-luxury approaches and why sustainability doesn't mean sacrificing exce...</p>
-          <a href="blog.html?id=25">Read More</a>
+          <a href="/blog/25" class="read-more">Read More</a>
         </div>
       </div>
       <div class="card">
-        <img src="/images/blog/2021_08_10-winter-blue-mountains-retreat.jpg" alt="Winter in the Blue Mountains: A Weekend Retreat">
+        <div class="card-image">
+          <img src="/images/blog/2021_08_10-winter-blue-mountains-retreat.jpg" alt="Winter in the Blue Mountains: A Weekend Retreat">
+        </div>
         <div class="card-content">
           <div class="card-meta">
             <span>Travel</span>
@@ -302,11 +347,13 @@
           </div>
           <h3>Winter in the Blue Mountains: A Weekend Retreat</h3>
           <p>Finding unexpected winter magic in the misty valleys and charming villages of New South Wales' most iconic mountain rang...</p>
-          <a href="blog.html?id=24">Read More</a>
+          <a href="/blog/24" class="read-more">Read More</a>
         </div>
       </div>
       <div class="card">
-        <img src="/images/blog/2021_06_30-indigenous-ingredients-australian-flavor.jpg" alt="Indigenous Ingredients: Australia's Native Flavor Revolution">
+        <div class="card-image">
+          <img src="/images/blog/2021_06_30-indigenous-ingredients-australian-flavor.jpg" alt="Indigenous Ingredients: Australia's Native Flavor Revolution">
+        </div>
         <div class="card-content">
           <div class="card-meta">
             <span>Hospitality</span>
@@ -314,11 +361,13 @@
           </div>
           <h3>Indigenous Ingredients: Australia's Native Flavor Revolution</h3>
           <p>Discovering the rich culinary heritage of Australian native foods and how these ancient ingredients are transforming mod...</p>
-          <a href="blog.html?id=23">Read More</a>
+          <a href="/blog/23" class="read-more">Read More</a>
         </div>
       </div>
       <div class="card">
-        <img src="/images/blog/2021_04_12-destination-weddings-byron-bay.jpg" alt="Destination Weddings: Byron Bay Edition">
+        <div class="card-image">
+          <img src="/images/blog/2021_04_12-destination-weddings-byron-bay.jpg" alt="Destination Weddings: Byron Bay Edition">
+        </div>
         <div class="card-content">
           <div class="card-meta">
             <span>Wedding</span>
@@ -326,11 +375,13 @@
           </div>
           <h3>Destination Weddings: Byron Bay Edition</h3>
           <p>The magic of planning celebrations in Australia's boho-luxury coastal paradise and why it has become my favorite wedding...</p>
-          <a href="blog.html?id=22">Read More</a>
+          <a href="/blog/22" class="read-more">Read More</a>
         </div>
       </div>
       <div class="card">
-        <img src="/images/blog/2021_04_10-sustainable-fashion-beyond-buzzwords.jpg" alt="Sustainable Fashion: Beyond the Buzzwords">
+        <div class="card-image">
+          <img src="/images/blog/2021_04_10-sustainable-fashion-beyond-buzzwords.jpg" alt="Sustainable Fashion: Beyond the Buzzwords">
+        </div>
         <div class="card-content">
           <div class="card-meta">
             <span>Fashion</span>
@@ -338,11 +389,13 @@
           </div>
           <h3>Sustainable Fashion: Beyond the Buzzwords</h3>
           <p>A deep dive into what makes fashion truly sustainable and the brands that are leading the ethical revolution....</p>
-          <a href="blog.html?id=4">Read More</a>
+          <a href="/blog/4" class="read-more">Read More</a>
         </div>
       </div>
       <div class="card">
-        <img src="/images/blog/2021_02_05-art-grazing-table-australian-entertaining.jpg" alt="The Art of the Grazing Table: Australian Entertaining">
+        <div class="card-image">
+          <img src="/images/blog/2021_02_05-art-grazing-table-australian-entertaining.jpg" alt="The Art of the Grazing Table: Australian Entertaining">
+        </div>
         <div class="card-content">
           <div class="card-meta">
             <span>Hospitality</span>
@@ -350,11 +403,13 @@
           </div>
           <h3>The Art of the Grazing Table: Australian Entertaining</h3>
           <p>How Australia's relaxed approach to luxury entertaining has influenced my event design philosophy and transformed my app...</p>
-          <a href="blog.html?id=21">Read More</a>
+          <a href="/blog/21" class="read-more">Read More</a>
         </div>
       </div>
       <div class="card">
-        <img src="/images/blog/2020_08_15-sydney-culinary-treasures-gourmet-adventure.jpg" alt="Exploring Sydney's Culinary Treasures: A Gourmet Adventure">
+        <div class="card-image">
+          <img src="/images/blog/2020_08_15-sydney-culinary-treasures-gourmet-adventure.jpg" alt="Exploring Sydney's Culinary Treasures: A Gourmet Adventure">
+        </div>
         <div class="card-content">
           <div class="card-meta">
             <span>Travel</span>
@@ -362,11 +417,13 @@
           </div>
           <h3>Exploring Sydney's Culinary Treasures: A Gourmet Adventure</h3>
           <p>Discovering the best of Sydney's diverse food scene, from iconic waterfront restaurants to hidden neighborhood gems that...</p>
-          <a href="blog.html?id=5">Read More</a>
+          <a href="/blog/5" class="read-more">Read More</a>
         </div>
       </div>
       <div class="card">
-        <img src="/images/blog/2020_08_14-hunter-valley-vineyards-wine-education.jpg" alt="Hunter Valley Vineyards: A Wine Education">
+        <div class="card-image">
+          <img src="/images/blog/2020_08_14-hunter-valley-vineyards-wine-education.jpg" alt="Hunter Valley Vineyards: A Wine Education">
+        </div>
         <div class="card-content">
           <div class="card-meta">
             <span>Travel</span>
@@ -374,11 +431,13 @@
           </div>
           <h3>Hunter Valley Vineyards: A Wine Education</h3>
           <p>Exploring Australia's oldest wine region and discovering how terroir translates into taste through immersive vineyard ex...</p>
-          <a href="blog.html?id=18">Read More</a>
+          <a href="/blog/18" class="read-more">Read More</a>
         </div>
       </div>
       <div class="card">
-        <img src="/images/blog/2020_06_18-pandemic-hospitality-uncertain-times.jpg" alt="Working Through a Pandemic: Hospitality in Uncertain Times">
+        <div class="card-image">
+          <img src="/images/blog/2020_06_18-pandemic-hospitality-uncertain-times.jpg" alt="Working Through a Pandemic: Hospitality in Uncertain Times">
+        </div>
         <div class="card-content">
           <div class="card-meta">
             <span>Hospitality</span>
@@ -386,11 +445,13 @@
           </div>
           <h3>Working Through a Pandemic: Hospitality in Uncertain Times</h3>
           <p>Reflections on adapting to COVID-19 challenges in the luxury hotel industry and finding meaningful ways to serve during ...</p>
-          <a href="blog.html?id=17">Read More</a>
+          <a href="/blog/17" class="read-more">Read More</a>
         </div>
       </div>
       <div class="card">
-        <img src="/images/blog/2020_03_10-sydney-first-impressions.jpg" alt="Sydney First Impressions: Ocean, Light, and Lifestyle">
+        <div class="card-image">
+          <img src="/images/blog/2020_03_10-sydney-first-impressions.jpg" alt="Sydney First Impressions: Ocean, Light, and Lifestyle">
+        </div>
         <div class="card-content">
           <div class="card-meta">
             <span>Travel</span>
@@ -398,11 +459,13 @@
           </div>
           <h3>Sydney First Impressions: Ocean, Light, and Lifestyle</h3>
           <p>The surprising elements of Australian life that have captured my imagination and how the quality of light changes everyt...</p>
-          <a href="blog.html?id=16">Read More</a>
+          <a href="/blog/16" class="read-more">Read More</a>
         </div>
       </div>
       <div class="card">
-        <img src="/images/blog/2020_01_20-new-chapter-moving-sydney.jpg" alt="Big News: I'm Moving to Sydney!">
+        <div class="card-image">
+          <img src="/images/blog/2020_01_20-new-chapter-moving-sydney.jpg" alt="Big News: I'm Moving to Sydney!">
+        </div>
         <div class="card-content">
           <div class="card-meta">
             <span>Personal</span>
@@ -410,11 +473,13 @@
           </div>
           <h3>Big News: I'm Moving to Sydney!</h3>
           <p>The exciting decision to relocate to Australia, the opportunities that await, and mixed emotions about leaving New York ...</p>
-          <a href="blog.html?id=16">Read More</a>
+          <a href="/blog/16" class="read-more">Read More</a>
         </div>
       </div>
       <div class="card">
-        <img src="/images/blog/2020_01_10-new-beginnings-distance-needed.jpg" alt="New Beginnings: When Distance is the Only Answer">
+        <div class="card-image">
+          <img src="/images/blog/2020_01_10-new-beginnings-distance-needed.jpg" alt="New Beginnings: When Distance is the Only Answer">
+        </div>
         <div class="card-content">
           <div class="card-meta">
             <span>Personal</span>
@@ -422,11 +487,13 @@
           </div>
           <h3>New Beginnings: When Distance is the Only Answer</h3>
           <p>Sometimes the bravest decision is to leave everything familiar behind. A reflection on new chapters and the courage to s...</p>
-          <a href="blog.html?id=15">Read More</a>
+          <a href="/blog/15" class="read-more">Read More</a>
         </div>
       </div>
       <div class="card">
-        <img src="/images/blog/2019_12_05-holiday-hosting-luxury-hotel-lessons.jpg" alt="Holiday Hosting: Lessons from Luxury Hotels">
+        <div class="card-image">
+          <img src="/images/blog/2019_12_05-holiday-hosting-luxury-hotel-lessons.jpg" alt="Holiday Hosting: Lessons from Luxury Hotels">
+        </div>
         <div class="card-content">
           <div class="card-meta">
             <span>Hospitality</span>
@@ -434,11 +501,13 @@
           </div>
           <h3>Holiday Hosting: Lessons from Luxury Hotels</h3>
           <p>How my work in hospitality has transformed my approach to entertaining at home, with ideas for bringing hotel magic into...</p>
-          <a href="blog.html?id=14">Read More</a>
+          <a href="/blog/14" class="read-more">Read More</a>
         </div>
       </div>
       <div class="card">
-        <img src="/images/blog/2019_09_12-fall-fashion-week-newcomer-observations.jpg" alt="Fall Fashion Week: Observations from a Newcomer">
+        <div class="card-image">
+          <img src="/images/blog/2019_09_12-fall-fashion-week-newcomer-observations.jpg" alt="Fall Fashion Week: Observations from a Newcomer">
+        </div>
         <div class="card-content">
           <div class="card-meta">
             <span>Fashion</span>
@@ -446,11 +515,13 @@
           </div>
           <h3>Fall Fashion Week: Observations from a Newcomer</h3>
           <p>My first experience attending New York Fashion Week events and how the energy of runway shows has influenced my understa...</p>
-          <a href="blog.html?id=13">Read More</a>
+          <a href="/blog/13" class="read-more">Read More</a>
         </div>
       </div>
       <div class="card">
-        <img src="/images/blog/2019_07_08-summer-cocktails-manhattan-speakeasies.jpg" alt="Summer Cocktails: Manhattan's Hidden Speakeasies">
+        <div class="card-image">
+          <img src="/images/blog/2019_07_08-summer-cocktails-manhattan-speakeasies.jpg" alt="Summer Cocktails: Manhattan's Hidden Speakeasies">
+        </div>
         <div class="card-content">
           <div class="card-meta">
             <span>Hospitality</span>
@@ -458,11 +529,13 @@
           </div>
           <h3>Summer Cocktails: Manhattan's Hidden Speakeasies</h3>
           <p>Exploring New York's secretive cocktail culture and how these intimate spaces have influenced my approach to hospitality...</p>
-          <a href="blog.html?id=12">Read More</a>
+          <a href="/blog/12" class="read-more">Read More</a>
         </div>
       </div>
       <div class="card">
-        <img src="/images/blog/2019_04_10-behind-scenes-eternal-elegance-bridal.jpg" alt="Behind the Scenes at Eternal Elegance Bridal">
+        <div class="card-image">
+          <img src="/images/blog/2019_04_10-behind-scenes-eternal-elegance-bridal.jpg" alt="Behind the Scenes at Eternal Elegance Bridal">
+        </div>
         <div class="card-content">
           <div class="card-meta">
             <span>Wedding</span>
@@ -470,11 +543,13 @@
           </div>
           <h3>Behind the Scenes at Eternal Elegance Bridal</h3>
           <p>My unexpected journey into the world of wedding design and the magic that happens behind the scenes at New York's most f...</p>
-          <a href="blog.html?id=10">Read More</a>
+          <a href="/blog/10" class="read-more">Read More</a>
         </div>
       </div>
       <div class="card">
-        <img src="/images/blog/2019_02_15-first-week-luminous-grand-hotel.jpg" alt="My First Week at The Luminous Grand Hotel">
+        <div class="card-image">
+          <img src="/images/blog/2019_02_15-first-week-luminous-grand-hotel.jpg" alt="My First Week at The Luminous Grand Hotel">
+        </div>
         <div class="card-content">
           <div class="card-meta">
             <span>Hospitality</span>
@@ -482,11 +557,13 @@
           </div>
           <h3>My First Week at The Luminous Grand Hotel</h3>
           <p>Reflecting on my initial days working at one of Manhattan's most iconic luxury hotels and the beginning of my hospitalit...</p>
-          <a href="blog.html?id=9">Read More</a>
+          <a href="/blog/9" class="read-more">Read More</a>
         </div>
       </div>
       <div class="card">
-        <img src="/images/blog/2017_08_15-before-the-big-apple-my-winding-path.jpg" alt="Before The Big Apple: My Winding Path Here">
+        <div class="card-image">
+          <img src="/images/blog/2017_08_15-before-the-big-apple-my-winding-path.jpg" alt="Before The Big Apple: My Winding Path Here">
+        </div>
         <div class="card-content">
           <div class="card-meta">
             <span>Personal</span>
@@ -494,7 +571,7 @@
           </div>
           <h3>Before The Big Apple: My Winding Path Here</h3>
           <p>Looking back at the unexpected journey that led me to New York and how a series of 'temporary' jobs became the foundatio...</p>
-          <a href="blog.html?id=7">Read More</a>
+          <a href="/blog/7" class="read-more">Read More</a>
         </div>
       </div>
     </div>
@@ -504,16 +581,10 @@
     <div class="container">
       <p>&copy; 2025 Blaire Delanné. All rights reserved.</p>
       <div class="social-links">
-        <a href="https://instagram.com/blairedelanne" aria-label="Instagram">Instagram</a>
-        <a href="mailto:info@blairedelanne.com" aria-label="Email">Email</a>
+        <a href="https://instagram.com/blairedelanne">Instagram</a>
+        <a href="mailto:info@blairedelanne.com">Email</a>
       </div>
     </div>
   </footer>
-
-  <script>
-    // Store posts data for client-side use
-    const postsData = {"2":{"id":2,"title":"The Art of Investment Dressing: Building a Wardrobe That Lasts","slug":"investment-dressing-building-wardrobe-that-lasts","excerpt":"In a world of fast fashion and fleeting trends, the concept of investment dressing stands as a counterpoint to disposable consumption. Learn how to curate a collection of high-quality, timeless pieces that will serve you for years to come.","content":"<p>In a world of fast fashion and fleeting trends, the concept of investment dressing stands as a counterpoint to disposable consumption. It's an approach that prioritizes quality over quantity, longevity over novelty, and personal style over passing fads. The result? A carefully curated wardrobe that not only serves you well for years to come but also reduces waste and ultimately saves money.</p>\n      <p>Investment dressing isn't about spending exorbitant amounts on designer labels—though quality often comes with a higher price tag. Rather, it's about thoughtful acquisition, choosing pieces that offer lasting value through superior materials, construction, and timeless design. Let's explore how to build a wardrobe that stands the test of time.</p>\n\n      <img src=\"/images/blog/2023_06_20-investment-dressing-building-wardrobe-that-lasts_img02.jpg\" alt=\"A carefully curated selection of timeless wardrobe essentials including a tailored blazer, silk blouse, and leather accessories\" class=\"my-6 w-full rounded-lg shadow-md\" />\n      <h3 class=\"font-playfair text-2xl font-semibold my-4\">Know Your Personal Style</h3>\n      <p>Before making any significant wardrobe investments, it's crucial to have a clear understanding of your personal style. What silhouettes make you feel confident? What colors complement your complexion? What fabrics do you enjoy wearing? Spend time analyzing the pieces you reach for repeatedly and notice patterns in what makes you feel your best.</p>\n      <p>Investment pieces should reflect your authentic style rather than representing who you wish to be or temporary influences. A beautifully crafted item will only provide value if it aligns with your genuine preferences and lifestyle needs.</p>\n      <h3 class=\"font-playfair text-2xl font-semibold my-4\">Focus on Versatility</h3>\n      <p>The cornerstone of an investment wardrobe is versatility. Each piece should work harmoniously with multiple others, creating numerous outfit combinations from a relatively small collection. This versatility comes from:</p>\n      <ul class=\"list-disc pl-6 my-4\">\n        <li class=\"mb-2\">A cohesive color palette that allows for easy mixing and matching</li>\n        <li class=\"mb-2\">Classic silhouettes that transcend seasonal trends</li>\n        <li class=\"mb-2\">High-quality fabrics that transition well between seasons</li>\n        <li>Designs that can be dressed up or down depending on the occasion</li>\n      </ul>\n      <p>When considering an investment piece, ask yourself how many existing items in your wardrobe it complements and how many different scenarios you could wear it in. The higher these numbers, the better the investment.</p>\n      <h3 class=\"font-playfair text-2xl font-semibold my-4\">Invest in Quality Construction</h3>\n      <p>The hallmark of investment pieces is their exceptional construction. Learning to recognize quality craftsmanship will help you make informed purchasing decisions. Look for:</p>\n      <ul class=\"list-disc pl-6 my-4\">\n        <li class=\"mb-2\">Natural fibers or high-quality technical materials</li>\n        <li class=\"mb-2\">Tight, even stitching with no loose threads</li>\n        <li class=\"mb-2\">Pattern matching at seams</li>\n        <li class=\"mb-2\">Finished seams that won't fray</li>\n        <li>Weight and structure appropriate to the garment type</li>\n      </ul>\n      <p>Quality construction ensures that your pieces maintain their shape, color, and integrity over years of wear and countless washes. While these items may cost more upfront, the cost-per-wear decreases significantly over time compared to cheaper alternatives that need frequent replacement.</p>\n      <h3 class=\"font-playfair text-2xl font-semibold my-4\">The Cornerstones of an Investment Wardrobe</h3>\n      <p>While everyone's ideal wardrobe will differ based on lifestyle, climate, and personal taste, certain categories of clothing typically offer the best return on investment:</p>\n      <p><strong>Outerwear:</strong> A well-made coat or jacket can last decades with proper care. Classic styles like trench coats, wool overcoats, and leather jackets transcend trends and can be the defining piece of an outfit.</p>\n      <p><strong>Knitwear:</strong> High-quality sweaters in cashmere or merino wool may be expensive, but they offer unparalleled warmth, comfort, and elegance. With proper care, they can last many years without losing their shape or softness.</p>\n      <p><strong>Tailoring:</strong> A perfectly fitted blazer or pair of trousers forms the backbone of a versatile wardrobe. These pieces can transition seamlessly from professional to casual contexts with a simple change of accessories.</p>\n      <p><strong>Footwear:</strong> Well-constructed shoes not only last longer but provide better support and comfort. Classic styles like loafers, Chelsea boots, or elegant pumps remain relevant regardless of shifting trends.</p>\n      <h3 class=\"font-playfair text-2xl font-semibold my-4\">Caring for Your Investment</h3>\n      <p>The longevity of investment pieces depends significantly on how you care for them. Develop good habits:</p>\n      <ul class=\"list-disc pl-6 my-4\">\n        <li class=\"mb-2\">Follow care instructions precisely</li>\n        <li class=\"mb-2\">Store items properly (cedar hangers for suits, shoe trees for footwear)</li>\n        <li class=\"mb-2\">Address repairs promptly before small issues become irreparable</li>\n        <li>Develop relationships with quality dry cleaners, cobblers, and tailors</li>\n      </ul>\n      <p>Remember that even the highest quality items require maintenance. Building care routines into your lifestyle ensures that your investments continue to serve you well for years to come.</p>\n      <h3 class=\"font-playfair text-2xl font-semibold my-4\">The Emotional Return on Investment</h3>\n      <p>Beyond practical considerations, investment dressing offers significant emotional benefits. There's a unique satisfaction in wearing beautifully made clothes that have grown with you through different life chapters. These pieces often carry stories and memories that fast fashion simply cannot match.</p>\n      <p>Moreover, knowing that your choices support quality craftsmanship and more sustainable consumption patterns provides a sense of alignment between your values and actions. This congruence alone can make investment dressing worthwhile, even beyond the practical benefits of having a wardrobe that truly works for you.</p>\n      <p>As you embark on your investment dressing journey, remember that building a lasting wardrobe is a marathon, not a sprint. Take your time, save for pieces that truly speak to you, and enjoy the process of creating a collection that expresses your unique style while standing the test of time.</p>","coverImage":"/images/blog/2023_06_20-investment-dressing-building-wardrobe-that-lasts.jpg","publishedAt":"2023-06-20T10:00:00.000Z","category":"Fashion","location":"New Zealand","featured":3,"readTime":8,"prevPostId":null,"nextPostId":null},"4":{"id":4,"title":"Sustainable Fashion: Beyond the Buzzwords","slug":"sustainable-fashion-beyond-buzzwords","excerpt":"A deep dive into what makes fashion truly sustainable and the brands that are leading the ethical revolution.","content":"<p>Been thinking loads about sustainable fashion lately. Sydney's totally changed my closet mindset - Aussies have this chill relationship with clothes, buying fewer, better pieces instead of chasing trends like we did in NY.</p>\n\n      <p>My Manhattan wardrobe? Packed with fast fashion I'd wear once or twice before they'd stretch, fade, or get boring. Been slowly swapping that disposable stuff with actual thoughtful buys since moving here.</p>\n\n      <img src=\"/images/blog/2021_04_10-sustainable-fashion-beyond-buzzwords_img02.jpg\" alt=\"My favorite sustainable linen dress from local Sydney designer against the harbor backdrop\" class=\"my-6 w-full rounded-lg shadow-md\" />\n\n      <p>So frustrating though - all these buzzwords! Everything's suddenly \"sustainable,\" \"eco-friendly,\" \"green,\" or \"clean.\" What does that even MEAN? Most terms have zero standard definitions, so brands just use them however they want.</p>\n\n      <p>Like \"organic\" cotton - unless it's GOTS certified, might be grown with fewer pesticides but still processed with nasty chemicals. Or \"vegan leather\" - usually just plastic. Trading animal welfare for plastic pollution? Not exactly a win.</p>\n\n      <p>Found some Aussie brands actually committed to the real deal - transparent supply chains, low-impact materials, designs meant to last. Yeah the prices are higher, but I'm thinking cost-per-wear now instead of just sticker price.</p>\n\n      <p>Michael teases me: \"Does it count as sustainable if you keep flying across the globe every few years?\" Ouch, fair point. My carbon footprint from international moves probably cancels any good my linen pants are doing. Still think these smaller choices matter though.</p>\n\n      <p>Some of the innovations blow my mind. This Melbourne designer works with pineapple leaf fibers (Piñatex!). Found a jacket made from recycled ocean plastic in Surry Hills. Brands using natural dyes from actual food waste to cut chemical runoff.</p>\n\n      <p>Biggest practical change? Just. Buying. Less. Trying this capsule wardrobe thing - fewer but versatile pieces that mix and match. So freeing to actually wear everything instead of that \"nothing to wear\" feeling despite owning tons.</p>\n\n      <p>Also loving secondhand shopping. Sydney has killer vintage stores - found this perfectly worn-in 90s denim jacket that's become my go-to.</p>\n\n      <p>Australia's shifted my whole perspective in ways I didn't expect. Something about living by the ocean makes environmental stuff feel way more real and personal.</p>","coverImage":"/images/blog/2021_04_10-sustainable-fashion-beyond-buzzwords.jpg","publishedAt":"2021-04-10T10:00:00.000Z","category":"Fashion","location":"Australia","featured":1,"readTime":9,"prevPostId":null,"nextPostId":null},"33":{"id":33,"title":"Luxury Wedding Planning: The Art of Creating Memorable Celebrations","slug":"luxury-wedding-planning-memorable-celebrations","excerpt":"Discover the secrets to planning elegant, personalized weddings that leave a lasting impression on guests and create beautiful memories for couples.","content":"<p>There's a subtle but critical difference between an expensive wedding and a luxury wedding. It's a distinction I've come to understand deeply since establishing my consultancy in New Zealand, where I now focus primarily on creating what I call \"meaningful luxury\" for my clients.</p>\n\n      <p>The essence of luxury wedding planning isn't about lavish spending or ostentatious displays—though beautiful settings and quality elements are certainly part of the equation. Instead, true luxury lies in the creation of deeply personalized celebrations that reflect a couple's unique love story while providing an extraordinary experience for both them and their guests.</p>\n\n      <img src=\"/images/blog/2022_10_15-luxury-wedding-planning-memorable-celebrations_img02.jpg\" alt=\"Intimate tablescape featuring native New Zealand flora, hand-calligraphed place cards, and bespoke menu designs\" class=\"my-6 w-full rounded-lg shadow-md\" />\n\n      <h3 class=\"font-playfair text-2xl font-semibold my-4\">The Evolution of Luxury</h3>\n\n      <p>When I first entered the wedding industry years ago, luxury was often defined by recognizable status markers—designer names, grand venues, and opulent decor. While those elements still have their place, today's sophisticated couples are seeking something more nuanced: authenticity, meaning, and experiences that can't be replicated.</p>\n\n      <p>This shift reflects broader changes in how we define luxury across industries. Just as travelers increasingly value exclusive experiences over marble lobbies, and diners prize chef interaction and ingredient provenance over white tablecloths, wedding couples are prioritizing personal significance over conventional displays of wealth.</p>\n\n      <h3 class=\"font-playfair text-2xl font-semibold my-4\">The Art of Curation</h3>\n\n      <p>One of the most valuable services I provide is curation. In an age of overwhelming choice and Pinterest-perfect inspiration, couples need more than just a planner who can execute logistics—they need a trusted advisor who can help them identify what truly matters to them and edit out the noise.</p>\n\n      <p>For a recent wedding at a historic homestead in Hawke's Bay, I worked with a couple who initially presented me with dozens of inspiration images spanning multiple styles. Rather than trying to incorporate everything, we had deep conversations about their relationship journey, values, and the atmosphere they wanted to create. This led to a focused concept centered around the bride's family heritage and the groom's passion for native conservation.</p>\n\n      <p>The resulting celebration featured tables named after native birds, with subtle conservation information woven into the design, hand-illustrated botanical elements that referenced the bride's grandmother's artwork, and a menu that told the story of their relationship through shared food experiences.</p>\n\n      <h3 class=\"font-playfair text-2xl font-semibold my-4\">Invisible Excellence</h3>\n\n      <p>Another hallmark of true luxury is what I call \"invisible excellence\"—the details and considerations guests may never consciously notice but that significantly enhance their experience.</p>\n\n      <p>This includes thoughtful timing that allows for conversation and connection rather than rushing from one programmed element to the next. It means considering sound design so that music enhances rather than dominates. It involves subtle comfort elements like pashminas appearing just as the evening chill sets in, or refreshing hand towels offered during outdoor summer ceremonies.</p>\n\n      <p>For a celebration last month, we researched each guest's dietary preferences and subtle food likes/dislikes beyond just allergies, allowing the chef to create individually tailored experiences without anyone feeling singled out. One gentleman later told the couple it was the first wedding where he'd been able to enjoy every course despite his complex dietary needs—yet he never had to mention them on the day.</p>\n\n      <h3 class=\"font-playfair text-2xl font-semibold my-4\">Cultural Intelligence</h3>\n\n      <p>New Zealand's unique cultural context presents both opportunities and responsibilities for luxury wedding design. I've invested significant time in understanding Māori protocols and building relationships with cultural advisors who can help couples appropriately incorporate indigenous elements when desired.</p>\n\n      <p>For a wedding bringing together families from New Zealand and Japan, we created a welcome ceremony that honored both cultures without appropriation. Elements included a simplified pōwhiri (welcome) led by a local kaumātua (elder) with the couple's advance permission, followed by a sake ceremony that recognized the groom's heritage.</p>\n\n      <p>The ability to navigate different cultural expectations with sensitivity and respect is increasingly essential in our globalized world. Luxury is not just what looks beautiful—it's creating an environment where every guest feels welcomed, respected, and included.</p>\n\n      <h3 class=\"font-playfair text-2xl font-semibold my-4\">Sustainable Luxury</h3>\n\n      <p>Perhaps the most significant evolution in luxury wedding planning is the integration of sustainability. Today's discerning couples understand that true luxury cannot come at the expense of our environment or communities.</p>\n\n      <p>This doesn't mean compromising on quality or aesthetic—quite the opposite. Some of the most exquisite designs I've created have centered on locally sourced, seasonal flowers arranged in reusable vessels that became gifts for key family members. For one wedding, we worked with a local potter to create custom ceramic pieces that served as both decor elements and meaningful keepsakes.</p>\n\n      <p>Food stories have become central to my approach as well. Rather than generic luxury ingredients shipped from across the world, we showcase the finest local offerings with transparent sourcing. At a recent celebration, each course highlighted a different local producer, with beautiful story cards explaining the relationship between the food, the land, and the people who grew it.</p>\n\n      <h3 class=\"font-playfair text-2xl font-semibold my-4\">The Future of Celebration</h3>\n\n      <p>As I look ahead, I see luxury wedding celebrations becoming even more intentional and values-driven. Couples are questioning traditions that don't resonate with them and creating new rituals that better reflect their shared vision.</p>\n\n      <p>While destination weddings remain popular, they're evolving to include deeper engagement with local culture and community. Rather than simply using exotic locations as backdrops, couples want to meaningfully connect with the places they choose to celebrate.</p>\n\n      <p>Technology is also being integrated in increasingly sophisticated ways—not to create distance through screens, but to bridge it by enabling loved ones to participate from afar when necessary.</p>\n\n      <p>The most beautiful celebrations I help create are those where every element feels both extraordinary and absolutely right for the couple at hand. That unique alchemy of personal meaning, exceptional quality, and thoughtful execution is what transforms an expensive event into a truly luxurious experience—one that creates memories to last a lifetime.</p>","coverImage":"/images/blog/2022_10_15-luxury-wedding-planning-memorable-celebrations.jpg","publishedAt":"2022-10-15T10:00:00.000Z","category":"Wedding","location":"New Zealand","featured":2,"readTime":7,"prevPostId":null,"nextPostId":null},"40":{"id":40,"title":"A New Chapter: Embracing Martinborough's Wine Culture","slug":"new-chapter-martinborough-wine-culture","excerpt":"My journey from Auckland to Martinborough has opened a new world of inspiration, combining the region's renowned wines with my passion for creating authentic hospitality experiences.","content":"<p>There's something magical about new beginnings. As I write this, I'm sitting on the porch of my new cottage in Martinborough, watching the sun cast long shadows across the neighboring vineyards. The Wairarapa region has welcomed me with open arms, and I'm excited to share this new chapter with you.</p>\n      <p>After several fulfilling years in Auckland, I felt the call to explore New Zealand's wine country more deeply. Martinborough, with its charming village square surrounded by boutique vineyards, offered the perfect blend of rural tranquility and sophisticated wine culture I was seeking.</p>\n\n      <img src=\"/images/blog/2025_05_12-new-chapter-martinborough-wine-culture_img02.jpg\" alt=\"My new cottage porch view overlooking Martinborough vineyards at sunset\" class=\"my-6 w-full rounded-lg shadow-md\" />\n      <h3 class=\"font-playfair text-2xl font-semibold my-4\">The Call of Wine Country</h3>\n      <p>What drew me to Martinborough wasn't just its world-class Pinot Noir (though that was certainly a compelling factor!). It was the sense of community—winemakers, chefs, farmers, and artisans all connected by a shared passion for this special terroir. In Auckland, I had built wonderful relationships with suppliers and venues, but I found myself increasingly sourcing wines and produce from this region.</p>\n      <p>When the opportunity arose to relocate my consulting practice here, it felt like the natural progression of my journey. Being at the source—where the grapes grow, where the cheese is made, where the olive oil is pressed—offers an authenticity to my work that I've always valued.</p>\n      <h3 class=\"font-playfair text-2xl font-semibold my-4\">From Urban Luxury to Rural Elegance</h3>\n      <p>My experience at The Fern Boutique Hotel in Auckland gave me invaluable insights into luxury hospitality, but Martinborough offers a different kind of luxury—one defined by connection to place, seasonal rhythms, and the thoughtful work of local producers.</p>\n      <p>I've already begun collaborating with several wineries on their events programs, bringing my background in weddings and hospitality to enhance their visitor experiences. There's something deeply satisfying about designing an intimate dinner among the vines, or helping a couple plan their wedding in a historic barrel hall.</p>\n      <h3 class=\"font-playfair text-2xl font-semibold my-4\">The Perfect Wine and Cheese Pairing</h3>\n      <p>One of my first projects here has been creating a series of guided tastings that celebrate the region's wine and cheese producers. Did you know that along with its celebrated Pinot Noir, the Wairarapa is home to some remarkable artisanal cheesemakers?</p>\n      <p>I've spent delightful afternoons with local cheesemakers learning about their processes and the stories behind their creations. From velvety goat cheese to complex aged cheddars, these artisans bring the same dedication to their craft that the winemakers bring to theirs.</p>\n      <p>These experiences have reinforced my belief that true luxury isn't about extravagance—it's about authenticity, quality, and meaningful connection. A perfectly paired local wine and cheese, enjoyed in good company with a view of the vineyards, offers a richness that no gold-plated amenity could match.</p>\n      <h3 class=\"font-playfair text-2xl font-semibold my-4\">New Inspirations for Weddings</h3>\n      <p>For couples planning their special day, Martinborough offers such distinctive backdrops—from rustic vineyard settings to elegant historic homesteads. I'm finding new inspiration daily for wedding designs that incorporate local elements: tables adorned with local olive branches, welcome baskets featuring regional wines and preserves, menus that truly reflect what's being harvested that very week.</p>\n      <p>There's a genuineness to celebrations here that resonates deeply with my approach to event design. Your wedding shouldn't feel like it could happen anywhere—it should be intimately connected to the place you've chosen and tell a story that could only be yours.</p>\n      <h3 class=\"font-playfair text-2xl font-semibold my-4\">Looking Forward</h3>\n      <p>While I'll still work with clients in Auckland and throughout New Zealand, making Martinborough my home base has already transformed my perspective and approach. There's something about the slower pace here that allows for deeper creative thinking and more meaningful connections.</p>\n      <p>If you're planning a visit to the Wairarapa wine region, or considering it as a destination for your wedding or special event, I'd love to show you the magic of this place through local eyes. And if you simply appreciate good wine and cheese—well, my porch has plenty of room for new friends.</p>\n      <p>Here's to new beginnings, to embracing change, and to finding inspiration in unexpected places. I raise my glass of local Pinot to you!</p>","coverImage":"/images/blog/2025_05_12-new-chapter-martinborough-wine-culture.jpg","publishedAt":"2025-05-12T10:00:00.000Z","category":"Hospitality","location":"New Zealand","featured":1,"readTime":6,"prevPostId":null,"nextPostId":null},"44":{"id":44,"title":"My New Side Hustle: Aesthetic Producer for AI Agents","slug":"ai-agents-social-media-aesthetic-producer","excerpt":"A friend's AI startup has created an unexpected opportunity for me to apply my aesthetic sensibilities to the emerging world of AI social media agents.","content":"<p>So I got roped into this weird side gig. Met this guy online - goes by DriftNZ or PJNZ - in this community called Secret Creators. He pinged me last month about his startup The Drift Agentic. Small outfit, but kinda interesting... they're building these AI agents for brands' social media stuff.</p>\n\n      <p>Started with me just throwing him some feedback, now he's calling me an \"Aesthetic Producer\" lol. Basically I'm helping make these AI things not look and sound like total robots. Extra $$ is nice tbh.</p>\n\n      <img src=\"/images/blog/2025_03_25-ai-agents-social-media-aesthetic-producer_img02.jpg\" alt=\"My workspace showing mood boards for an AI agent persona project\" class=\"my-6 w-full rounded-lg shadow-md\" />\n\n      <h3 class=\"font-playfair text-2xl font-semibold my-4\">Weird but Cool Work</h3>\n\n      <p>It's pretty out-there stuff - these AI agents have personalities, visual styles, the whole deal. Not just answering questions but actually vibing with a brand's aesthetic on social. Some are fashion experts, others know travel or home decor.</p>\n\n      <p>Turns out my hospitality background is actually useful here? Creating a mood, setting a tone, making people feel something... same principles, different medium. Go figure.</p>\n\n      <p>Only about 5hrs a week (thank god) making mood boards and telling them when their AI sounds fake af. It's a trip seeing my design instincts applied to friggin algorithms.</p>\n\n      <h3 class=\"font-playfair text-2xl font-semibold my-4\">What They're Building</h3>\n\n      <p>Beyond the social stuff, they wanna get into e-commerce. Imagine AI that can tell boho-chic from coastal grandmother without just matching keywords. Or tools that keep a brand consistent across all platforms without a human checking every damn post.</p>\n\n      <p>Way too early to know if this'll be a thing, but tbh it's nice having a foot in tech while living in wine country. Keeps my brain from turning into pinot-soaked mush... tho that has its charms too ;)</p>\n\n      <p>Still think there's no replacing human creativity (plz don't make me obsolete, AI overlords), but it's kinda cool to be part of the convo. And the side income doesn't hurt while I'm settling into Martinborough life!</p>","coverImage":"/images/blog/2025_03_25-ai-agents-social-media-aesthetic-producer.jpg","publishedAt":"2025-03-25T10:00:00.000Z","category":"Hospitality","location":"New Zealand","featured":0,"readTime":7,"prevPostId":null,"nextPostId":null},"45":{"id":45,"title":"First Week in Martinborough: Town Square, Wine Streets & Good Eats","slug":"martinborough-first-impressions-square-wine-streets","excerpt":"A few days into settling in Martinborough and I'm noticing the quirky details of this wine town.","content":"<p>Ok so this tiny town is built around a lil square - v different vibe from Auckland's sprawl. Weirdest thing is all the streets named after international places - Venice St, Dublin St, etc. Like some wine-soaked fantasy of world travel lol.</p>\n\n      <p>Get this - the fancy new housing development is legit called \"Pinot Place\" 😂 These ppl are COMMITTED to the wine brand. Can't blame em, the stuff is good.</p>\n\n      <p>Been eating my way thru town (obv):</p>\n\n      <ul class=\"list-disc pl-6 my-4\">\n        <li class=\"mb-2\"><span class=\"font-semibold\">Luna</span> - Solid place. Cute waiter who didn't judge when I asked stupid wine qs. Gotta try their \"special\" pinot next time (is it actually special or just marketing? tbd)</li>\n        <li class=\"mb-2\"><span class=\"font-semibold\">Tohi</span> - Gin bar w/ Asian food that's actually got spice. The owner makes these weird gin infusions that are either brilliant or terrible, no in-between.</li>\n        <li class=\"mb-2\"><span class=\"font-semibold\">Na Ra</span> - OMG their chicken & waffles!! Worth the move alone tbh</li>\n      </ul>\n\n      <p>Everything moves sloooow here. 20min convo with the bakery lady about her cat this morning. Everyone knows everyone's biz. Kinda nice after city anonymity? I dunno yet. Anyway, gonna chill for a couple weeks, find a car (my poor car won't make it on these country roads), poke around Wairarapa and maybe pop into Welly when I need a proper coffee.</p>","coverImage":"/images/blog/2025_02_10-martinborough-first-impressions.jpg","publishedAt":"2025-02-10T18:30:00.000Z","category":"Travel","location":"New Zealand","featured":0,"readTime":2,"prevPostId":null,"nextPostId":null}};
-  </script>
-  <script src="assets/js/main.js"></script>
 </body>
 </html>

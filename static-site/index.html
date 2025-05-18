@@ -6,17 +6,103 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blaire Delanné | Hospitality & Wedding Design Expert</title>
   <meta name="description" content="Blaire Delanné - Hospitality, Wedding Design, Travel & Fashion Expert in Martinborough, New Zealand. Discover professional consulting services and inspiration.">
-  
-  <link rel="stylesheet" href="/static/css/main.css">
-  
-  <!-- Load React -->
-  <script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script>
-  <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin></script>
-  
-  <!-- Load our React component -->
-  <script src="/static/js/bundle.js" defer></script>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <script src="/assets/js/main.js"></script>
 </head>
 <body>
-  <div id="root"></div>
+  <header>
+    <div class="container">
+      <nav>
+        <a href="/" class="logo">Blaire <span>Delanné</span></a>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/experience">Experience</a></li>
+          <li><a href="/blog">Journal</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Hospitality & Wine Expert</h1>
+      <p>With over a decade of experience in luxury hospitality and wine across three continents, I bring a unique perspective to every project.</p>
+      <a href="/contact" class="btn">Get in Touch</a>
+    </div>
+  </section>
+
+  <section class="container">
+    <h2>Latest Journal Entries</h2>
+    <div class="grid">
+      <div class="card">
+        <div class="card-image">
+          <img src="/images/blog/2023_06_20-investment-dressing-building-wardrobe-that-lasts.jpg" alt="The Art of Investment Dressing: Building a Wardrobe That Lasts">
+        </div>
+        <div class="card-content">
+          <div class="card-meta">
+            <span>Fashion</span>
+            <span>Jun 20, 2023</span>
+          </div>
+          <h3>The Art of Investment Dressing: Building a Wardrobe That Lasts</h3>
+          <p>In a world of fast fashion and fleeting trends, the concept of investment dressing stands as a counterpoint to disposabl...</p>
+          <a href="/blog/2" class="read-more">Read More</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image">
+          <img src="/images/blog/2022_10_15-luxury-wedding-planning-memorable-celebrations.jpg" alt="Luxury Wedding Planning: The Art of Creating Memorable Celebrations">
+        </div>
+        <div class="card-content">
+          <div class="card-meta">
+            <span>Wedding</span>
+            <span>Oct 15, 2022</span>
+          </div>
+          <h3>Luxury Wedding Planning: The Art of Creating Memorable Celebrations</h3>
+          <p>Discover the secrets to planning elegant, personalized weddings that leave a lasting impression on guests and create bea...</p>
+          <a href="/blog/33" class="read-more">Read More</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image">
+          <img src="/images/blog/2021_04_10-sustainable-fashion-beyond-buzzwords.jpg" alt="Sustainable Fashion: Beyond the Buzzwords">
+        </div>
+        <div class="card-content">
+          <div class="card-meta">
+            <span>Fashion</span>
+            <span>Apr 10, 2021</span>
+          </div>
+          <h3>Sustainable Fashion: Beyond the Buzzwords</h3>
+          <p>A deep dive into what makes fashion truly sustainable and the brands that are leading the ethical revolution....</p>
+          <a href="/blog/4" class="read-more">Read More</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image">
+          <img src="/images/blog/2025_05_12-new-chapter-martinborough-wine-culture.jpg" alt="A New Chapter: Embracing Martinborough's Wine Culture">
+        </div>
+        <div class="card-content">
+          <div class="card-meta">
+            <span>Hospitality</span>
+            <span>May 12, 2025</span>
+          </div>
+          <h3>A New Chapter: Embracing Martinborough's Wine Culture</h3>
+          <p>My journey from Auckland to Martinborough has opened a new world of inspiration, combining the region's renowned wines w...</p>
+          <a href="/blog/40" class="read-more">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Blaire Delanné. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://instagram.com/blairedelanne">Instagram</a>
+        <a href="mailto:info@blairedelanne.com">Email</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
