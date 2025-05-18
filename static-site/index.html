@@ -43,6 +43,18 @@
             json: () => Promise.resolve(window.STATIC_DATA.galleryFeatured)
           });
         }
+        
+        // Handle individual blog post requests
+        const postMatch = url.match(/\/api\/posts\/(\d+)/);
+        if (postMatch && postMatch[1]) {
+          const postId = parseInt(postMatch[1], 10);
+          if (window.STATIC_DATA.individualPosts[postId]) {
+            return Promise.resolve({
+              ok: true,
+              json: () => Promise.resolve(window.STATIC_DATA.individualPosts[postId])
+            });
+          }
+        }
       }
       // Use original fetch for anything else
       return originalFetch.apply(this, arguments);

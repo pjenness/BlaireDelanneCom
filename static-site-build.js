@@ -80,13 +80,31 @@ AddType image/gif .gif`;
       fetch('http://localhost:5000/api/gallery/featured').then(res => res.json())
     ]);
     
+    // Also fetch all individual blog posts so they can be accessed directly
+    console.log('Fetching individual blog posts...');
+    
+    // Get all post IDs from the posts we already have
+    const allPostIds = new Set();
+    featuredPosts.forEach(post => allPostIds.add(post.id));
+    recentPosts.forEach(post => allPostIds.add(post.id));
+    if (featuredMain) allPostIds.add(featuredMain.id);
+    
+    // Fetch each individual post
+    const individualPosts = {};
+    for (const id of allPostIds) {
+      console.log(`  - Fetching post ID ${id}`);
+      const postData = await fetch(`http://localhost:5000/api/posts/${id}`).then(res => res.json());
+      individualPosts[id] = postData;
+    }
+    
     // Create a static data JavaScript file
     const staticDataContent = `// This file contains static data for the site
 window.STATIC_DATA = {
   featuredPosts: ${JSON.stringify(featuredPosts, null, 2)},
   recentPosts: ${JSON.stringify(recentPosts, null, 2)},
   featuredMain: ${JSON.stringify(featuredMain, null, 2)},
-  galleryFeatured: ${JSON.stringify(galleryFeatured, null, 2)}
+  galleryFeatured: ${JSON.stringify(galleryFeatured, null, 2)},
+  individualPosts: ${JSON.stringify(individualPosts, null, 2)}
 };`;
     
     await mkdir(path.join(BUILD_DIR, 'static-data'), { recursive: true });
@@ -133,6 +151,18 @@ window.STATIC_DATA = {
             ok: true,
             json: () => Promise.resolve(window.STATIC_DATA.galleryFeatured)
           });
+        }
+        
+        // Handle individual blog post requests
+        const postMatch = url.match(/\\/api\\/posts\\/(\\d+)/);
+        if (postMatch && postMatch[1]) {
+          const postId = parseInt(postMatch[1], 10);
+          if (window.STATIC_DATA.individualPosts[postId]) {
+            return Promise.resolve({
+              ok: true,
+              json: () => Promise.resolve(window.STATIC_DATA.individualPosts[postId])
+            });
+          }
         }
       }
       // Use original fetch for anything else
