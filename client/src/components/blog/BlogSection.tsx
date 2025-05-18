@@ -83,11 +83,13 @@ const BlogSection = () => {
                 </Link>
               </div>
               <div className="order-1 lg:order-2">
-                <img 
-                  src={featuredPost.coverImage} 
-                  alt={featuredPost.title} 
-                  className="w-full h-full object-cover"
-                />
+                <Link href={`/blog/${featuredPost.id}`} className="block overflow-hidden">
+                  <img 
+                    src={featuredPost.coverImage} 
+                    alt={featuredPost.title} 
+                    className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                  />
+                </Link>
               </div>
             </article>
           )}

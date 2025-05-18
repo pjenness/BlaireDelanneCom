@@ -9,13 +9,13 @@ interface BlogCardProps {
 const BlogCard = ({ post }: BlogCardProps) => {
   return (
     <article className="bg-white shadow-sm hover-up">
-      <div className="h-60 overflow-hidden">
+      <Link href={`/blog/${post.id}`} className="block h-60 overflow-hidden">
         <img 
           src={post.coverImage} 
           alt={post.title} 
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
         />
-      </div>
+      </Link>
       <div className="p-6">
         <div className="flex justify-between items-center mb-2">
           <span className="text-accent font-medium uppercase tracking-wider text-xs">
@@ -35,7 +35,7 @@ const BlogCard = ({ post }: BlogCardProps) => {
         <p className="text-charcoal/80 mb-4 line-clamp-3">{post.excerpt}</p>
         <div className="flex justify-between items-center">
           <span className="text-sm text-charcoal/60">{formatDate(post.publishedAt)}</span>
-          <Link href={`/journal/${post.id}`} className="text-accent hover:underline font-medium">
+          <Link href={`/blog/${post.id}`} className="text-accent hover:underline font-medium">
             Continue Reading
           </Link>
         </div>
