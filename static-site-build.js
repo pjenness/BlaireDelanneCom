@@ -123,26 +123,43 @@ window.STATIC_DATA = {
     await writeFile(path.join(BUILD_DIR, 'static-data', 'site-data.js'), staticDataContent);
     console.log('Created static data file');
     
-    // 6. Copy and modify the index.html file
-    if (fs.existsSync('dist/public/index.html')) {
-      let indexContent = await readFile('dist/public/index.html', 'utf8');
-      
-      // Fix asset paths
-      indexContent = indexContent.replace(/src="\/assets\//g, 'src="assets/');
-      indexContent = indexContent.replace(/href="\/assets\//g, 'href="assets/');
-      
-      // Ensure image paths are correct
-      indexContent = indexContent.replace(/src="\/images\//g, 'src="images/');
-      indexContent = indexContent.replace(/href="\/images\//g, 'href="images/');
-      
-      // Fix any absolute paths in event handlers
-      indexContent = indexContent.replace(/href="\/journal\//g, 'href="journal/');
-      indexContent = indexContent.replace(/href="\/blog\//g, 'href="blog/');
-      indexContent = indexContent.replace(/navigate\("\/journal\//g, 'navigate("journal/');
-      indexContent = indexContent.replace(/navigate\("\/blog\//g, 'navigate("blog/');
-      
-      // Add our static data file and override for API calls
-      const staticDataScript = `
+    // 6. Create a completely standalone index.html file for the static site
+    // Read the client index.html template
+    const clientIndexPath = path.join(__dirname, 'client', 'index.html');
+    let indexContent = await readFile(clientIndexPath, 'utf8');
+    
+    // Add custom styles
+    const customCss = `
+<style>
+  body {
+    font-family: 'Playfair Display', 'Raleway', system-ui, sans-serif;
+    color: #333;
+    line-height: 1.6;
+  }
+  .cursor-pointer {
+    cursor: pointer !important;
+  }
+  article img {
+    cursor: pointer !important;
+    transition: transform 0.3s ease;
+  }
+  article img:hover {
+    transform: scale(1.05);
+  }
+  .hover-up {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .hover-up:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+</style>`;
+    
+    // Add it to the head
+    indexContent = indexContent.replace('</head>', customCss + '\n</head>');
+    
+    // Add our static data file and override for API calls
+    const staticDataScript = `
   <script src="static-data/site-data.js"></script>
   <script>
     // Override fetch to use our static data when API calls are made
