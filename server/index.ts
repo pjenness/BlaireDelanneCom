@@ -7,6 +7,53 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
+// Image path mapping for backward compatibility
+const categoryImageMapping = {
+  // Fashion images
+  'investment-dressing.jpg': 'fashion-category.jpg',
+  'sustainable-fashion.jpg': 'fashion-category.jpg',
+  'accessories-styling.jpg': 'fashion-category.jpg',
+  
+  // Travel images
+  'luxury-travel.jpg': 'travel-category.jpg',
+  'new-zealand-adventure.jpg': 'travel-category.jpg',
+  'moving-to-sydney.jpg': 'travel-category.jpg',
+  'sydney-culinary-treasures.jpg': 'travel-category.jpg',
+  'waiheke-vineyards.jpg': 'travel-category.jpg',
+  'central-otago-wine.jpg': 'travel-category.jpg',
+  
+  // Wedding images
+  'byron-bay-weddings.jpg': 'wedding-category.jpg',
+  'luxury-wedding-planning.jpg': 'wedding-category.jpg',
+  'queenstown-weddings.jpg': 'wedding-category.jpg',
+  'sustainable-weddings.jpg': 'wedding-category.jpg',
+  'sustainable-weddings-nz.jpg': 'wedding-category.jpg',
+  
+  // Hospitality images
+  'wellness-hospitality.jpg': 'hospitality-category.jpg',
+  'tablescaping-art.jpg': 'hospitality-category.jpg',
+  'boutique-hotel-partnership.jpg': 'hospitality-category.jpg',
+  'wellness-event-design.jpg': 'hospitality-category.jpg',
+  
+  // Personal/other images
+  'new-zealand-year-reflection.jpg': 'personal-category.jpg',
+  'autumn-harvest-festivals-otago.jpg': 'personal-category.jpg'
+};
+
+// Handle image requests with mapping for backward compatibility
+app.use('/images/blog/:filename', (req, res, next) => {
+  const requestedFile = req.params.filename;
+  
+  // If the requested file is in our mapping, redirect to the category image
+  if (categoryImageMapping[requestedFile]) {
+    const categoryImage = categoryImageMapping[requestedFile];
+    res.redirect(`/images/blog/${categoryImage}`);
+  } else {
+    // Otherwise continue to the regular static file handling
+    next();
+  }
+});
+
 // Serve static image files before any other routes
 app.use('/images', express.static(path.join(process.cwd(), 'images')));
 
