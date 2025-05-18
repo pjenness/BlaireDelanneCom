@@ -18,7 +18,9 @@ function Router() {
       <Route path="/specialties" component={Specialties} />
       <Route path="/experience" component={Experience} />
       <Route path="/journal" component={Blog} />
+      <Route path="/blog" component={Blog} />
       <Route path="/journal/:id" component={BlogPost} />
+      <Route path="/blog/:id" component={BlogPost} />
       <Route path="/contact" component={Contact} />
       <Route component={NotFound} />
     </Switch>
