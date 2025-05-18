@@ -44,7 +44,7 @@ This document serves as a comprehensive reference of Blaire's life events, caree
 - **2025 January 5**: Posted about decision to leave Auckland for Martinborough
 - **2025 January 10**: Reflection on luxury travel focus
 - **2025 February 10**: First impressions of Martinborough (restaurants, town square, streets named after cities)
-- **2025 March 25**: Started side hustle with TheDriftAgentic as "Aesthetic Producer"
+- **2025 March 25**: Started side hustle with The Drift Agentic as "Aesthetic Producer"
 - **2025 May 12**: Fully settled in Martinborough, working with local vineyards
 
 ## Career Evolution
@@ -79,7 +79,7 @@ This document serves as a comprehensive reference of Blaire's life events, caree
   - Local vineyard partnerships
   - Small town hospitality concepts
   - Martinborough wine expertise
-  - TheDriftAgentic aesthetic consultation (AI agents social media personas)
+  - The Drift Agentic aesthetic consultation (AI agents social media personas)
 
 ## Relationship Patterns
 - Tendency to move locations after relationships end
@@ -106,7 +106,7 @@ This document serves as a comprehensive reference of Blaire's life events, caree
 - **2022**: Early experiments with Midjourney for event concepts
 - **2023**: Using ChatGPT for business writing and proposals
 - **2024**: Exploring AI in fashion and video content
-- **2025**: Aesthetic Producer side hustle for TheDriftAgentic AI agents
+- **2025**: Aesthetic Producer side hustle for The Drift Agentic AI agents
 
 ## Martinborough References
 - Town center built around a square

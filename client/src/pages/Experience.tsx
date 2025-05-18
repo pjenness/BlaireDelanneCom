@@ -114,7 +114,7 @@ const Experience = () => {
                     <p className="text-charcoal/80 mb-3">
                       Since moving to Martinborough in early 2025, I've been working with various vineyards and hospitality venues throughout the Wairarapa region. My consultancy focuses on event design, hospitality experiences, and helping venues create memorable moments that showcase the distinctive terroir and artisanal culture of this special wine region.
                     </p>
-                    <h4 className="font-semibold text-lg mb-2 mt-5 font-playfair">TheDriftAgentic – Aesthetic Producer (2025 - Present)</h4>
+                    <h4 className="font-semibold text-lg mb-2 mt-5 font-playfair">The Drift Agentic – Aesthetic Producer (2025 - Present)</h4>
                     <p className="text-charcoal/80 mb-3">
                       As a part-time consultant with this innovative AI startup, I help design the visual styles and personalities for AI agents used in social media and commercial applications. This fascinating side project allows me to apply my aesthetic sensibilities to emerging technology while maintaining my base in Martinborough's wine country.
                     </p>
