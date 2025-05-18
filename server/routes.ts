@@ -124,15 +124,8 @@ export async function registerRoutes(app: Express): Promise<Server> {
         return res.status(404).json({ message: "Post not found" });
       }
       
-      // Fix the image path for the individual blog post
-      const date = new Date(post.publishedAt);
-      const year = date.getFullYear();
-      const month = String(date.getMonth() + 1).padStart(2, '0');
-      const day = String(date.getDate()).padStart(2, '0');
-      
-      // Create date-formatted image path
-      const formattedDate = `${year}_${month}_${day}`;
-      post.coverImage = `/images/blog/${formattedDate}-${post.slug}.jpg`;
+      // Preserve the original image path from content file
+      // We don't need to modify this path as it's already correct in the blog post JSON file
       
       res.json(post);
     } catch (error) {
