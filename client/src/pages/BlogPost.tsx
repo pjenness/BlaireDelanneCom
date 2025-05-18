@@ -77,7 +77,7 @@ const BlogPost = () => {
             <div className="flex items-center mb-8">
               <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
                 <img 
-                  src="/images/about/blaire-square-profile.svg" 
+                  src="/images/about/blaire-profile-square.jpg" 
                   alt="Blaire Delanné" 
                   className="w-full h-full object-cover"
                 />

@@ -62,13 +62,13 @@ const BlogSection = () => {
                 <div className="flex items-center mb-6">
                   <div className="w-10 h-10 rounded-full overflow-hidden mr-3">
                     <img 
-                      src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100" 
-                      alt="Blaire" 
+                      src="/images/about/blaire-profile-square.jpg" 
+                      alt="Blaire Delanné" 
                       className="w-full h-full object-cover"
                     />
                   </div>
                   <div>
-                    <span className="block text-charcoal font-medium">Blaire</span>
+                    <span className="block text-charcoal font-medium">Blaire Delanné</span>
                     <span className="text-sm text-charcoal/60">
                       {formatDate(featuredPost.publishedAt)} • {featuredPost.readTime} min read
                     </span>
