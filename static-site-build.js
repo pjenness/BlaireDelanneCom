@@ -73,11 +73,12 @@ AddType image/gif .gif`;
     // 5. Create static data file that's embedded in our site
     // Fetch all the data we need
     console.log('Fetching API data...');
-    const [featuredPosts, recentPosts, featuredMain, galleryFeatured] = await Promise.all([
+    const [featuredPosts, recentPosts, featuredMain, galleryFeatured, allPosts] = await Promise.all([
       fetch('http://localhost:5000/api/posts/featured').then(res => res.json()),
       fetch('http://localhost:5000/api/posts/recent').then(res => res.json()),
       fetch('http://localhost:5000/api/posts/featured/main').then(res => res.json()),
-      fetch('http://localhost:5000/api/gallery/featured').then(res => res.json())
+      fetch('http://localhost:5000/api/gallery/featured').then(res => res.json()),
+      fetch('http://localhost:5000/api/posts').then(res => res.json())
     ]);
     
     // Also fetch all individual blog posts so they can be accessed directly
@@ -104,7 +105,8 @@ window.STATIC_DATA = {
   recentPosts: ${JSON.stringify(recentPosts, null, 2)},
   featuredMain: ${JSON.stringify(featuredMain, null, 2)},
   galleryFeatured: ${JSON.stringify(galleryFeatured, null, 2)},
-  individualPosts: ${JSON.stringify(individualPosts, null, 2)}
+  individualPosts: ${JSON.stringify(individualPosts, null, 2)},
+  allPosts: ${JSON.stringify(allPosts, null, 2)}
 };`;
     
     await mkdir(path.join(BUILD_DIR, 'static-data'), { recursive: true });
@@ -150,6 +152,14 @@ window.STATIC_DATA = {
           return Promise.resolve({
             ok: true,
             json: () => Promise.resolve(window.STATIC_DATA.galleryFeatured)
+          });
+        }
+        
+        // Main blog page posts (all posts)
+        if (url === '/api/posts' || url.match(/\\/api\\/posts\\?/)) {
+          return Promise.resolve({
+            ok: true,
+            json: () => Promise.resolve(window.STATIC_DATA.allPosts)
           });
         }
         
