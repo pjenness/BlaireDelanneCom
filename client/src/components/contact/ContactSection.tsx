@@ -136,7 +136,7 @@ const ContactSection = () => {
               <CardContent className="p-0">
                 <Mail className="mx-auto text-accent mb-4" size={24} />
                 <h3 className="font-playfair font-semibold mb-2">Email</h3>
-                <p className="text-charcoal/70">blaire@blairedelanne.com</p>
+                <p className="text-charcoal/70">info@blairedelanne.com</p>
               </CardContent>
             </Card>
             
@@ -163,7 +163,7 @@ const ContactSection = () => {
                       <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z"/>
                     </svg>
                   </a>
-                  <a href="mailto:blaire@blairedelanne.com" rel="noopener noreferrer" className="text-charcoal/60 hover:text-accent">
+                  <a href="mailto:info@blairedelanne.com" rel="noopener noreferrer" className="text-charcoal/60 hover:text-accent">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                       <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
                     </svg>
