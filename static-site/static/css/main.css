@@ -1,13 +1,13 @@
 
-/* Main Styles for the Static Site */
+/* Main CSS for the static build */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@300;400;500;600&display=swap');
+
 :root {
   --color-accent: #9D8F68;
   --color-charcoal: #333333;
   --color-white: #FFFFFF;
   --color-light: #F5F5F5;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@300;400;500;600&display=swap');
 
 body {
   font-family: 'Raleway', sans-serif;
@@ -110,6 +110,8 @@ nav ul li a:hover {
   padding: 12px 30px;
   border-radius: 4px;
   font-weight: 500;
+  border: none;
+  cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
@@ -198,12 +200,34 @@ nav ul li a:hover {
   margin: 30px 0;
 }
 
+/* Form Fields */
+input, textarea, select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: 'Raleway', sans-serif;
+}
+
+textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
 /* Footer */
 footer {
   background-color: var(--color-charcoal);
   color: var(--color-white);
   padding: 60px 0;
   text-align: center;
+  margin-top: 60px;
 }
 
 .social-links {
