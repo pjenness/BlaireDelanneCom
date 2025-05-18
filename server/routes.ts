@@ -14,7 +14,23 @@ export async function registerRoutes(app: Express): Promise<Server> {
     try {
       const category = req.query.category as string;
       const posts = await storage.getPosts(category);
-      res.json(posts);
+      
+      // Fix image paths on posts before sending response
+      const fixedPosts = posts.map(post => {
+        // Get date from publishedAt
+        const date = new Date(post.publishedAt);
+        const year = date.getFullYear();
+        const month = String(date.getMonth() + 1).padStart(2, '0');
+        const day = String(date.getDate()).padStart(2, '0');
+        
+        // Create date-formatted image path based on the post slug
+        const formattedDate = `${year}_${month}_${day}`;
+        post.coverImage = `/images/blog/${formattedDate}-${post.slug}.jpg`;
+        
+        return post;
+      });
+      
+      res.json(fixedPosts);
     } catch (error) {
       res.status(500).json({ message: "Failed to fetch posts" });
     }
@@ -23,7 +39,23 @@ export async function registerRoutes(app: Express): Promise<Server> {
   app.get("/api/posts/featured", async (req, res) => {
     try {
       const featuredPosts = await storage.getFeaturedPosts();
-      res.json(featuredPosts);
+      
+      // Fix image paths on featured posts
+      const fixedPosts = featuredPosts.map(post => {
+        // Get date from publishedAt
+        const date = new Date(post.publishedAt);
+        const year = date.getFullYear();
+        const month = String(date.getMonth() + 1).padStart(2, '0');
+        const day = String(date.getDate()).padStart(2, '0');
+        
+        // Create date-formatted image path
+        const formattedDate = `${year}_${month}_${day}`;
+        post.coverImage = `/images/blog/${formattedDate}-${post.slug}.jpg`;
+        
+        return post;
+      });
+      
+      res.json(fixedPosts);
     } catch (error) {
       res.status(500).json({ message: "Failed to fetch featured posts" });
     }
@@ -32,7 +64,24 @@ export async function registerRoutes(app: Express): Promise<Server> {
   app.get("/api/posts/featured/main", async (req, res) => {
     try {
       const posts = await storage.getFeaturedPosts(1);
-      res.json(posts[0] || null);
+      
+      if (posts.length > 0) {
+        const post = posts[0];
+        
+        // Fix image path on main featured post
+        const date = new Date(post.publishedAt);
+        const year = date.getFullYear();
+        const month = String(date.getMonth() + 1).padStart(2, '0');
+        const day = String(date.getDate()).padStart(2, '0');
+        
+        // Create date-formatted image path
+        const formattedDate = `${year}_${month}_${day}`;
+        post.coverImage = `/images/blog/${formattedDate}-${post.slug}.jpg`;
+        
+        res.json(post);
+      } else {
+        res.json(null);
+      }
     } catch (error) {
       res.status(500).json({ message: "Failed to fetch featured post" });
     }
