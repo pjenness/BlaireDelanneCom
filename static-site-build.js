@@ -45,6 +45,12 @@ RewriteBase /
 RewriteRule ^index\\.html$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(blog|journal|about|experience|contact|specialties|gallery)/(.*)$ /index.html [L]
+RewriteRule ^(blog|journal|about|experience|contact|specialties|gallery)$ /index.html [L]
+
+# Fallback rule - for any other paths, redirect to index.html
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.html [L]
 
 # Set MIME types
@@ -192,6 +198,40 @@ window.STATIC_DATA = {
       // Use original fetch for anything else
       return originalFetch.apply(this, arguments);
     };
+
+    // Fix for client-side routing in static site
+    document.addEventListener('DOMContentLoaded', function() {
+      // Make all links work with the static site structure
+      document.addEventListener('click', function(e) {
+        // Find closest anchor tag
+        let target = e.target;
+        while (target && target.tagName !== 'A') {
+          target = target.parentNode;
+          if (!target) return;
+        }
+        
+        // If it's an internal link
+        if (target && target.href && target.href.includes(window.location.hostname)) {
+          // Extract the path from the href
+          const url = new URL(target.href);
+          const path = url.pathname;
+          
+          // If it's a path that should be handled by client-side routing
+          if (path.startsWith('/journal/') || path.startsWith('/blog/') || 
+              path === '/about' || path === '/experience' || path === '/contact' || 
+              path === '/specialties' || path === '/gallery') {
+            
+            e.preventDefault();
+            
+            // Update browser history and trigger route change
+            history.pushState(null, '', path);
+            
+            // Trigger a popstate event to make the router update
+            window.dispatchEvent(new PopStateEvent('popstate'));
+          }
+        }
+      });
+    });
   </script>`;
       
       indexContent = indexContent.replace('</head>', staticDataScript + '\n  </head>');
